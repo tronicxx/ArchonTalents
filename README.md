@@ -1,7 +1,6 @@
 # Archon Talents - World of Warcraft Addon
 
 [![GitHub release](https://img.shields.io/github/v/release/yourusername/archon-talents)](https://github.com/yourusername/archon-talents/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > Display the most popular talent builds from Archon.gg meta data directly in-game
 
@@ -53,24 +52,6 @@ Talent data is automatically updated daily via our CI/CD pipeline, ensuring you 
 - **`embeds.xml`** - Embedded library dependencies
 - **`Libs/`** - Required libraries (LibStub, LibDataBroker, LibDBIcon)
 
-## 🛠️ Development
-
-### Prerequisites
-- Python 3.9+
-- Git
-
-### Local Development
-```bash
-git clone https://github.com/yourusername/archon-talents.git
-cd archon-talents
-python archon_combined_scraper.py
-```
-
-### Creating a Release
-```bash
-./create_release.sh 1.0.0
-```
-
 ## 📊 Supported Content
 
 ### Raid: Manaforge Omega
@@ -82,30 +63,6 @@ python archon_combined_scraper.py
 - **+10 Key Level** meta builds
 - **All Dungeons** overall spec data
 - Weekly updated rankings
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Archon.gg** for providing the talent build data
-- **LibStub** and **LibDBIcon** developers for the excellent libraries
-- **WowUp** team for making addon management easy
-
-## 📞 Support
-
-- **GitHub Issues**: [Report bugs or request features](https://github.com/yourusername/archon-talents/issues)
-- **Discord**: Join our community server (link coming soon)
-- **In-Game**: Use `/archon help` for command reference
 
 ---
 
