@@ -63,7 +63,3 @@ Talent data is automatically updated daily via our CI/CD pipeline, ensuring you 
 - **+10 Key Level** meta builds
 - **All Dungeons** overall spec data
 - Weekly updated rankings
-
----
-
-**Made with ❤️ for the World of Warcraft community**
