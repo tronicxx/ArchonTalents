@@ -1,0 +1,10 @@
+## Interface: 100200
+## Title: Archon Talents
+## Notes: GUI for the most popular builds from Archon.gg meta data
+## Author: Tronic
+## Version: 2.0.0
+## SavedVariables: ArchonTalentsDB
+
+embeds.xml
+ArchonData.lua
+ArchonTalents.lua
