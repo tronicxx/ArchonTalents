@@ -41,8 +41,16 @@ jobs:
         else
           # Extract version from tag
           VERSION=${GITHUB_REF#refs/tags/v}
+          echo "Creating release for version: $VERSION"
           ./create_release.sh $VERSION
         fi
+        
+    - name: List files
+      run: |
+        echo "Current directory contents:"
+        ls -la
+        echo "Looking for zip files:"
+        ls -la *.zip || echo "No zip files found"
         
     - name: Create Release
       id: create_release
