@@ -34,11 +34,7 @@ if [ -d "Libs" ]; then
     cp -r "Libs" "$RELEASE_DIR/${ADDON_NAME}/"
 fi
 
-# Copy icon if it exists
-if [ -f "minimap_icon.tga" ]; then
-    echo "🎨 Copying icon..."
-    cp "minimap_icon.tga" "$RELEASE_DIR/${ADDON_NAME}/"
-fi
+
 
 # Create the zip package
 echo "📦 Creating package: ${PACKAGE_NAME}"
