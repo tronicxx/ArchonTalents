@@ -448,6 +448,24 @@ local function RenderHeatmap()
 	local offsetX = math.max(0, math.floor((containerWidth - treeWidth) / 2))
 	local offsetY = math.max(0, math.floor((containerHeight - treeHeight) / 2))
 
+	-- Scale hero subtree node/entry percentages by hero tree usage
+	for nodeID, _ in pairs(nodeData) do
+		local ni = LTT:GetLibNodeInfo(nodeID)
+		if ni and ni.subTreeID and subTreeUsage[ni.subTreeID] then
+			local scale = subTreeUsage[ni.subTreeID]
+			if pctByNodeID[nodeID] then
+				pctByNodeID[nodeID] = pctByNodeID[nodeID] * scale
+			end
+			if ni.entryIDs then
+				for _, eid in ipairs(ni.entryIDs) do
+					if pctByEntryID[eid] then
+						pctByEntryID[eid] = pctByEntryID[eid] * scale
+					end
+				end
+			end
+		end
+	end
+
 	for nodeID, _ in pairs(nodeData) do
 		if LTT:IsNodeVisibleForSpec(specID, nodeID) then
 			local nodeInfo = LTT:GetLibNodeInfo(nodeID)
