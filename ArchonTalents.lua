@@ -4,48 +4,38 @@
 local addonName, addon = ...
 local ArchonTalents = CreateFrame("Frame")
 
--- Database - Only initialize if ArchonData.lua hasn't already loaded it
+-- SavedVariables: only user preferences (minimap button position, etc.)
 if not ArchonTalentsDB then
-	ArchonTalentsDB = {
-		lastUpdate = 0,
-		specData = {},
-		bossData = {},
-		dataVersion = nil,
-		source = "bundled"
-	}
-	print("|cFF888888[Archon Talents]|r Initialized empty database (ArchonData.lua will populate it)")
-else
-	print("|cFF888888[Archon Talents]|r Using existing database (loaded by ArchonData.lua)")
+	ArchonTalentsDB = {}
 end
 
--- Boss list for Manaforge Omega
-local BOSS_LIST = {
-	"Plexus Sentinel",
-	"Loom'ithar", 
-	"Soulbinder Naazindhri",
-	"Forgeweaver Araz",
-	"The Soul Hunters",
-	"Fractillus",
-	"Nexus-King Salhadaar",
-	"Dimensius"
-}
+-- Talent data comes from ArchonData.lua (a plain global, NOT a SavedVariable).
+-- It is freshly loaded every time the addon loads — no stale cache issues.
+if not ArchonTalentsData then
+	ArchonTalentsData = { specData = {} }
+end
 
--- Expose constants for UI file
-ArchonTalents.CLASS_SPECS = CLASS_SPECS
-ArchonTalents.BOSS_LIST = BOSS_LIST
+-- WCL heatmap data comes from WCLTalentData.lua
+if not WCLTalentHeatmap then
+	WCLTalentHeatmap = {}
+end
+
+-- Boss list for Midnight Season 1
+local BOSS_LIST = {
+	"Imperator",
+	"Vorasius",
+	"Salhadaar",
+	"Vaelgor & Ezzorak",
+	"Vanguard",
+	"Crown",
+	"Chimaerus",
+	"Belo'ren",
+	"Midnight Falls"
+}
 
 -- Initialize addon
 function ArchonTalents:Initialize()
 	self:RegisterEvent("ADDON_LOADED")
-	self:RegisterEvent("PLAYER_LOGIN")
-	
-	-- Create update timer
-	self.updateTimer = 0
-	
-	-- Create minimap button
-	self:CreateMinimapButton()
-	
-	print("|cFF00FF00[Archon Talents]|r Loaded! Use minimap button or type /archon to open.")
 end
 
 --- Create LibDBIcon minimap button (with embedded libraries)
@@ -71,8 +61,8 @@ function ArchonTalents:CreateMinimapButton()
 	-- Create LibDataBroker data object
 	local dataObject = LDB:NewDataObject("Archon Talents", {
 		type = "launcher",
-		text = "WCL",
-		icon = "Interface\\Icons\\Ability_hunter_focusedaim",
+		text = "Archon",
+		icon = "Interface\\AddOns\\ArchonTalents\\logo",
 		OnClick = function(self, button)
 			if button == "LeftButton" then
 				ArchonTalents:CreateGUI()
@@ -95,8 +85,6 @@ function ArchonTalents:CreateMinimapButton()
 	self.LibDBIcon = LibDBIcon
 end
 
-
-
 -- Event handler
 function ArchonTalents:OnEvent(event, ...)
 	if event == "ADDON_LOADED" then
@@ -104,243 +92,64 @@ function ArchonTalents:OnEvent(event, ...)
 		if loadedAddon == addonName then
 			self:OnAddonLoaded()
 		end
-	elseif event == "PLAYER_LOGIN" then
-		self:OnPlayerLogin()
 	end
 end
 
 function ArchonTalents:OnAddonLoaded()
-	-- Initialize saved variables
-	if not ArchonTalentsDB.specData then
-		ArchonTalentsDB.specData = {}
-	end
-	if not ArchonTalentsDB.bossData then
-		ArchonTalentsDB.bossData = {}
-	end
-	
-	-- Do not auto-update if bundled data exists
-	local hasBundledData = next(ArchonTalentsDB.specData) ~= nil
-	if not hasBundledData then
-		-- No bundled data, but we'll let ArchonData.lua handle it
-	end
+	-- SavedVariables are now available — create the minimap button
+	self:CreateMinimapButton()
+	print("|cFF00FF00[Archon Talents]|r Loaded! Use minimap button or type /archon to open.")
 end
 
-function ArchonTalents:OnPlayerLogin()
-	-- Initialize UI (if UI file is loaded)
-	if self.InitializeUI then
-		self:InitializeUI()
-	end
+-- Pretty-print class token: "DEATHKNIGHT" -> "Death Knight"
+local CLASS_DISPLAY_NAMES = {
+	DEATHKNIGHT = "Death Knight",
+	DEMONHUNTER = "Demon Hunter",
+	DRUID = "Druid",
+	EVOKER = "Evoker",
+	HUNTER = "Hunter",
+	MAGE = "Mage",
+	MONK = "Monk",
+	PALADIN = "Paladin",
+	PRIEST = "Priest",
+	ROGUE = "Rogue",
+	SHAMAN = "Shaman",
+	WARLOCK = "Warlock",
+	WARRIOR = "Warrior",
+}
+
+local function FormatClassName(classToken)
+	return CLASS_DISPLAY_NAMES[classToken] or classToken
 end
 
-
-
--- Update spec data from bundled data
-function ArchonTalents:UpdateSpecData()
-	if self.isUpdating then return end
-	
-	self.isUpdating = true
-
-	
-	-- Check if bundled data exists and import it
-	if next(ArchonTalentsDB.specData) ~= nil then
-
-		
-		-- Import all specs from bundled data
-		self:ImportAllSpecsFromBundledData()
-		
-		self.isUpdating = false
-		self.updateScheduled = false
-		return
-	end
-	
-	-- Fallback to mock data when no bundled data present (DISABLED - using WCLData.lua)
-	-- self:MockUpdateSpecData()
-
-	
-	self.isUpdating = false
-	self.updateScheduled = false
-	ArchonTalentsDB.lastUpdate = GetTime()
-end
-
--- Import all specs from bundled data
-function ArchonTalents:ImportAllSpecsFromBundledData()
-	local importedCount = 0
-	local totalBosses = 0
-	
-	for bossName, bossData in pairs(ArchonTalentsDB.specData) do
-		totalBosses = totalBosses + 1
-		
-		-- Handle both difficulties (Heroic and Mythic)
-		for difficulty, difficultyData in pairs(bossData) do
-			if type(difficultyData) == "table" then
-				for className, classData in pairs(difficultyData) do
-					if type(classData) == "table" and classData.spec then
-						importedCount = importedCount + 1
-					end
-				end
-			end
-		end
-	end
-	
-
-end
-
--- Mock update function (used only when no bundled data)
-function ArchonTalents:MockUpdateSpecData()
-	local currentSpecs = {}
-	
-	-- Simulate fetching data for each boss
-	for _, bossName in ipairs(BOSS_LIST) do
-		currentSpecs[bossName] = {}
-		
-		-- Generate mock popular specs for each class
-		for className, specs in pairs(CLASS_SPECS) do
-			local randomSpec = specs[math.random(1, #specs)]
-			currentSpecs[bossName][className] = {
-				spec = randomSpec,
-				popularity = math.random(50, 100),
-				sampleSize = math.random(100, 1000)
-			}
-		end
-	end
-	
-	ArchonTalentsDB.specData = currentSpecs
-	ArchonTalentsDB.source = "mock"
-	ArchonTalentsDB.dataVersion = date("%Y-%m-%d %H:%M:%S")
-
-end
-
--- Get most popular spec for a class on a specific boss and difficulty
-function ArchonTalents:GetMostPopularSpec(className, bossName, difficulty)
-	if not ArchonTalentsDB.specData[bossName] then
-		return nil
-	end
-	
-	-- Try to get data for the specified difficulty
-	local difficultyData = ArchonTalentsDB.specData[bossName][difficulty]
-	if difficultyData and difficultyData[className] then
-		return difficultyData[className].spec
-	end
-	
-	-- Fallback: try to get data from any available difficulty
-	for diff, diffData in pairs(ArchonTalentsDB.specData[bossName]) do
-		if type(diffData) == "table" and diffData[className] then
-			return diffData[className].spec
-		end
-	end
-	
-	return nil
-end
-
--- Get most popular loadout for a class/spec on a specific boss and difficulty
-function ArchonTalents:GetMostPopularLoadout(className, specName, bossName, difficulty)
-	if not ArchonTalentsDB.specData[bossName] then
-		return nil
-	end
-	
-	-- Try to get data for the specified difficulty
-	local difficultyData = ArchonTalentsDB.specData[bossName][difficulty]
-	if difficultyData and difficultyData[className] and difficultyData[className][specName] then
-		return difficultyData[className][specName].loadoutCode
-	end
-	
-	-- Fallback: try to get data from any available difficulty
-	for diff, diffData in pairs(ArchonTalentsDB.specData[bossName]) do
-		if type(diffData) == "table" and diffData[className] and diffData[className][specName] then
-			return diffData[className][specName].loadoutCode
-		end
-	end
-	
-	return nil
-end
-
--- Get most popular loadout for current player's class/spec
-function ArchonTalents:GetCurrentClassLoadout(specName, bossName, difficulty)
-	local _, className = UnitClass("player")
-	if not className then return nil end
-	
-	return self:GetMostPopularLoadout(className, specName or "Any", bossName or "All Bosses", difficulty)
-end
-
--- Import a loadout code directly
-function ArchonTalents:ImportLoadoutCode(loadoutCode)
-	if not loadoutCode then return false end
-	
-	-- Check if we can use loadouts
-	if C_ClassTalents and C_ClassTalents.CanUseLoadout then
-		-- Try to import the loadout code
-		local success = C_ClassTalents.ImportLoadout(loadoutCode)
-		if success then
-			-- Loadout imported successfully
-			return true
-		else
-			-- Failed to import loadout code
-			return false
-		end
-	else
-		-- Loadout system not available
-		return false
-	end
-end
-
--- Auto-import most popular loadout for current boss
-function ArchonTalents:AutoImportLoadout(specName, difficulty)
-	local currentBoss = self:GetCurrentBossName()
-	if not currentBoss then
-		-- Could not determine current boss
-		return false
-	end
-	
-	local loadoutCode = self:GetCurrentClassLoadout(specName, currentBoss, difficulty)
-	if not loadoutCode then
-		-- No loadout data available for current boss/class/spec
-		return false
-	end
-	
-	return self:ImportLoadoutCode(loadoutCode)
-end
-
--- Get current boss name (simplified - you might want to enhance this)
-function ArchonTalents:GetCurrentBossName()
-	local zoneName = GetZoneText()
-	if zoneName == "Manaforge Omega" then
-		-- Try to get boss name from combat log or other sources
-		-- For now, return a default
-		return "All Bosses"
-	end
-	
-	return nil
-end
+-- Map WoW class tokens to WCL URL-style class names
+local CLASS_TOKEN_TO_WCL = {
+	DEATHKNIGHT = "DeathKnight",
+	DEMONHUNTER = "DemonHunter",
+	DRUID = "Druid",
+	EVOKER = "Evoker",
+	HUNTER = "Hunter",
+	MAGE = "Mage",
+	MONK = "Monk",
+	PALADIN = "Paladin",
+	PRIEST = "Priest",
+	ROGUE = "Rogue",
+	SHAMAN = "Shaman",
+	WARLOCK = "Warlock",
+	WARRIOR = "Warrior",
+}
 
 -- GUI variables
 local mainFrame = nil
-local isUIShown = false
-local selectedBoss = "Plexus Sentinel"
+local selectedBoss = "Imperator"
 local selectedDifficulty = "Heroic"
-local selectedTab = "Raid" -- "Raid" or "Mythic+"
+local selectedTab = "Raid"
+local heatmapBoss = "Imperator"
+local heatmapDifficulty = "mythic"
 
-
-
--- Get loadout data for a specific boss, difficulty, class, and spec
-function ArchonTalents:GetLoadoutData(bossName, difficulty, className, specName)
-	if not ArchonTalentsDB.specData then return nil end
-	
-	local bossData = ArchonTalentsDB.specData[bossName]
-	if not bossData then return nil end
-	
-	local diffData = bossData[difficulty]
-	if not diffData then return nil end
-	
-	local classData = diffData[className]
-	if not classData then return nil end
-	
-	return classData[specName]
-end
-
--- Update the mythic+ display
 local function UpdateMythicPlusDisplay()
 	if not mainFrame or not mainFrame.mythicPlusContent then return end
-	
+
 	local className, specName = ArchonTalents:GetPlayerClassSpec()
 	if not className or not specName then
 		mainFrame.mpSpecText:SetText("No class/spec detected")
@@ -349,27 +158,25 @@ local function UpdateMythicPlusDisplay()
 		mainFrame.mpCodeBox.originalText = "No loadout available"
 		return
 	end
-	
-	-- Update class/spec display
-	mainFrame.mpSpecText:SetText(className .. " - " .. specName)
-	
-	-- Get Mythic+ data for this class/spec
-	local mythicPlusData = ArchonTalentsDB and ArchonTalentsDB.specData and ArchonTalentsDB.specData["Mythic+"]
+
+	mainFrame.mpSpecText:SetText(FormatClassName(className) .. " - " .. specName)
+
+	local mythicPlusData = ArchonTalentsData and ArchonTalentsData.specData and ArchonTalentsData.specData["Mythic+"]
 	if not mythicPlusData then
 		mainFrame.mpUsageText:SetText("No Mythic+ data available")
 		mainFrame.mpCodeBox:SetText("No loadout available")
 		mainFrame.mpCodeBox.originalText = "No loadout available"
 		return
 	end
-	
+
 	local classData = mythicPlusData[className]
 	if not classData then
-		mainFrame.mpUsageText:SetText("No M+ data for " .. className)
+		mainFrame.mpUsageText:SetText("No M+ data for " .. FormatClassName(className))
 		mainFrame.mpCodeBox:SetText("No loadout available")
 		mainFrame.mpCodeBox.originalText = "No loadout available"
 		return
 	end
-	
+
 	local specData = classData[specName]
 	if not specData then
 		mainFrame.mpUsageText:SetText("No M+ data for " .. specName)
@@ -377,13 +184,8 @@ local function UpdateMythicPlusDisplay()
 		mainFrame.mpCodeBox.originalText = "No loadout available"
 		return
 	end
-	
-	-- Display the Mythic+ build data
-	local usageText = string.format("%.1f%% popularity", specData.usage or 0)
-	if specData.totalRankings then
-		usageText = usageText .. string.format(" (%s parses)", tostring(specData.totalRankings))
-	end
-	
+
+	local usageText = string.format("%.1f%% popularity (%s parses)", specData.usage or 0, tostring(specData.totalRankings or 0))
 	mainFrame.mpUsageText:SetText(usageText)
 	mainFrame.mpCodeBox:SetText(specData.loadoutCode or "No loadout available")
 	mainFrame.mpCodeBox.originalText = specData.loadoutCode or "No loadout available"
@@ -393,548 +195,1075 @@ end
 -- Update the raid display with current boss data
 local function UpdateRaidDisplay()
 	if not mainFrame then return end
-	
+
 	local bossName = selectedBoss
 	if not bossName then return end
-	
+
+	if mainFrame.bossText then
+		mainFrame.bossText:SetText(bossName)
+	end
+
 	local className, specName = ArchonTalents:GetPlayerClassSpec()
 	if not className or not specName then
 		mainFrame.specText:SetText("No class/spec detected")
-		mainFrame.usageText:SetText("Please select a specialization")
+		mainFrame.usageText:SetText("Select a specialization first")
 		mainFrame.codeBox:SetText("No loadout available")
 		mainFrame.codeBox.originalText = "No loadout available"
 		return
 	end
-	
-	-- Update class/spec display
-	mainFrame.specText:SetText(className .. " - " .. specName)
-	
+
+	mainFrame.specText:SetText(FormatClassName(className) .. " - " .. specName)
+
 	local loadoutData = ArchonTalents:GetLoadoutData(bossName, selectedDifficulty, className, specName)
 	if loadoutData then
-		local usageText = string.format("%.1f%% popularity", loadoutData.usage)
-		mainFrame.usageText:SetText(usageText)
-		mainFrame.codeBox:SetText(loadoutData.loadoutCode)
-		mainFrame.codeBox.originalText = loadoutData.loadoutCode
-		mainFrame.codeBox:SetCursorPosition(0)
-	else
-		mainFrame.usageText:SetText("No loadout available for this combination")
-		mainFrame.codeBox:SetText("No loadout available")
-		mainFrame.codeBox.originalText = "No loadout available"
-	end
-	
-	-- Update difficulty button text colors
-	if mainFrame.heroicButton and mainFrame.mythicButton then
-		if selectedDifficulty == "Heroic" then
-			mainFrame.heroicButton:GetFontString():SetTextColor(1, 0.8, 0, 1) -- Gold for selected
-			mainFrame.mythicButton:GetFontString():SetTextColor(1, 1, 1, 1) -- White for normal
-		else
-			mainFrame.heroicButton:GetFontString():SetTextColor(1, 1, 1, 1) -- White for normal
-			mainFrame.mythicButton:GetFontString():SetTextColor(1, 0.8, 0, 1) -- Gold for selected mythic
-		end
-	end
-end
-
--- Update tab display visibility
-local function UpdateTabDisplay()
-	if not mainFrame then return end
-	
-	-- Update tab button colors
-	if mainFrame.raidTabButton and mainFrame.mythicPlusTabButton then
-		if selectedTab == "Raid" then
-			mainFrame.raidTabButton:GetFontString():SetTextColor(1, 0.8, 0, 1) -- Gold for selected
-			mainFrame.mythicPlusTabButton:GetFontString():SetTextColor(1, 1, 1, 1) -- White for unselected
-		else
-			mainFrame.raidTabButton:GetFontString():SetTextColor(1, 1, 1, 1) -- White for unselected
-			mainFrame.mythicPlusTabButton:GetFontString():SetTextColor(1, 0.8, 0, 1) -- Gold for selected
-		end
-	end
-	
-	-- Show/hide content based on selected tab
-	if mainFrame.raidContent then
-		if selectedTab == "Raid" then
-			mainFrame.raidContent:Show()
-		else
-			mainFrame.raidContent:Hide()
-		end
-	end
-	
-	if mainFrame.mythicPlusContent then
-		if selectedTab == "Mythic+" then
-			mainFrame.mythicPlusContent:Show()
-		else
-			mainFrame.mythicPlusContent:Hide()
-		end
-	end
-	
-	-- Update content based on selected tab
-	if selectedTab == "Raid" then
-		UpdateRaidDisplay()
-	else
-		UpdateMythicPlusDisplay()
-	end
-end
-
--- Update the mythic+ display
-local function UpdateMythicPlusDisplay()
-	if not mainFrame or not mainFrame.mythicPlusContent then return end
-	
-	local className, specName = ArchonTalents:GetPlayerClassSpec()
-	if not className or not specName then
-		mainFrame.mpSpecText:SetText("No class/spec detected")
-		mainFrame.mpUsageText:SetText("Please select a specialization")
-		mainFrame.mpCodeBox:SetText("No loadout available")
-		mainFrame.mpCodeBox.originalText = "No loadout available"
-		return
-	end
-	
-	-- Update class/spec display
-	mainFrame.mpSpecText:SetText(className .. " - " .. specName)
-	
-	-- Get Mythic+ data for this class/spec
-	local mythicPlusData = ArchonTalentsDB and ArchonTalentsDB.specData and ArchonTalentsDB.specData["Mythic+"]
-	if not mythicPlusData then
-		mainFrame.mpUsageText:SetText("No Mythic+ data available")
-		mainFrame.mpCodeBox:SetText("No loadout available")
-		mainFrame.mpCodeBox.originalText = "No loadout available"
-		return
-	end
-	
-	local classData = mythicPlusData[className]
-	if not classData then
-		mainFrame.mpUsageText:SetText("No M+ data for " .. className)
-		mainFrame.mpCodeBox:SetText("No loadout available")
-		mainFrame.mpCodeBox.originalText = "No loadout available"
-		return
-	end
-	
-	local specData = classData[specName]
-	if not specData then
-		mainFrame.mpUsageText:SetText("No M+ data for " .. specName)
-		mainFrame.mpCodeBox:SetText("No loadout available")
-		mainFrame.mpCodeBox.originalText = "No loadout available"
-		return
-	end
-	
-	-- Display the Mythic+ build data
-	local usageText = string.format("%.1f%% popularity", specData.usage or 0)
-	if specData.totalRankings then
-		usageText = usageText .. string.format(" (%s parses)", tostring(specData.totalRankings))
-	end
-	
-	mainFrame.mpUsageText:SetText(usageText)
-	mainFrame.mpCodeBox:SetText(specData.loadoutCode or "No loadout available")
-	mainFrame.mpCodeBox.originalText = specData.loadoutCode or "No loadout available"
-	mainFrame.mpCodeBox:SetCursorPosition(0)
-end
-
--- Update the raid display with current boss data (renamed from UpdateBossDisplay)
-local function UpdateRaidDisplay()
-	if not mainFrame then return end
-	
-	local bossName = BOSS_LIST[selectedBoss]
-	if not bossName then return end
-	
-	local className, specName = ArchonTalents:GetPlayerClassSpec()
-	if not className or not specName then
-		-- Show message if no class/spec detected
-		mainFrame.bossText:SetText(bossName .. " (" .. selectedDifficulty .. ")")
-		mainFrame.specText:SetText("No class/spec detected")
-		mainFrame.usageText:SetText("Please select a specialization")
-		mainFrame.codeBox:SetText("No loadout available")
-		mainFrame.codeBox.originalText = "No loadout available"
-		return
-	end
-	
-	local loadoutData = ArchonTalents:GetLoadoutData(bossName, selectedDifficulty, className, specName)
-	
-	-- Update all the display elements
-	mainFrame.bossText:SetText(bossName .. " (" .. selectedDifficulty .. ")")
-	mainFrame.specText:SetText(className .. " - " .. specName)
-	
-	if loadoutData then
-		mainFrame.usageText:SetText((loadoutData.usage or "Unknown") .. "% of top 100 players")
-		mainFrame.codeBox:SetText(loadoutData.loadoutCode or "No code available")
-		mainFrame.codeBox.originalText = loadoutData.loadoutCode or "No code available"
+		mainFrame.usageText:SetText(string.format("%.1f%% popularity (%s parses)", loadoutData.usage or 0, tostring(loadoutData.totalRankings or 0)))
+		mainFrame.codeBox:SetText(loadoutData.loadoutCode or "")
+		mainFrame.codeBox.originalText = loadoutData.loadoutCode or ""
 	else
 		mainFrame.usageText:SetText("No data available")
-		mainFrame.codeBox:SetText("No loadout available for this combination")
-		mainFrame.codeBox.originalText = "No loadout available for this combination"
+		mainFrame.codeBox:SetText("No loadout for this combination")
+		mainFrame.codeBox.originalText = "No loadout for this combination"
 	end
-	
-	mainFrame.codeBox:SetCursorPosition(0) -- Reset cursor to beginning
-	
-	-- Update difficulty button text colors
+	mainFrame.codeBox:SetCursorPosition(0)
+
 	if mainFrame.heroicButton and mainFrame.mythicButton then
 		if selectedDifficulty == "Heroic" then
-			mainFrame.heroicButton:GetFontString():SetTextColor(1, 0.8, 0, 1) -- Gold for selected
-			mainFrame.mythicButton:GetFontString():SetTextColor(1, 1, 1, 1) -- White for normal
+			mainFrame.heroicButton:GetFontString():SetTextColor(1, 0.8, 0, 1)
+			mainFrame.mythicButton:GetFontString():SetTextColor(0.85, 0.85, 0.85, 1)
 		else
-			mainFrame.heroicButton:GetFontString():SetTextColor(1, 1, 1, 1) -- White for normal
-			mainFrame.mythicButton:GetFontString():SetTextColor(1, 0.8, 0, 1) -- Gold for selected mythic
+			mainFrame.heroicButton:GetFontString():SetTextColor(0.85, 0.85, 0.85, 1)
+			mainFrame.mythicButton:GetFontString():SetTextColor(1, 0.8, 0, 1)
 		end
 	end
 end
 
--- Legacy function for backward compatibility  
-local function UpdateBossDisplay()
-	UpdateTabDisplay()
+-- ===== HEATMAP TAB LOGIC =====
+
+-- Color gradient: red (0%) -> yellow (50%) -> green (100%)
+local function GetHeatmapColor(pct)
+	if pct >= 0.8 then
+		-- Green: high usage
+		return 0.2, 1.0, 0.2
+	elseif pct >= 0.5 then
+		-- Yellow-green: moderate-high
+		local t = (pct - 0.5) / 0.3
+		return 1.0 - 0.8 * t, 0.8 + 0.2 * t, 0.2
+	elseif pct >= 0.2 then
+		-- Orange-yellow: moderate-low
+		local t = (pct - 0.2) / 0.3
+		return 1.0, 0.4 + 0.4 * t, 0.2
+	else
+		-- Red-gray: low usage
+		return 0.6, 0.25, 0.2
+	end
 end
 
--- Create the beautiful GUI window
-function ArchonTalents:CreateGUI()
-	if mainFrame then
-		-- If GUI already exists, just show/hide it
-		if mainFrame:IsShown() then
-			mainFrame:Hide()
-			isUIShown = false
-		else
-			mainFrame:Show()
-			isUIShown = true
-			UpdateBossDisplay()
+local heatmapDots = {}
+local heatmapLines = {}
+local heatmapLabels = {}
+
+local function ClearHeatmap()
+	for _, dot in pairs(heatmapDots) do
+		dot:Hide()
+		dot:ClearAllPoints()
+	end
+	for _, line in pairs(heatmapLines) do
+		line:Hide()
+	end
+	for _, label in pairs(heatmapLabels) do
+		label:Hide()
+	end
+	wipe(heatmapDots)
+	wipe(heatmapLines)
+	wipe(heatmapLabels)
+end
+
+local function RenderHeatmap()
+	if not mainFrame or not mainFrame.heatmapContainer then return end
+	ClearHeatmap()
+
+	local className, specName = ArchonTalents:GetPlayerClassSpec()
+	if not className or not specName then
+		if mainFrame.heatmapStatusText then
+			mainFrame.heatmapStatusText:SetText("No class/spec detected")
+			mainFrame.heatmapStatusText:Show()
 		end
 		return
 	end
 
-	-- Create main frame (larger to fit boss list)
-	mainFrame = CreateFrame("Frame", "ArchonTalentsGUI", UIParent, "BackdropTemplate")
-	mainFrame:SetSize(600, 400)
-	mainFrame:SetPoint("CENTER")
-	mainFrame:SetBackdrop({
-		bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
-		edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
-		tile = true, tileSize = 32, edgeSize = 32,
-		insets = { left = 8, right = 8, top = 8, bottom = 8 }
+	-- Get the WCL class name
+	local wclClass = CLASS_TOKEN_TO_WCL[className]
+	if not wclClass then
+		if mainFrame.heatmapStatusText then
+			mainFrame.heatmapStatusText:SetText("Unsupported class: " .. className)
+			mainFrame.heatmapStatusText:Show()
+		end
+		return
+	end
+
+	-- Get heatmap data
+	local heatData = WCLTalentHeatmap and WCLTalentHeatmap[heatmapDifficulty]
+		and WCLTalentHeatmap[heatmapDifficulty][wclClass]
+		and WCLTalentHeatmap[heatmapDifficulty][wclClass][specName]
+		and WCLTalentHeatmap[heatmapDifficulty][wclClass][specName][heatmapBoss]
+
+	if not heatData then
+		if mainFrame.heatmapStatusText then
+			mainFrame.heatmapStatusText:SetText("No heatmap data for " .. specName .. " " .. FormatClassName(className) .. "\n" .. heatmapBoss .. " (" .. heatmapDifficulty .. ")")
+			mainFrame.heatmapStatusText:Show()
+		end
+		return
+	end
+
+	if mainFrame.heatmapStatusText then
+		mainFrame.heatmapStatusText:Hide()
+	end
+
+	-- Get LibTalentTree
+	local LTT = LibStub and LibStub:GetLibrary("LibTalentTree-1.0", true)
+	if not LTT then
+		if mainFrame.heatmapStatusText then
+			mainFrame.heatmapStatusText:SetText("LibTalentTree not loaded")
+			mainFrame.heatmapStatusText:Show()
+		end
+		return
+	end
+
+	-- Get spec ID for filtering
+	local specIndex = C_SpecializationInfo.GetSpecialization()
+	local specID = specIndex and C_SpecializationInfo.GetSpecializationInfo(specIndex)
+	if not specID then return end
+
+	-- Get the tree ID
+	local treeID = LTT:GetClassTreeID(className)
+	if not treeID then return end
+
+	-- Get active hero subtree
+	local activeSubTreeID = nil
+	local subTreeIDs = LTT:GetSubTreeIDsForSpecID(specID)
+	if subTreeIDs then
+		for _, subTreeID in ipairs(subTreeIDs) do
+			local selNodeID, selEntryID = LTT:GetSubTreeSelectionNodeIDAndEntryIDBySpecID(specID, subTreeID)
+			if selNodeID and selEntryID then
+				local configID = C_ClassTalents.GetActiveConfigID()
+				if configID then
+					local nodeInfo = C_Traits.GetNodeInfo(configID, selNodeID)
+					if nodeInfo and nodeInfo.activeEntry and nodeInfo.activeEntry.entryID == selEntryID then
+						activeSubTreeID = subTreeID
+					end
+				end
+			end
+		end
+	end
+
+	-- Build subtree info first, then sort so dominant (most-used) is on top
+	local subTreeNames = {}
+	local subTreeUsage = {}
+	local heroUsageData = heatData and heatData.heroUsage
+	if subTreeIDs then
+		for _, stID in ipairs(subTreeIDs) do
+			local stInfo = LTT:GetSubTreeInfo(stID)
+			subTreeNames[stID] = stInfo and stInfo.name or ("Hero ?")
+			-- Use scraped heroUsage data directly (keyed by subTreeID)
+			subTreeUsage[stID] = heroUsageData and heroUsageData[stID] or 0
+		end
+		-- Sort so the most-used subtree gets index 1 (top position)
+		table.sort(subTreeIDs, function(a, b) return (subTreeUsage[a] or 0) > (subTreeUsage[b] or 0) end)
+	end
+
+	-- Build subtree index map for row offsetting (dominant is index 1 = top)
+	local subTreeMap = {}
+	if subTreeIDs then
+		for i, stID in ipairs(subTreeIDs) do
+			subTreeMap[stID] = i
+		end
+	end
+
+	-- Determine the dominant (most-used) hero subtree — only show that one
+	local dominantSubTreeID = nil
+	if subTreeIDs then
+		local bestUsage = -1
+		for _, stID in ipairs(subTreeIDs) do
+			if subTreeUsage[stID] > bestUsage then
+				bestUsage = subTreeUsage[stID]
+				dominantSubTreeID = stID
+			end
+		end
+	end
+
+	local container = mainFrame.heatmapContainer
+	local dotSize = 12
+	local spacing = 20
+	local topPad = 20 -- extra space at top for first subtree label
+	local dotsByNodeID = {}
+
+	-- Convert WCL entry IDs to node IDs for lookup
+	local pctByNodeID = {}
+	local pctByEntryID = {}
+	for entryID, pct in pairs(heatData) do
+		if type(entryID) == "number" then
+			pctByEntryID[entryID] = pct
+			local nodeID = LTT:GetNodeIDForEntry(entryID)
+			if nodeID then
+				-- If multiple entries map to the same node, take the max
+				if not pctByNodeID[nodeID] or pct > pctByNodeID[nodeID] then
+					pctByNodeID[nodeID] = pct
+				end
+			end
+		end
+	end
+
+	-- Track hero subtree dot positions for label placement
+	local subTreeDotPositions = {} -- subTreeID -> {minCol, maxCol, minRow}
+
+	-- Get all nodes from the tree and iterate visible ones
+	local nodeData = LTT.cache and LTT.cache.nodeData and LTT.cache.nodeData[treeID]
+	if not nodeData then return end
+
+	-- First pass: find grid bounds for centering
+	local minCol, maxCol, minRow, maxRow = 999, 0, 999, 0
+	for nodeID, _ in pairs(nodeData) do
+		if LTT:IsNodeVisibleForSpec(specID, nodeID) then
+			local nodeInfo = LTT:GetLibNodeInfo(nodeID)
+			if nodeInfo and not nodeInfo.isSubTreeSelection then
+				local col, row = LTT:GetNodeGridPosition(nodeID)
+				if col and row then
+					if nodeInfo.subTreeID and subTreeMap[nodeInfo.subTreeID] then
+						row = row + (subTreeMap[nodeInfo.subTreeID] - 1) * 5
+					end
+					if col < minCol then minCol = col end
+					if col > maxCol then maxCol = col end
+					if row < minRow then minRow = row end
+					if row > maxRow then maxRow = row end
+				end
+			end
+		end
+	end
+
+	-- Calculate centering offsets
+	local treeWidth = (maxCol - minCol) * spacing + dotSize
+	local treeHeight = (maxRow - minRow) * spacing + dotSize + topPad
+	local containerWidth = container:GetWidth()
+	local containerHeight = container:GetHeight()
+	local offsetX = math.max(0, math.floor((containerWidth - treeWidth) / 2))
+	local offsetY = math.max(0, math.floor((containerHeight - treeHeight) / 2))
+
+	for nodeID, _ in pairs(nodeData) do
+		if LTT:IsNodeVisibleForSpec(specID, nodeID) then
+			local nodeInfo = LTT:GetLibNodeInfo(nodeID)
+			if nodeInfo then
+				-- Skip the hero subtree selection node itself
+				if nodeInfo.isSubTreeSelection then
+					-- skip
+				else
+					local col, row = LTT:GetNodeGridPosition(nodeID)
+					if col and row then
+						-- Offset hero subtree rows (stack them on rows 1-5)
+						if nodeInfo.subTreeID and subTreeMap[nodeInfo.subTreeID] then
+							row = row + (subTreeMap[nodeInfo.subTreeID] - 1) * 5
+							-- Track bounding box for label placement
+							local stID = nodeInfo.subTreeID
+							if not subTreeDotPositions[stID] then
+								subTreeDotPositions[stID] = { minCol = col, maxCol = col, minRow = row }
+							else
+								local p = subTreeDotPositions[stID]
+								if col < p.minCol then p.minCol = col end
+								if col > p.maxCol then p.maxCol = col end
+								if row < p.minRow then p.minRow = row end
+							end
+						end
+
+						-- Fade non-dominant hero subtree nodes
+						local isMinorHero = nodeInfo.subTreeID and dominantSubTreeID and nodeInfo.subTreeID ~= dominantSubTreeID
+
+						local pct = pctByNodeID[nodeID] or 0
+						local hasData = pctByNodeID[nodeID] ~= nil
+						local r, g, b
+
+						if hasData then
+							r, g, b = GetHeatmapColor(pct)
+						else
+							-- Not used = dim dark dot
+							r, g, b = 0.3, 0.3, 0.35
+						end
+
+						-- Create dot frame
+						local dot = CreateFrame("Frame", nil, container)
+						dot:SetSize(dotSize, dotSize)
+						dot:SetPoint("TOPLEFT", (col - minCol) * spacing + offsetX, -((row - minRow) * spacing) - topPad - offsetY)
+
+						-- Circle texture
+						local tex = dot:CreateTexture(nil, "ARTWORK")
+						tex:SetAllPoints()
+						tex:SetTexture("Interface\\COMMON\\Indicator-Gray")
+						tex:SetVertexColor(r, g, b, 1)
+
+						if isMinorHero then
+							dot:SetAlpha(0.35)
+						elseif not hasData then
+							dot:SetAlpha(0.4)
+						else
+							dot:SetAlpha(1)
+						end
+
+						-- Percentage text on hover
+						dot:EnableMouse(true)
+						dot.pct = pct
+						dot.nodeID = nodeID
+						dot.hasData = hasData
+						dot.dotR, dot.dotG, dot.dotB = r, g, b
+						dot:SetScript("OnEnter", function(self)
+							GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+							local nInfo = LTT:GetLibNodeInfo(self.nodeID)
+							local isChoiceNode = nInfo and nInfo.entryIDs and #nInfo.entryIDs > 1
+
+							if isChoiceNode then
+								-- Choice node: show each entry with its own percentage
+								GameTooltip:SetText("Choice Node", 1, 1, 1)
+								for _, eid in ipairs(nInfo.entryIDs) do
+									local entryPct = pctByEntryID[eid] or 0
+									local eInfo = LTT:GetEntryInfo(eid)
+									local spellName = "?"
+									local icon = nil
+									if eInfo and eInfo.definitionID then
+										local defInfo = C_Traits.GetDefinitionInfo(eInfo.definitionID)
+										if defInfo and defInfo.spellID then
+											spellName = C_Spell.GetSpellName(defInfo.spellID) or spellName
+											icon = C_Spell.GetSpellTexture(defInfo.spellID)
+										end
+									end
+									local er, eg, eb = GetHeatmapColor(entryPct)
+									local prefix = icon and ("|T" .. icon .. ":14:14:0:0|t ") or ""
+									GameTooltip:AddLine(prefix .. spellName .. "  " .. string.format("%.0f%%", entryPct * 100), er, eg, eb)
+								end
+							else
+								-- Single entry node: show spell tooltip + percentage
+								local spellShown = false
+								local spellIcon = nil
+								if nInfo and nInfo.entryIDs and #nInfo.entryIDs > 0 then
+									local eInfo = LTT:GetEntryInfo(nInfo.entryIDs[1])
+									if eInfo and eInfo.definitionID then
+										local defInfo = C_Traits.GetDefinitionInfo(eInfo.definitionID)
+										if defInfo and defInfo.spellID then
+											GameTooltip:SetSpellByID(defInfo.spellID)
+											spellShown = true
+											spellIcon = C_Spell.GetSpellTexture(defInfo.spellID)
+										end
+									end
+								end
+								if not spellShown then
+									GameTooltip:SetText("Node " .. self.nodeID, 0.7, 0.7, 0.7)
+								end
+								if spellIcon then
+									local titleLine = GameTooltipTextLeft1
+									if titleLine then
+										local existing = titleLine:GetText() or ""
+										titleLine:SetText("|T" .. spellIcon .. ":16:16:0:0|t " .. existing)
+									end
+								end
+								if self.hasData then
+									GameTooltip:AddLine(string.format("%.0f%%", self.pct * 100), self.dotR, self.dotG, self.dotB)
+								else
+									GameTooltip:AddLine("0%", 0.5, 0.5, 0.5)
+								end
+							end
+							GameTooltip:Show()
+						end)
+						dot:SetScript("OnLeave", function()
+							GameTooltip:Hide()
+						end)
+
+						dotsByNodeID[nodeID] = dot
+						table.insert(heatmapDots, dot)
+					end
+				end
+			end
+		end
+	end
+
+	-- Draw connections
+	for nodeID, dot in pairs(dotsByNodeID) do
+		local edges = LTT:GetNodeEdges(nodeID)
+		if edges then
+			for _, edge in ipairs(edges) do
+				local targetDot = dotsByNodeID[edge.targetNode]
+				if targetDot then
+					local line = container:CreateLine(nil, "BACKGROUND")
+					line:SetThickness(2)
+					line:SetStartPoint("CENTER", dot)
+					line:SetEndPoint("CENTER", targetDot)
+					-- Color the line based on the lower of the two node percentages
+					local pct1 = pctByNodeID[nodeID] or 0
+					local pct2 = pctByNodeID[edge.targetNode] or 0
+					local minPct = math.min(pct1, pct2)
+					local lr, lg, lb = GetHeatmapColor(minPct)
+					line:SetColorTexture(lr, lg, lb, 0.4)
+					line:SetAlpha(math.min(dot:GetAlpha(), targetDot:GetAlpha()))
+					table.insert(heatmapLines, line)
+				end
+			end
+		end
+	end
+
+	-- Add labels for both hero subtrees — dominant in green, minor in gray
+	if subTreeIDs then
+		for _, stID in ipairs(subTreeIDs) do
+			local pos = subTreeDotPositions[stID]
+			if pos then
+				local name = subTreeNames[stID]
+				local usage = subTreeUsage[stID]
+				local isDominant = (stID == dominantSubTreeID)
+				local centerX = ((pos.minCol + pos.maxCol) / 2 - minCol) * spacing + (dotSize / 2) + offsetX
+				local topY = -((pos.minRow - minRow) * spacing) - topPad + 16 - offsetY
+				-- Push non-first subtree labels down a bit to avoid clipping dots above
+				if subTreeMap[stID] > 1 then
+					topY = topY - 4
+				end
+
+				local labelFrame = CreateFrame("Frame", nil, container)
+				labelFrame:SetSize(140, 14)
+				labelFrame:SetPoint("TOPLEFT", centerX - 70, topY)
+				local labelText = labelFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+				labelText:SetPoint("CENTER")
+				labelText:SetText(string.format("%s (%.0f%%)", name, usage * 100))
+				if isDominant then
+					labelText:SetTextColor(0.2, 1.0, 0.2, 1)
+				else
+					labelText:SetTextColor(0.5, 0.5, 0.5, 1)
+				end
+				table.insert(heatmapLabels, labelFrame)
+			end
+		end
+	end
+
+	-- Update header text
+	if mainFrame.heatmapSpecText then
+		mainFrame.heatmapSpecText:SetText(FormatClassName(className) .. " - " .. specName)
+	end
+end
+
+local function UpdateHeatmapDisplay()
+	if not mainFrame or not mainFrame.heatmapContent then return end
+	RenderHeatmap()
+end
+
+-- Update tab display visibility (must be defined after UpdateRaidDisplay/UpdateMythicPlusDisplay)
+local function UpdateTabDisplay()
+	if not mainFrame then return end
+
+	local tabs = {
+		{ button = mainFrame.raidTabButton, key = "Raid" },
+		{ button = mainFrame.mythicPlusTabButton, key = "Mythic+" },
+		{ button = mainFrame.heatmapTabButton, key = "Heatmap" },
+	}
+	for _, tab in ipairs(tabs) do
+		if tab.button then
+			if selectedTab == tab.key then
+				tab.button:GetFontString():SetTextColor(1, 0.8, 0, 1)
+				tab.button:SetBackdropBorderColor(1, 0.8, 0, 0.8)
+			else
+				tab.button:GetFontString():SetTextColor(0.85, 0.85, 0.85, 1)
+				tab.button:SetBackdropBorderColor(0.4, 0.4, 0.5, 0.8)
+			end
+		end
+	end
+
+	if mainFrame.raidContent then
+		mainFrame.raidContent:SetShown(selectedTab == "Raid")
+	end
+	if mainFrame.mythicPlusContent then
+		mainFrame.mythicPlusContent:SetShown(selectedTab == "Mythic+")
+	end
+	if mainFrame.heatmapContent then
+		mainFrame.heatmapContent:SetShown(selectedTab == "Heatmap")
+	end
+
+	if selectedTab == "Raid" then
+		UpdateRaidDisplay()
+	elseif selectedTab == "Mythic+" then
+		UpdateMythicPlusDisplay()
+	elseif selectedTab == "Heatmap" then
+		UpdateHeatmapDisplay()
+	end
+end
+
+
+-- Helper: create a read-only EditBox that auto-selects on click (for copy-paste)
+local function CreateReadOnlyCodeBox(parent, width, height)
+	-- Wrapper frame holds the EditBox and the "Copied!" overlay
+	local wrapper = CreateFrame("Frame", nil, parent, "BackdropTemplate")
+	wrapper:SetSize(width, height)
+	wrapper:SetBackdrop({
+		bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		tile = true, tileSize = 16, edgeSize = 12,
+		insets = { left = 3, right = 3, top = 3, bottom = 3 }
 	})
-	mainFrame:SetBackdropColor(0, 0, 0, 0.8)
-	mainFrame:EnableMouse(true)
-	mainFrame:SetMovable(true)
-	mainFrame:RegisterForDrag("LeftButton")
-	mainFrame:SetScript("OnDragStart", mainFrame.StartMoving)
-	mainFrame:SetScript("OnDragStop", mainFrame.StopMovingOrSizing)
-	
-	-- Register with WoW's ESC key handler
-	tinsert(UISpecialFrames, "ArchonTalentsGUI")
-	
-	-- Update our state when frame is hidden by ESC key
-	mainFrame:SetScript("OnHide", function()
-		isUIShown = false
+	wrapper:SetBackdropColor(0, 0, 0, 0.6)
+	wrapper:SetBackdropBorderColor(0.4, 0.4, 0.4, 0.8)
+
+	local box = CreateFrame("EditBox", nil, wrapper)
+	box:SetPoint("TOPLEFT", 6, 0)
+	box:SetPoint("BOTTOMRIGHT", -6, 0)
+	box:SetFontObject(GameFontHighlightSmall)
+	box:SetAutoFocus(false)
+	box:EnableMouse(true)
+	box:SetText("No loadout available")
+	box.originalText = "No loadout available"
+
+	-- Hint label that shows on click (parented to box so it draws on top)
+	local hintLabel = box:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+	hintLabel:SetPoint("BOTTOM", box, "TOP", 0, 2)
+	hintLabel:SetTextColor(0.3, 1, 0.3, 1)
+	hintLabel:Hide()
+
+	-- Defer highlight so it happens after WoW's internal cursor placement
+	local function selectAllDeferred()
+		C_Timer.After(0.01, function()
+			box:HighlightText()
+		end)
+	end
+
+	-- On click: focus, select all, show hint
+	box:SetScript("OnMouseDown", function(self)
+		self:SetFocus()
+		selectAllDeferred()
+		hintLabel:SetText("Ctrl+C to copy")
+		hintLabel:Show()
+		C_Timer.After(3, function() hintLabel:Hide() end)
 	end)
 
-	-- Title bar
-	local titleBar = CreateFrame("Frame", nil, mainFrame, "BackdropTemplate")
-	titleBar:SetHeight(30)
-	titleBar:SetPoint("TOPLEFT", mainFrame, "TOPLEFT", 8, -8)
-	titleBar:SetPoint("TOPRIGHT", mainFrame, "TOPRIGHT", -8, -8)
-	titleBar:SetBackdrop({
+	-- On focus: select all
+	box:SetScript("OnEditFocusGained", function(self)
+		selectAllDeferred()
+	end)
+
+	-- On losing focus: hide hint
+	box:SetScript("OnEditFocusLost", function(self)
+		hintLabel:Hide()
+	end)
+
+	box:SetScript("OnKeyDown", function(self, key)
+		if key == "ESCAPE" then
+			self:ClearFocus()
+		end
+	end)
+
+	-- Keep read-only: restore original text if user types anything
+	box:SetScript("OnTextChanged", function(self, userInput)
+		if userInput and wrapper.originalText then
+			self:SetText(wrapper.originalText)
+			selectAllDeferred()
+		end
+	end)
+
+	box:SetScript("OnEscapePressed", function(self) self:ClearFocus() end)
+	box:SetScript("OnEnterPressed", function(self) self:ClearFocus() end)
+
+	-- Proxy EditBox methods through the wrapper so callers work as before
+	wrapper.editBox = box
+	wrapper.SetText = function(self, text) box:SetText(text) end
+	wrapper.GetText = function(self) return box:GetText() end
+	wrapper.SetCursorPosition = function(self, pos) box:SetCursorPosition(pos) end
+	wrapper.HighlightText = function(self, ...) box:HighlightText(...) end
+	wrapper.ClearFocus = function(self) box:ClearFocus() end
+	wrapper.SetFocus = function(self) box:SetFocus() end
+	wrapper.originalText = "No loadout available"
+
+	return wrapper
+end
+
+-- Helper: create a flat text button (no 3D GameMenu chrome)
+local function CreateTextButton(parent, text, width, height, onClick)
+	local btn = CreateFrame("Button", nil, parent, "BackdropTemplate")
+	btn:SetSize(width, height)
+	btn:SetBackdrop({
+		bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		tile = true, tileSize = 16, edgeSize = 12,
+		insets = { left = 2, right = 2, top = 2, bottom = 2 }
+	})
+	btn:SetBackdropColor(0.1, 0.1, 0.15, 0.9)
+	btn:SetBackdropBorderColor(0.4, 0.4, 0.5, 0.8)
+	local fs = btn:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+	fs:SetPoint("CENTER")
+	fs:SetText(text)
+	btn:SetFontString(fs)
+	btn:SetScript("OnEnter", function(self)
+		self:SetBackdropBorderColor(1, 0.8, 0, 1)
+	end)
+	btn:SetScript("OnLeave", function(self)
+		self:SetBackdropBorderColor(0.4, 0.4, 0.5, 0.8)
+	end)
+	if onClick then btn:SetScript("OnClick", onClick) end
+	return btn
+end
+
+-- Create the GUI window
+function ArchonTalents:CreateGUI()
+	if mainFrame then
+		if mainFrame:IsShown() then
+			mainFrame:Hide()
+			else
+			mainFrame:Show()
+				UpdateTabDisplay()
+		end
+		return
+	end
+
+	-- ===== MAIN FRAME =====
+	mainFrame = CreateFrame("Frame", "ArchonTalentsGUI", UIParent, "BackdropTemplate")
+	mainFrame:SetSize(600, 440)
+	mainFrame:SetPoint("CENTER")
+	mainFrame:SetBackdrop({
 		bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
 		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
 		tile = true, tileSize = 16, edgeSize = 16,
 		insets = { left = 4, right = 4, top = 4, bottom = 4 }
 	})
-	titleBar:SetBackdropColor(0.1, 0.1, 0.2, 1)
+	mainFrame:SetBackdropColor(0.05, 0.05, 0.09, 0.95)
+	mainFrame:SetBackdropBorderColor(0.3, 0.3, 0.4, 1)
+	mainFrame:SetFrameStrata("DIALOG")
+	mainFrame:EnableMouse(true)
+	mainFrame:SetMovable(true)
+	mainFrame:RegisterForDrag("LeftButton")
+	mainFrame:SetScript("OnDragStart", mainFrame.StartMoving)
+	mainFrame:SetScript("OnDragStop", mainFrame.StopMovingOrSizing)
+	-- Handle Escape to close without using UISpecialFrames (which causes
+	-- Blizzard panels like the talent tree to auto-close this frame)
+	mainFrame:EnableKeyboard(true)
+	mainFrame:SetPropagateKeyboardInput(true)
+	mainFrame:SetScript("OnKeyDown", function(self, key)
+		if key == "ESCAPE" then
+			self:SetPropagateKeyboardInput(false)
+			self:Hide()
+		else
+			self:SetPropagateKeyboardInput(true)
+		end
+	end)
 
-	-- Title text
-	local titleText = titleBar:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-	titleText:SetPoint("CENTER", titleBar, "CENTER")
-	titleText:SetText("Archon Talents - Meta Builds")
+
+	-- ===== TITLE BAR =====
+	local titleBar = CreateFrame("Frame", nil, mainFrame, "BackdropTemplate")
+	titleBar:SetHeight(28)
+	titleBar:SetPoint("TOPLEFT", 6, -6)
+	titleBar:SetPoint("TOPRIGHT", -6, -6)
+	titleBar:SetBackdrop({
+		bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		tile = true, tileSize = 16, edgeSize = 12,
+		insets = { left = 3, right = 3, top = 3, bottom = 3 }
+	})
+	titleBar:SetBackdropColor(0.12, 0.12, 0.2, 1)
+	titleBar:SetBackdropBorderColor(0.4, 0.4, 0.5, 0.8)
+
+	local titleText = titleBar:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+	titleText:SetPoint("LEFT", 10, 0)
+	titleText:SetText("Archon Talents")
 	titleText:SetTextColor(1, 0.8, 0, 1)
 
-	-- Close button
-	local closeButton = CreateFrame("Button", nil, titleBar, "UIPanelCloseButton")
-	closeButton:SetPoint("TOPRIGHT", titleBar, "TOPRIGHT", -2, -2)
-	closeButton:SetScript("OnClick", function()
-		mainFrame:Hide()
-		isUIShown = false
-	end)
+	-- Version / data timestamp
+	local versionText = titleBar:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+	versionText:SetPoint("RIGHT", -30, 0)
+	if ArchonTalentsData and ArchonTalentsData.lastUpdated then
+		versionText:SetText("Data: " .. ArchonTalentsData.lastUpdated)
+	else
+		versionText:SetText("")
+	end
+	versionText:SetTextColor(0.5, 0.5, 0.5, 1)
 
-	-- Tab buttons
-	local raidTabButton = CreateFrame("Button", nil, mainFrame, "GameMenuButtonTemplate")
-	raidTabButton:SetSize(80, 25)
-	raidTabButton:SetPoint("TOPLEFT", titleBar, "BOTTOMLEFT", 10, -5)
-	raidTabButton:SetText("Raid")
-	raidTabButton:SetScript("OnClick", function()
-		selectedTab = "Raid"
-		UpdateTabDisplay()
+	local closeButton = CreateFrame("Button", nil, titleBar, "UIPanelCloseButton")
+	closeButton:SetPoint("TOPRIGHT", 4, 4)
+	closeButton:SetSize(22, 22)
+	closeButton:SetScript("OnClick", function() mainFrame:Hide() end)
+
+	-- ===== TAB BAR =====
+	local tabY = -40
+	local raidTabButton = CreateTextButton(mainFrame, "Raid", 70, 22, function()
+		selectedTab = "Raid"; UpdateTabDisplay()
 	end)
+	raidTabButton:SetPoint("TOPLEFT", 10, tabY)
 	mainFrame.raidTabButton = raidTabButton
 
-	local mythicPlusTabButton = CreateFrame("Button", nil, mainFrame, "GameMenuButtonTemplate")
-	mythicPlusTabButton:SetSize(80, 25)
-	mythicPlusTabButton:SetPoint("LEFT", raidTabButton, "RIGHT", 5, 0)
-	mythicPlusTabButton:SetText("Mythic+")
-	mythicPlusTabButton:SetScript("OnClick", function()
-		selectedTab = "Mythic+"
-		UpdateTabDisplay()
+	local mythicPlusTabButton = CreateTextButton(mainFrame, "Mythic+", 70, 22, function()
+		selectedTab = "Mythic+"; UpdateTabDisplay()
 	end)
+	mythicPlusTabButton:SetPoint("LEFT", raidTabButton, "RIGHT", 4, 0)
 	mainFrame.mythicPlusTabButton = mythicPlusTabButton
 
-	-- Create content containers
+	local heatmapTabButton = CreateTextButton(mainFrame, "WCL Top 100", 85, 22, function()
+		selectedTab = "Heatmap"; UpdateTabDisplay()
+	end)
+	heatmapTabButton:SetPoint("LEFT", mythicPlusTabButton, "RIGHT", 4, 0)
+	mainFrame.heatmapTabButton = heatmapTabButton
+
+	-- Thin separator line under tabs
+	local sep = mainFrame:CreateTexture(nil, "ARTWORK")
+	sep:SetHeight(1)
+	sep:SetPoint("TOPLEFT", 8, tabY - 26)
+	sep:SetPoint("TOPRIGHT", -8, tabY - 26)
+	sep:SetColorTexture(0.4, 0.4, 0.5, 0.5)
+
+	-- ===== CONTENT CONTAINERS =====
+	local contentTop = tabY - 32
+
 	local raidContent = CreateFrame("Frame", nil, mainFrame)
-	raidContent:SetPoint("TOPLEFT", raidTabButton, "BOTTOMLEFT", 0, -10)
-	raidContent:SetPoint("BOTTOMRIGHT", mainFrame, "BOTTOMRIGHT", -10, 10)
+	raidContent:SetPoint("TOPLEFT", 8, contentTop)
+	raidContent:SetPoint("BOTTOMRIGHT", -8, 8)
 	mainFrame.raidContent = raidContent
 
 	local mythicPlusContent = CreateFrame("Frame", nil, mainFrame)
-	mythicPlusContent:SetPoint("TOPLEFT", raidTabButton, "BOTTOMLEFT", 0, -10)
-	mythicPlusContent:SetPoint("BOTTOMRIGHT", mainFrame, "BOTTOMRIGHT", -10, 10)
-	mythicPlusContent:Hide() -- Hidden by default
+	mythicPlusContent:SetPoint("TOPLEFT", 8, contentTop)
+	mythicPlusContent:SetPoint("BOTTOMRIGHT", -8, 8)
+	mythicPlusContent:Hide()
 	mainFrame.mythicPlusContent = mythicPlusContent
 
-	-- RAID CONTENT - Move existing boss selection to raid content
-	-- Left side: Boss selection
-	local bossListLabel = raidContent:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-	bossListLabel:SetPoint("TOPLEFT", raidContent, "TOPLEFT", 10, -10)
-	bossListLabel:SetText("Select Boss:")
-	bossListLabel:SetTextColor(1, 0.8, 0, 1)
+	local heatmapContent = CreateFrame("Frame", nil, mainFrame)
+	heatmapContent:SetPoint("TOPLEFT", 8, contentTop)
+	heatmapContent:SetPoint("BOTTOMRIGHT", -8, 8)
+	heatmapContent:Hide()
+	mainFrame.heatmapContent = heatmapContent
 
-	-- Boss buttons
+	-- ===== RAID TAB: LEFT PANEL (boss list) =====
+	local leftPanel = CreateFrame("Frame", nil, raidContent, "BackdropTemplate")
+	leftPanel:SetWidth(170)
+	leftPanel:SetPoint("TOPLEFT", 0, 0)
+	leftPanel:SetPoint("BOTTOMLEFT", 0, 0)
+	leftPanel:SetBackdrop({
+		bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		tile = true, tileSize = 16, edgeSize = 12,
+		insets = { left = 3, right = 3, top = 3, bottom = 3 }
+	})
+	leftPanel:SetBackdropColor(0.08, 0.08, 0.12, 0.8)
+	leftPanel:SetBackdropBorderColor(0.3, 0.3, 0.4, 0.6)
+
+	local bossListLabel = leftPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+	bossListLabel:SetPoint("TOPLEFT", 10, -8)
+	bossListLabel:SetText("Boss")
+	bossListLabel:SetTextColor(0.6, 0.6, 0.7, 1)
+
 	local bossButtons = {}
 	for i, bossName in ipairs(BOSS_LIST) do
-		local button = CreateFrame("Button", nil, raidContent, "GameMenuButtonTemplate")
-		button:SetSize(180, 25)
-		button:SetPoint("TOPLEFT", bossListLabel, "BOTTOMLEFT", 0, -5 - (i-1) * 30)
-		button:SetText(bossName)
-		button:SetScript("OnClick", function()
+		local btn = CreateFrame("Button", nil, leftPanel)
+		btn:SetSize(154, 22)
+		btn:SetPoint("TOPLEFT", bossListLabel, "BOTTOMLEFT", -2, -4 - (i - 1) * 24)
+		local highlight = btn:CreateTexture(nil, "HIGHLIGHT")
+		highlight:SetAllPoints()
+		highlight:SetColorTexture(1, 0.8, 0, 0.1)
+		local fs = btn:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+		fs:SetPoint("LEFT", 8, 0)
+		fs:SetText(bossName)
+		fs:SetJustifyH("LEFT")
+		btn:SetFontString(fs)
+		btn:SetScript("OnClick", function()
 			selectedBoss = bossName
-			UpdateBossDisplay()
-			-- Update button text colors
-			for j, btn in ipairs(bossButtons) do
+			UpdateTabDisplay()
+			for j, b in ipairs(bossButtons) do
 				if j == i then
-					btn:GetFontString():SetTextColor(1, 0.8, 0, 1) -- Gold for selected boss
+					b:GetFontString():SetTextColor(1, 0.8, 0, 1)
 				else
-					btn:GetFontString():SetTextColor(1, 1, 1, 1) -- White for normal
+					b:GetFontString():SetTextColor(0.85, 0.85, 0.85, 1)
 				end
 			end
 		end)
-		bossButtons[i] = button
+		bossButtons[i] = btn
 	end
 
-	-- Right side: Boss details
-	local detailsLabel = raidContent:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-	detailsLabel:SetPoint("TOPLEFT", raidContent, "TOPLEFT", 210, -10)
-	detailsLabel:SetText("Talent Build Details:")
-	detailsLabel:SetTextColor(1, 0.8, 0, 1)
+	-- ===== RAID TAB: RIGHT PANEL (details) =====
+	local rightPanel = CreateFrame("Frame", nil, raidContent, "BackdropTemplate")
+	rightPanel:SetPoint("TOPLEFT", leftPanel, "TOPRIGHT", 6, 0)
+	rightPanel:SetPoint("BOTTOMRIGHT", 0, 0)
+	rightPanel:SetBackdrop({
+		bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		tile = true, tileSize = 16, edgeSize = 12,
+		insets = { left = 3, right = 3, top = 3, bottom = 3 }
+	})
+	rightPanel:SetBackdropColor(0.08, 0.08, 0.12, 0.8)
+	rightPanel:SetBackdropBorderColor(0.3, 0.3, 0.4, 0.6)
 
-	-- Difficulty selector
-	local difficultyLabel = raidContent:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-	difficultyLabel:SetPoint("TOPLEFT", detailsLabel, "BOTTOMLEFT", 0, -15)
-	difficultyLabel:SetText("Difficulty:")
-	difficultyLabel:SetTextColor(0.8, 0.8, 0.8, 1)
+	-- Boss name header
+	local bossText = rightPanel:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+	bossText:SetPoint("TOPLEFT", 12, -10)
+	bossText:SetText(BOSS_LIST[1] or "")
+	bossText:SetTextColor(1, 0.8, 0, 1)
+	mainFrame.bossText = bossText
 
-	-- Heroic button
-	local heroicButton = CreateFrame("Button", nil, raidContent, "GameMenuButtonTemplate")
-	heroicButton:SetSize(80, 25)
-	heroicButton:SetPoint("LEFT", difficultyLabel, "RIGHT", 10, 0)
-	heroicButton:SetText("Heroic")
+	-- Difficulty toggles
+	local heroicButton = CreateTextButton(rightPanel, "Heroic", 70, 20)
+	heroicButton:SetPoint("TOPLEFT", bossText, "BOTTOMLEFT", 0, -10)
 	mainFrame.heroicButton = heroicButton
 
-	-- Mythic button
-	local mythicButton = CreateFrame("Button", nil, raidContent, "GameMenuButtonTemplate")
-	mythicButton:SetSize(80, 25)
-	mythicButton:SetPoint("LEFT", heroicButton, "RIGHT", 5, 0)
-	mythicButton:SetText("Mythic")
+	local mythicButton = CreateTextButton(rightPanel, "Mythic", 70, 20)
+	mythicButton:SetPoint("LEFT", heroicButton, "RIGHT", 4, 0)
 	mainFrame.mythicButton = mythicButton
-	
-	-- Set up click handlers after both buttons are created
+
 	heroicButton:SetScript("OnClick", function()
 		selectedDifficulty = "Heroic"
-		-- Update button colors
-		heroicButton:GetFontString():SetTextColor(1, 0.8, 0, 1) -- Gold for selected
-		mythicButton:GetFontString():SetTextColor(1, 1, 1, 1) -- White for unselected
-		UpdateBossDisplay()
+		heroicButton:GetFontString():SetTextColor(1, 0.8, 0, 1)
+		mythicButton:GetFontString():SetTextColor(0.85, 0.85, 0.85, 1)
+		UpdateTabDisplay()
 	end)
-	
 	mythicButton:SetScript("OnClick", function()
 		selectedDifficulty = "Mythic"
-		-- Update button colors
-		mythicButton:GetFontString():SetTextColor(1, 0.8, 0, 1) -- Gold for selected
-		heroicButton:GetFontString():SetTextColor(1, 1, 1, 1) -- White for unselected
-		UpdateBossDisplay()
+		mythicButton:GetFontString():SetTextColor(1, 0.8, 0, 1)
+		heroicButton:GetFontString():SetTextColor(0.85, 0.85, 0.85, 1)
+		UpdateTabDisplay()
 	end)
 
-	-- Class/Spec info
-	local specLabel = raidContent:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-	specLabel:SetPoint("TOPLEFT", difficultyLabel, "BOTTOMLEFT", 0, -20)
-	specLabel:SetText("Class/Spec:")
-	specLabel:SetTextColor(0.8, 0.8, 0.8, 1)
+	-- Separator
+	local detailSep = rightPanel:CreateTexture(nil, "ARTWORK")
+	detailSep:SetHeight(1)
+	detailSep:SetPoint("TOPLEFT", heroicButton, "BOTTOMLEFT", 0, -10)
+	detailSep:SetPoint("RIGHT", rightPanel, "RIGHT", -12, 0)
+	detailSep:SetColorTexture(0.4, 0.4, 0.5, 0.3)
 
-	local specText = raidContent:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-	specText:SetPoint("LEFT", specLabel, "RIGHT", 10, 0)
-	specText:SetText("Unknown - Unknown")
-	specText:SetTextColor(0.8, 0.4, 1, 1)
+	-- Class/Spec
+	local specLabel = rightPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+	specLabel:SetPoint("TOPLEFT", detailSep, "BOTTOMLEFT", 0, -12)
+	specLabel:SetText("Spec:")
+	specLabel:SetTextColor(0.6, 0.6, 0.7, 1)
+
+	local specText = rightPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+	specText:SetPoint("LEFT", specLabel, "RIGHT", 8, 0)
+	specText:SetText("--")
+	specText:SetTextColor(0.4, 0.78, 1, 1)
 	mainFrame.specText = specText
 
-	-- Usage info
-	local usageLabel = raidContent:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-	usageLabel:SetPoint("TOPLEFT", specLabel, "BOTTOMLEFT", 0, -15)
-	usageLabel:SetText("Usage:")
-	usageLabel:SetTextColor(0.8, 0.8, 0.8, 1)
+	-- Popularity
+	local usageLabel = rightPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+	usageLabel:SetPoint("TOPLEFT", specLabel, "BOTTOMLEFT", 0, -10)
+	usageLabel:SetText("Popularity:")
+	usageLabel:SetTextColor(0.6, 0.6, 0.7, 1)
 
-	local usageText = raidContent:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-	usageText:SetPoint("LEFT", usageLabel, "RIGHT", 10, 0)
-	usageText:SetText("83% of top 100 players")
-	usageText:SetTextColor(0, 1, 0, 1)
+	local usageText = rightPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+	usageText:SetPoint("LEFT", usageLabel, "RIGHT", 8, 0)
+	usageText:SetText("--")
+	usageText:SetTextColor(0.3, 1, 0.3, 1)
 	mainFrame.usageText = usageText
 
-	-- Loadout code display
-	local codeLabel = raidContent:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-	codeLabel:SetPoint("TOPLEFT", usageLabel, "BOTTOMLEFT", 0, -25)
-	codeLabel:SetText("Talent Loadout Code (click to select):")
-	codeLabel:SetTextColor(0.8, 0.8, 0.8, 1)
+	-- Loadout code
+	local codeLabel = rightPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+	codeLabel:SetPoint("TOPLEFT", usageLabel, "BOTTOMLEFT", 0, -16)
+	codeLabel:SetText("Talent Build  (click to copy)")
+	codeLabel:SetTextColor(0.6, 0.6, 0.7, 1)
 
-	-- Code text box (clickable to select all)
-	local codeBox = CreateFrame("EditBox", nil, raidContent, "InputBoxTemplate")
-	codeBox:SetSize(350, 20)
-	codeBox:SetPoint("TOPLEFT", codeLabel, "BOTTOMLEFT", 0, -5)
-	codeBox:SetText("No loadout available")
-	codeBox:SetAutoFocus(false)
-	codeBox:SetCursorPosition(0)
-	codeBox:EnableMouse(true)
-	codeBox:SetScript("OnEscapePressed", function() codeBox:ClearFocus() end)
-	codeBox:SetScript("OnEnterPressed", function() codeBox:ClearFocus() end)
-	-- Make it read-only
-	codeBox:SetScript("OnChar", function() end)
-	codeBox:SetScript("OnKeyDown", function(self, key) 
-		if key == "ESCAPE" then
-			codeBox:ClearFocus()
-		end
-	end)
-	-- Prevent text changes by restoring original text
-	codeBox:SetScript("OnTextChanged", function(self, userInput)
-		if userInput and self.originalText then
-			self:SetText(self.originalText)
-			self:SetCursorPosition(0)
-			self:HighlightText(0, -1)
-		end
-	end)
-	codeBox.originalText = "No loadout available"
-	-- Auto-select all text on any interaction
-	codeBox:SetScript("OnMouseDown", function()
-		codeBox:SetFocus()
-		C_Timer.After(0.01, function()
-			codeBox:SetCursorPosition(0)
-			codeBox:HighlightText(0, -1)
-		end)
-	end)
-	codeBox:SetScript("OnEditFocusGained", function()
-		C_Timer.After(0.01, function()
-			codeBox:SetCursorPosition(0)
-			codeBox:HighlightText(0, -1)
-		end)
-	end)
-	codeBox:SetScript("OnCursorChanged", function()
-		if not codeBox.isSelecting then
-			codeBox.isSelecting = true
-			C_Timer.After(0.01, function()
-				codeBox:SetCursorPosition(0)
-				codeBox:HighlightText(0, -1)
-				codeBox.isSelecting = false
-			end)
-		end
-	end)
+	local codeBox = CreateReadOnlyCodeBox(rightPanel, 1, 24)
+	codeBox:SetPoint("TOPLEFT", codeLabel, "BOTTOMLEFT", 0, -4)
+	codeBox:SetPoint("RIGHT", rightPanel, "RIGHT", -12, 0)
 	mainFrame.codeBox = codeBox
 
-	-- MYTHIC+ CONTENT (Simple centered layout)
-	-- M+ Title
-	local mpTitleLabel = mythicPlusContent:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-	mpTitleLabel:SetPoint("CENTER", mythicPlusContent, "CENTER", 0, 150)
-	mpTitleLabel:SetText("Mythic+ Talent Builds")
-	mpTitleLabel:SetTextColor(1, 0.8, 0, 1)
+	-- ===== MYTHIC+ TAB =====
+	local mpPanel = CreateFrame("Frame", nil, mythicPlusContent, "BackdropTemplate")
+	mpPanel:SetPoint("TOPLEFT", 0, 0)
+	mpPanel:SetPoint("BOTTOMRIGHT", 0, 0)
+	mpPanel:SetBackdrop({
+		bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		tile = true, tileSize = 16, edgeSize = 12,
+		insets = { left = 3, right = 3, top = 3, bottom = 3 }
+	})
+	mpPanel:SetBackdropColor(0.08, 0.08, 0.12, 0.8)
+	mpPanel:SetBackdropBorderColor(0.3, 0.3, 0.4, 0.6)
 
-	-- M+ Class/Spec info
-	local mpSpecLabel = mythicPlusContent:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-	mpSpecLabel:SetPoint("CENTER", mythicPlusContent, "CENTER", -60, 125)
-	mpSpecLabel:SetText("Class/Spec:")
-	mpSpecLabel:SetTextColor(0.8, 0.8, 0.8, 1)
+	local mpTitle = mpPanel:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+	mpTitle:SetPoint("TOPLEFT", 12, -12)
+	mpTitle:SetText("Mythic+ Meta Build")
+	mpTitle:SetTextColor(1, 0.8, 0, 1)
 
-	local mpSpecText = mythicPlusContent:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-	mpSpecText:SetPoint("LEFT", mpSpecLabel, "RIGHT", 10, 0)
-	mpSpecText:SetText("Unknown - Unknown")
-	mpSpecText:SetTextColor(0.8, 0.4, 1, 1)
+	local mpSep = mpPanel:CreateTexture(nil, "ARTWORK")
+	mpSep:SetHeight(1)
+	mpSep:SetPoint("TOPLEFT", mpTitle, "BOTTOMLEFT", 0, -8)
+	mpSep:SetPoint("RIGHT", mpPanel, "RIGHT", -12, 0)
+	mpSep:SetColorTexture(0.4, 0.4, 0.5, 0.3)
+
+	local mpSpecLabel = mpPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+	mpSpecLabel:SetPoint("TOPLEFT", mpSep, "BOTTOMLEFT", 0, -14)
+	mpSpecLabel:SetText("Spec:")
+	mpSpecLabel:SetTextColor(0.6, 0.6, 0.7, 1)
+
+	local mpSpecText = mpPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+	mpSpecText:SetPoint("LEFT", mpSpecLabel, "RIGHT", 8, 0)
+	mpSpecText:SetText("--")
+	mpSpecText:SetTextColor(0.4, 0.78, 1, 1)
 	mainFrame.mpSpecText = mpSpecText
 
-	-- M+ Usage info
-	local mpUsageLabel = mythicPlusContent:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-	mpUsageLabel:SetPoint("CENTER", mythicPlusContent, "CENTER", -80, 100)
-	mpUsageLabel:SetText("Usage:")
-	mpUsageLabel:SetTextColor(0.8, 0.8, 0.8, 1)
+	local mpUsageLabel = mpPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+	mpUsageLabel:SetPoint("TOPLEFT", mpSpecLabel, "BOTTOMLEFT", 0, -10)
+	mpUsageLabel:SetText("Popularity:")
+	mpUsageLabel:SetTextColor(0.6, 0.6, 0.7, 1)
 
-	local mpUsageText = mythicPlusContent:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-	mpUsageText:SetPoint("LEFT", mpUsageLabel, "RIGHT", 10, 0)
-	mpUsageText:SetText("M+ data coming soon...")
-	mpUsageText:SetTextColor(0, 1, 0, 1)
+	local mpUsageText = mpPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+	mpUsageText:SetPoint("LEFT", mpUsageLabel, "RIGHT", 8, 0)
+	mpUsageText:SetText("--")
+	mpUsageText:SetTextColor(0.3, 1, 0.3, 1)
 	mainFrame.mpUsageText = mpUsageText
 
-	-- M+ Loadout code display
-	local mpCodeLabel = mythicPlusContent:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-	mpCodeLabel:SetPoint("CENTER", mythicPlusContent, "CENTER", 0, 75)
-	mpCodeLabel:SetText("Talent Loadout Code (click to select):")
-	mpCodeLabel:SetTextColor(0.8, 0.8, 0.8, 1)
+	local mpCodeLabel = mpPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+	mpCodeLabel:SetPoint("TOPLEFT", mpUsageLabel, "BOTTOMLEFT", 0, -16)
+	mpCodeLabel:SetText("Talent Build  (click to copy)")
+	mpCodeLabel:SetTextColor(0.6, 0.6, 0.7, 1)
 
-	-- M+ Code text box
-	local mpCodeBox = CreateFrame("EditBox", nil, mythicPlusContent, "InputBoxTemplate")
-	mpCodeBox:SetSize(450, 20)
-	mpCodeBox:SetPoint("CENTER", mythicPlusContent, "CENTER", 0, 50)
-	mpCodeBox:SetText("M+ talent builds will be available here")
-	mpCodeBox:SetAutoFocus(false)
-	mpCodeBox:SetCursorPosition(0)
-	mpCodeBox:EnableMouse(true)
-	mpCodeBox:SetScript("OnEscapePressed", function() mpCodeBox:ClearFocus() end)
-	mpCodeBox:SetScript("OnEnterPressed", function() mpCodeBox:ClearFocus() end)
-	-- Make it read-only (for now)
-	mpCodeBox:SetScript("OnChar", function() end)
-	mpCodeBox:SetScript("OnKeyDown", function(self, key) 
-		if key == "ESCAPE" then
-			mpCodeBox:ClearFocus()
-		end
-	end)
-	mpCodeBox:SetScript("OnTextChanged", function()
-		if mpCodeBox.originalText and mpCodeBox:GetText() ~= mpCodeBox.originalText then
-			mpCodeBox:SetText(mpCodeBox.originalText)
-		end
-	end)
-	-- Auto-select on click
-	mpCodeBox:SetScript("OnMouseDown", function()
-		if not mpCodeBox.isSelecting then
-			mpCodeBox.isSelecting = true
-			C_Timer.After(0.01, function()
-				mpCodeBox:SetCursorPosition(0)
-				mpCodeBox:HighlightText(0, -1)
-				mpCodeBox.isSelecting = false
-			end)
-		end
-	end)
+	local mpCodeBox = CreateReadOnlyCodeBox(mpPanel, 1, 24)
+	mpCodeBox:SetPoint("TOPLEFT", mpCodeLabel, "BOTTOMLEFT", 0, -4)
+	mpCodeBox:SetPoint("RIGHT", mpPanel, "RIGHT", -12, 0)
 	mainFrame.mpCodeBox = mpCodeBox
 
-	-- Initialize tab display
+	-- ===== HEATMAP TAB =====
+	local hmPanel = CreateFrame("Frame", nil, heatmapContent, "BackdropTemplate")
+	hmPanel:SetPoint("TOPLEFT", 0, 0)
+	hmPanel:SetPoint("BOTTOMRIGHT", 0, 0)
+	hmPanel:SetBackdrop({
+		bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		tile = true, tileSize = 16, edgeSize = 12,
+		insets = { left = 3, right = 3, top = 3, bottom = 3 }
+	})
+	hmPanel:SetBackdropColor(0.08, 0.08, 0.12, 0.8)
+	hmPanel:SetBackdropBorderColor(0.3, 0.3, 0.4, 0.6)
+
+	-- Header row: spec name + boss selector + difficulty toggle
+	local hmSpecText = hmPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+	hmSpecText:SetPoint("TOPLEFT", 12, -10)
+	hmSpecText:SetText("--")
+	hmSpecText:SetTextColor(0.4, 0.78, 1, 1)
+	mainFrame.heatmapSpecText = hmSpecText
+
+	-- Difficulty toggles
+	local hmHeroicBtn = CreateTextButton(hmPanel, "Heroic", 60, 18)
+	hmHeroicBtn:SetPoint("TOPRIGHT", hmPanel, "TOPRIGHT", -74, -8)
+
+	local hmMythicBtn = CreateTextButton(hmPanel, "Mythic", 60, 18)
+	hmMythicBtn:SetPoint("LEFT", hmHeroicBtn, "RIGHT", 4, 0)
+
+	local function UpdateHeatmapDiffButtons()
+		if heatmapDifficulty == "heroic" then
+			hmHeroicBtn:GetFontString():SetTextColor(1, 0.8, 0, 1)
+			hmMythicBtn:GetFontString():SetTextColor(0.85, 0.85, 0.85, 1)
+		else
+			hmHeroicBtn:GetFontString():SetTextColor(0.85, 0.85, 0.85, 1)
+			hmMythicBtn:GetFontString():SetTextColor(1, 0.8, 0, 1)
+		end
+	end
+
+	hmHeroicBtn:SetScript("OnClick", function()
+		heatmapDifficulty = "heroic"
+		UpdateHeatmapDiffButtons()
+		UpdateHeatmapDisplay()
+	end)
+	hmMythicBtn:SetScript("OnClick", function()
+		heatmapDifficulty = "mythic"
+		UpdateHeatmapDiffButtons()
+		UpdateHeatmapDisplay()
+	end)
+	UpdateHeatmapDiffButtons()
+
+	-- Boss selector dropdown row
+	local hmBossLabel = hmPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+	hmBossLabel:SetPoint("TOPLEFT", 12, -34)
+	hmBossLabel:SetText("Boss:")
+	hmBossLabel:SetTextColor(0.6, 0.6, 0.7, 1)
+
+	local hmBossButtons = {}
+	local bossBtnSpacing = 2
+	for i, bossName in ipairs(BOSS_LIST) do
+		local btn = CreateTextButton(hmPanel, bossName, 0, 16)
+		if i == 1 then
+			btn:SetPoint("TOPLEFT", hmBossLabel, "BOTTOMLEFT", 0, -2)
+		else
+			btn:SetPoint("LEFT", hmBossButtons[i - 1], "RIGHT", bossBtnSpacing, 0)
+		end
+		btn:GetFontString():SetFont(btn:GetFontString():GetFont(), 8)
+		btn:SetWidth(btn:GetFontString():GetStringWidth() + 12)
+		btn.bossName = bossName
+		btn:SetScript("OnClick", function()
+			heatmapBoss = bossName
+			for _, b in ipairs(hmBossButtons) do
+				if b.bossName == heatmapBoss then
+					b:GetFontString():SetTextColor(1, 0.8, 0, 1)
+				else
+					b:GetFontString():SetTextColor(0.85, 0.85, 0.85, 1)
+				end
+			end
+			UpdateHeatmapDisplay()
+		end)
+		if bossName == heatmapBoss then
+			btn:GetFontString():SetTextColor(1, 0.8, 0, 1)
+		end
+		hmBossButtons[i] = btn
+	end
+
+	local hmSepY = -34 - 14 - 20
+
+	-- Separator
+	local hmSep = hmPanel:CreateTexture(nil, "ARTWORK")
+	hmSep:SetHeight(1)
+	hmSep:SetPoint("TOPLEFT", 8, hmSepY)
+	hmSep:SetPoint("TOPRIGHT", -8, hmSepY)
+	hmSep:SetColorTexture(0.4, 0.4, 0.5, 0.3)
+
+	-- Talent tree container
+	local hmContainer = CreateFrame("Frame", nil, hmPanel)
+	hmContainer:SetPoint("TOPLEFT", 8, hmSepY - 4)
+	hmContainer:SetPoint("BOTTOMRIGHT", -8, 24)
+	mainFrame.heatmapContainer = hmContainer
+
+	-- Status text (shown when no data)
+	local hmStatusText = hmContainer:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+	hmStatusText:SetPoint("CENTER", hmContainer, "CENTER", 0, 0)
+	hmStatusText:SetText("Select a boss to view heatmap data")
+	hmStatusText:SetTextColor(0.6, 0.6, 0.6, 1)
+	hmStatusText:SetJustifyH("CENTER")
+	mainFrame.heatmapStatusText = hmStatusText
+
+	-- Legend at the bottom-right
+	local legendFrame = CreateFrame("Frame", nil, hmPanel)
+	legendFrame:SetSize(200, 16)
+	legendFrame:SetPoint("BOTTOM", hmPanel, "BOTTOM", 0, 10)
+
+	local legendColors = {
+		{ 0.3, 0.3, 0.35, "0%" },
+		{ 0.6, 0.25, 0.2, "<20%" },
+		{ 1.0, 0.6, 0.2, "20-50%" },
+		{ 1.0, 0.9, 0.2, "50-80%" },
+		{ 0.2, 1.0, 0.2, "80%+" },
+	}
+	local prevSwatch = nil
+	for _, info in ipairs(legendColors) do
+		local swatch = legendFrame:CreateTexture(nil, "ARTWORK")
+		swatch:SetSize(8, 8)
+		if prevSwatch then
+			swatch:SetPoint("LEFT", prevSwatch, "RIGHT", 8, 0)
+		else
+			swatch:SetPoint("LEFT", 0, 0)
+		end
+		swatch:SetColorTexture(info[1], info[2], info[3], 1)
+
+		local label = legendFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+		label:SetPoint("LEFT", swatch, "RIGHT", 2, 0)
+		label:SetText(info[4])
+		label:SetTextColor(0.7, 0.7, 0.7, 1)
+		prevSwatch = label
+	end
+
+	-- ===== INITIALIZE STATE =====
 	UpdateTabDisplay()
-	
-	-- Set initial boss button selection
 	if bossButtons[1] then
 		bossButtons[1]:GetFontString():SetTextColor(1, 0.8, 0, 1)
 	end
-	
-	-- Set initial difficulty button selection (Heroic is default)
-	heroicButton:GetFontString():SetTextColor(1, 0.8, 0, 1) -- Gold for selected Heroic
-	mythicButton:GetFontString():SetTextColor(1, 1, 1, 1) -- White for unselected Mythic
-	
+	heroicButton:GetFontString():SetTextColor(1, 0.8, 0, 1)
+	mythicButton:GetFontString():SetTextColor(0.85, 0.85, 0.85, 1)
 	mainFrame:Show()
-	isUIShown = true
 end
-
-
-
-
-
-
 
 -- Get loadout data for a specific boss, difficulty, class, and spec
 function ArchonTalents:GetLoadoutData(bossName, difficulty, className, specName)
-	if not ArchonTalentsDB or not ArchonTalentsDB.specData then
+	if not ArchonTalentsData or not ArchonTalentsData.specData then
 		return nil
 	end
-	
-	local bossData = ArchonTalentsDB.specData[bossName]
+
+	local bossData = ArchonTalentsData.specData[bossName]
 	if not bossData then
 		return nil
 	end
@@ -959,82 +1288,22 @@ end
 
 -- Get player's current class and spec
 function ArchonTalents:GetPlayerClassSpec()
-	local specIndex = GetSpecialization()
+	local specIndex = C_SpecializationInfo.GetSpecialization()
 	if not specIndex then
 		return nil, nil
 	end
-	
-	local specID, specName = GetSpecializationInfo(specIndex)
-	local className = UnitClass("player")
-	
-	-- Convert class name to match data file format (uppercase, no spaces)
-	local classKey = string.upper(string.gsub(className, " ", ""))
-	
-	return classKey, specName
+
+	local specID, specName = C_SpecializationInfo.GetSpecializationInfo(specIndex)
+	local _, className = UnitClass("player")
+
+	-- className from UnitClass arg2 is already the uppercase english token (e.g. "WARRIOR", "DEATHKNIGHT")
+	return className, specName
 end
 
--- Register slash commands
+-- Register slash command
 SLASH_ARCHON1 = "/archon"
-SlashCmdList["ARCHON"] = function(msg)
-	local command = string.lower(msg or "")
-	
-	if command == "hide" then
-		ArchonTalents:HideGUI()
-	elseif command == "hide minimap" then
-		ArchonTalents:HideMinimapButton()
-	elseif command == "show minimap" then
-		ArchonTalents:ShowMinimapButton()
-	elseif command == "help" then
-		ArchonTalents:ShowHelp()
-	else
-		ArchonTalents:CreateGUI()
-	end
-end
-
--- Hide GUI function
-function ArchonTalents:HideGUI()
-	if mainFrame then
-		mainFrame:Hide()
-		isUIShown = false
-	end
-end
-
--- Hide minimap button
-function ArchonTalents:HideMinimapButton()
-	if not self.LibDBIcon then
-		return
-	end
-	
-	if not ArchonTalentsDB.minimapButton then
-		ArchonTalentsDB.minimapButton = { hide = false }
-	end
-	
-	self.LibDBIcon:Hide("Archon Talents")
-	ArchonTalentsDB.minimapButton.hide = true
-end
-
--- Show minimap button
-function ArchonTalents:ShowMinimapButton()
-	if not self.LibDBIcon then
-		return
-	end
-	
-	if not ArchonTalentsDB.minimapButton then
-		ArchonTalentsDB.minimapButton = { hide = false }
-	end
-	
-	self.LibDBIcon:Show("Archon Talents")
-	ArchonTalentsDB.minimapButton.hide = false
-end
-
--- Show help
-function ArchonTalents:ShowHelp()
-	print("|cFF00FF00[Archon Talents]|r Commands:")
-	print("  /archon         - Show the talent GUI")
-	print("  /archon hide    - Hide the talent GUI")
-	print("  /archon hide minimap - Hide the minimap button")
-	print("  /archon show minimap - Show the minimap button")
-	print("  /archon help    - Show this help message")
+SlashCmdList["ARCHON"] = function()
+	ArchonTalents:CreateGUI()
 end
 
 -- Make the addon object globally accessible
