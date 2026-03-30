@@ -1,65 +1,37 @@
 # Archon Talents - World of Warcraft Addon
 
-[![GitHub release](https://img.shields.io/github/v/release/yourusername/archon-talents)](https://github.com/yourusername/archon-talents/releases)
+Display popular talent builds from Archon.gg and WarcraftLogs top 100 data directly in-game.
 
-> Display the most popular talent builds from Archon.gg meta data directly in-game
+## Features
 
-## 🎯 Features
+- **Raid Talent Builds** -- Top talent builds for all raid bosses (Heroic and Mythic)
+- **Mythic+ Builds** -- Meta builds for Mythic+ content
+- **WCL Top 100 Heatmap** -- Visual talent tree with color-coded node usage from WarcraftLogs top 100 rankings
+- **Hero Talent Labels** -- Shows which hero talent subtree is dominant with usage percentages
+- **Auto Detection** -- Detects your class and specialization automatically
+- **Minimap Button** -- Left-click to open, drag to reposition
 
-- **Raid Talent Builds**: View top talent builds for all Manaforge Omega bosses
-- **Mythic+ Support**: Access meta builds for Mythic+ dungeons
-- **Real-time Data**: Automatically updated talent data from Archon.gg
-- **Clean Interface**: Professional, easy-to-use GUI with tabbed navigation
-- **Minimap Integration**: Convenient minimap button with drag-and-drop support
-- **Smart Detection**: Automatically detects your class and specialization
+## Installation
 
-## 🚀 Quick Start
+Download the latest release from [GitHub Releases](https://github.com/tronicxx/ArchonTalents/releases) and extract `ArchonTalents/` to `World of Warcraft/_retail_/Interface/AddOns/`.
 
-### Via WowUp (Recommended)
-1. Download and install [WowUp](https://wowup.io/)
-2. Click "Get Addons" → "Browse"
-3. Search for "Archon Talents"
-4. Click "Install"
+## Usage
 
-### Manual Installation
-1. Download the latest release from [GitHub Releases](https://github.com/yourusername/archon-talents/releases)
-2. Extract the `ArchonTalents` folder to your `World of Warcraft/_retail_/Interface/AddOns/` directory
-3. Restart World of Warcraft
+`/archon` or click the minimap button to open.
 
-## 📱 Usage
+### Tabs
+- **Raid** -- Select boss and difficulty to view the most popular talent build with a copyable loadout code
+- **Mythic+** -- View the overall Mythic+ meta build for your spec
+- **WCL Top 100** -- Talent tree heatmap showing how often each node is picked by the top 100 players
 
-### Commands
-- **`/archon`** - Open the talent GUI
-- **`/archon hide`** - Hide the talent GUI
-- **`/archon hide minimap`** - Hide the minimap button
-- **`/archon show minimap`** - Show the minimap button
-- **`/archon help`** - Show help information
+### Heatmap Legend
+- Green (80%+) -- Nearly all top players pick this
+- Yellow (50-80%) -- Common pick
+- Orange (20-50%) -- Situational
+- Red (<20%) -- Rarely picked
+- Gray (0%) -- Not used by any top 100 player
 
-### Interface
-- **Raid Tab**: Select boss and difficulty to view talent builds
-- **Mythic+ Tab**: View overall Mythic+ meta builds for your spec
-- **Minimap Button**: Left-click to open GUI, drag to reposition
+## Data Sources
 
-## 🔄 Data Updates
-
-Talent data is automatically updated daily via our CI/CD pipeline, ensuring you always have access to the latest meta builds from Archon.gg.
-
-## 📁 Files
-
-- **`ArchonTalents.lua`** - Main addon logic and UI
-- **`ArchonTalents.toc`** - Addon metadata and dependencies
-- **`ArchonData.lua`** - Talent build data (auto-generated)
-- **`embeds.xml`** - Embedded library dependencies
-- **`Libs/`** - Required libraries (LibStub, LibDataBroker, LibDBIcon)
-
-## 📊 Supported Content
-
-### Raid: Manaforge Omega
-- **Heroic & Mythic** difficulties
-- All 8 bosses supported
-- Class and specialization specific builds
-
-### Mythic+
-- **+10 Key Level** meta builds
-- **All Dungeons** overall spec data
-- Weekly updated rankings
+- [Archon.gg](https://www.archon.gg) -- Raid and Mythic+ talent builds
+- [WarcraftLogs](https://www.warcraftlogs.com) -- Top 100 talent heatmap data
