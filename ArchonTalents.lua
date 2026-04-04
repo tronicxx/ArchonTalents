@@ -139,6 +139,24 @@ local CLASS_TOKEN_TO_WCL = {
 	WARRIOR = "Warrior",
 }
 
+-- WCL boss encounter IDs (for URL generation)
+local WCL_BOSS_IDS = {
+	["Imperator"] = 3176,
+	["Vorasius"] = 3177,
+	["Salhadaar"] = 3179,
+	["Vaelgor & Ezzorak"] = 3178,
+	["Vanguard"] = 3180,
+	["Crown"] = 3181,
+	["Chimaerus"] = 3306,
+	["Belo'ren"] = 3182,
+	["Midnight Falls"] = 3183,
+}
+
+local WCL_DIFFICULTY_IDS = {
+	heroic = 4,
+	mythic = 5,
+}
+
 -- GUI variables
 local mainFrame = nil
 local selectedBoss = "Imperator"
@@ -420,7 +438,7 @@ local function RenderHeatmap()
 	local nodeData = LTT.cache and LTT.cache.nodeData and LTT.cache.nodeData[treeID]
 	if not nodeData then return end
 
-	-- First pass: find grid bounds for centering
+	-- First pass: find grid bounds for centering + hero subtree bounds for labels
 	local minCol, maxCol, minRow, maxRow = 999, 0, 999, 0
 	for nodeID, _ in pairs(nodeData) do
 		if LTT:IsNodeVisibleForSpec(specID, nodeID) then
@@ -430,11 +448,24 @@ local function RenderHeatmap()
 				if col and row then
 					if nodeInfo.subTreeID and subTreeMap[nodeInfo.subTreeID] then
 						row = row + (subTreeMap[nodeInfo.subTreeID] - 1) * 5
+						-- Track full subtree bounds for label centering
+						local stID = nodeInfo.subTreeID
+						if not subTreeDotPositions[stID] then
+							subTreeDotPositions[stID] = { minCol = col, maxCol = col, minRow = row }
+						else
+							local p = subTreeDotPositions[stID]
+							if col < p.minCol then p.minCol = col end
+							if col > p.maxCol then p.maxCol = col end
+							if row < p.minRow then p.minRow = row end
+						end
 					end
-					if col < minCol then minCol = col end
-					if col > maxCol then maxCol = col end
-					if row < minRow then minRow = row end
-					if row > maxRow then maxRow = row end
+					-- Only include rendered nodes in grid bounds (skip non-choice hero nodes)
+					if not (nodeInfo.subTreeID and nodeInfo.entryIDs and #nodeInfo.entryIDs <= 1) then
+						if col < minCol then minCol = col end
+						if col > maxCol then maxCol = col end
+						if row < minRow then minRow = row end
+						if row > maxRow then maxRow = row end
+					end
 				end
 			end
 		end
@@ -448,18 +479,19 @@ local function RenderHeatmap()
 	local offsetX = math.max(0, math.floor((containerWidth - treeWidth) / 2))
 	local offsetY = math.max(0, math.floor((containerHeight - treeHeight) / 2))
 
-	-- Scale hero subtree node/entry percentages by hero tree usage
+	-- Normalize hero subtree choice node percentages relative to tree usage
+	-- WCL data is out of all 100 players; divide by heroUsage to get relative %
 	for nodeID, _ in pairs(nodeData) do
 		local ni = LTT:GetLibNodeInfo(nodeID)
-		if ni and ni.subTreeID and subTreeUsage[ni.subTreeID] then
-			local scale = subTreeUsage[ni.subTreeID]
-			if pctByNodeID[nodeID] then
-				pctByNodeID[nodeID] = pctByNodeID[nodeID] * scale
-			end
-			if ni.entryIDs then
+		if ni and ni.subTreeID and ni.entryIDs and #ni.entryIDs > 1 then
+			local usage = subTreeUsage[ni.subTreeID]
+			if usage and usage > 0 then
+				if pctByNodeID[nodeID] then
+					pctByNodeID[nodeID] = math.min(1, pctByNodeID[nodeID] / usage)
+				end
 				for _, eid in ipairs(ni.entryIDs) do
 					if pctByEntryID[eid] then
-						pctByEntryID[eid] = pctByEntryID[eid] * scale
+						pctByEntryID[eid] = math.min(1, pctByEntryID[eid] / usage)
 					end
 				end
 			end
@@ -471,24 +503,17 @@ local function RenderHeatmap()
 			local nodeInfo = LTT:GetLibNodeInfo(nodeID)
 			if nodeInfo then
 				-- Skip the hero subtree selection node itself
+				-- Skip non-choice hero subtree nodes (always 100%, no useful data)
 				if nodeInfo.isSubTreeSelection then
 					-- skip
+				elseif nodeInfo.subTreeID and nodeInfo.entryIDs and #nodeInfo.entryIDs <= 1 then
+					-- skip non-choice hero node
 				else
 					local col, row = LTT:GetNodeGridPosition(nodeID)
 					if col and row then
 						-- Offset hero subtree rows (stack them on rows 1-5)
 						if nodeInfo.subTreeID and subTreeMap[nodeInfo.subTreeID] then
 							row = row + (subTreeMap[nodeInfo.subTreeID] - 1) * 5
-							-- Track bounding box for label placement
-							local stID = nodeInfo.subTreeID
-							if not subTreeDotPositions[stID] then
-								subTreeDotPositions[stID] = { minCol = col, maxCol = col, minRow = row }
-							else
-								local p = subTreeDotPositions[stID]
-								if col < p.minCol then p.minCol = col end
-								if col > p.maxCol then p.maxCol = col end
-								if row < p.minRow then p.minRow = row end
-							end
 						end
 
 						-- Fade non-dominant hero subtree nodes
@@ -657,6 +682,21 @@ local function RenderHeatmap()
 	-- Update header text
 	if mainFrame.heatmapSpecText then
 		mainFrame.heatmapSpecText:SetText(FormatClassName(className) .. " - " .. specName)
+	end
+
+	-- Update WCL link
+	if mainFrame.heatmapLinkText then
+		local bossID = WCL_BOSS_IDS[heatmapBoss]
+		local diffID = WCL_DIFFICULTY_IDS[heatmapDifficulty]
+		if bossID and diffID and wclClass then
+			local url = string.format(
+				"warcraftlogs.com/zone/rankings/46?boss=%d&class=%s&spec=%s&difficulty=%d",
+				bossID, wclClass, specName, diffID)
+			mainFrame.heatmapLinkText:SetText(url)
+			mainFrame.heatmapLinkText:Show()
+		else
+			mainFrame.heatmapLinkText:Hide()
+		end
 	end
 end
 
@@ -1224,7 +1264,7 @@ function ArchonTalents:CreateGUI()
 	-- Talent tree container
 	local hmContainer = CreateFrame("Frame", nil, hmPanel)
 	hmContainer:SetPoint("TOPLEFT", 8, hmSepY - 4)
-	hmContainer:SetPoint("BOTTOMRIGHT", -8, 24)
+	hmContainer:SetPoint("BOTTOMRIGHT", -8, 28)
 	mainFrame.heatmapContainer = hmContainer
 
 	-- Status text (shown when no data)
@@ -1238,7 +1278,7 @@ function ArchonTalents:CreateGUI()
 	-- Legend at the bottom-right
 	local legendFrame = CreateFrame("Frame", nil, hmPanel)
 	legendFrame:SetSize(200, 16)
-	legendFrame:SetPoint("BOTTOM", hmPanel, "BOTTOM", 0, 10)
+	legendFrame:SetPoint("BOTTOM", hmPanel, "BOTTOM", 0, 14)
 
 	local legendColors = {
 		{ 0.3, 0.3, 0.35, "0%" },
@@ -1264,6 +1304,79 @@ function ArchonTalents:CreateGUI()
 		label:SetTextColor(0.7, 0.7, 0.7, 1)
 		prevSwatch = label
 	end
+
+	-- WCL link button + popup
+	local hmLinkBtn = CreateFrame("Button", nil, hmPanel)
+	hmLinkBtn:SetSize(80, 14)
+	hmLinkBtn:SetPoint("BOTTOMLEFT", hmPanel, "BOTTOMLEFT", 10, 8)
+	local hmLinkBtnText = hmLinkBtn:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+	hmLinkBtnText:SetPoint("LEFT")
+	hmLinkBtnText:SetText("WCL Rankings URL")
+	hmLinkBtnText:SetTextColor(0.4, 0.6, 1, 0.9)
+	hmLinkBtn:SetScript("OnEnter", function() hmLinkBtnText:SetTextColor(0.6, 0.8, 1, 1) end)
+	hmLinkBtn:SetScript("OnLeave", function() hmLinkBtnText:SetTextColor(0.4, 0.6, 1, 0.9) end)
+	hmLinkBtn:Hide()
+
+	-- Popup with copyable URL
+	local hmLinkPopup = CreateFrame("Frame", nil, hmPanel, "BackdropTemplate")
+	hmLinkPopup:SetSize(420, 30)
+	hmLinkPopup:SetPoint("BOTTOM", hmLinkBtn, "TOP", 160, 4)
+	hmLinkPopup:SetBackdrop({
+		bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		tile = true, tileSize = 16, edgeSize = 12,
+		insets = { left = 3, right = 3, top = 3, bottom = 3 }
+	})
+	hmLinkPopup:SetBackdropColor(0.05, 0.05, 0.09, 0.95)
+	hmLinkPopup:SetBackdropBorderColor(0.4, 0.6, 1, 0.6)
+	hmLinkPopup:SetFrameStrata("TOOLTIP")
+	hmLinkPopup:Hide()
+
+	local hmLinkEditBox = CreateFrame("EditBox", nil, hmLinkPopup)
+	hmLinkEditBox:SetPoint("TOPLEFT", 6, -2)
+	hmLinkEditBox:SetPoint("BOTTOMRIGHT", -6, 2)
+	hmLinkEditBox:SetFontObject(GameFontHighlightSmall)
+	hmLinkEditBox:SetAutoFocus(false)
+	hmLinkEditBox:SetJustifyH("LEFT")
+	hmLinkEditBox:SetTextColor(1, 1, 1, 1)
+	hmLinkEditBox:SetScript("OnEditFocusGained", function(self)
+		C_Timer.After(0.01, function() hmLinkEditBox:HighlightText() end)
+	end)
+	hmLinkEditBox:SetScript("OnEditFocusLost", function(self)
+		self:HighlightText(0, 0)
+		hmLinkPopup:Hide()
+	end)
+	hmLinkEditBox:SetScript("OnEscapePressed", function(self)
+		self:ClearFocus()
+		hmLinkPopup:Hide()
+	end)
+	hmLinkEditBox:SetScript("OnTextChanged", function(self, userInput)
+		if userInput then
+			self:SetText(self.savedURL or "")
+			C_Timer.After(0.01, function() hmLinkEditBox:HighlightText() end)
+		end
+	end)
+
+	hmLinkBtn:SetScript("OnClick", function()
+		if hmLinkPopup:IsShown() then
+			hmLinkPopup:Hide()
+		else
+			hmLinkPopup:Show()
+			hmLinkEditBox:SetCursorPosition(0)
+			hmLinkEditBox:SetFocus()
+			C_Timer.After(0.01, function() hmLinkEditBox:HighlightText() end)
+		end
+	end)
+
+	-- Expose as a simple interface for RenderHeatmap
+	mainFrame.heatmapLinkText = {
+		SetText = function(self, text)
+			hmLinkEditBox.savedURL = text
+			hmLinkEditBox:SetText(text)
+		end,
+		Show = function() hmLinkBtn:Show() end,
+		Hide = function() hmLinkBtn:Hide(); hmLinkPopup:Hide() end,
+	}
 
 	-- ===== INITIALIZE STATE =====
 	UpdateTabDisplay()
