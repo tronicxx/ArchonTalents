@@ -15,3 +15,6 @@ Libs\LibTalentTree-1.0\LibTalentTree-1.0.lua
 ArchonData.lua
 WCLTalentData.lua
 ArchonTalents.lua
+Heatmap.lua
+BuildOptimizer.lua
+Apply.lua

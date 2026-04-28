@@ -377,13 +377,22 @@ local function RenderHeatmap()
 	-- Build subtree info first, then sort so dominant (most-used) is on top
 	local subTreeNames = {}
 	local subTreeUsage = {}
-	local heroUsageData = heatData and heatData.heroUsage
+	-- Parse packed hero usage string: "subTreeID:pct;subTreeID:pct;..."
+	local heroUsageParsed = {}
+	local heroStr = heatData and heatData.h
+	if heroStr and heroStr ~= "" then
+		for pair in heroStr:gmatch("[^;]+") do
+			local id, pct = pair:match("^(%d+):([%d%.]+)$")
+			if id and pct then
+				heroUsageParsed[tonumber(id)] = tonumber(pct)
+			end
+		end
+	end
 	if subTreeIDs then
 		for _, stID in ipairs(subTreeIDs) do
 			local stInfo = LTT:GetSubTreeInfo(stID)
 			subTreeNames[stID] = stInfo and stInfo.name or ("Hero ?")
-			-- Use scraped heroUsage data directly (keyed by subTreeID)
-			subTreeUsage[stID] = heroUsageData and heroUsageData[stID] or 0
+			subTreeUsage[stID] = heroUsageParsed[stID] or 0
 		end
 		-- Sort so the most-used subtree gets index 1 (top position)
 		table.sort(subTreeIDs, function(a, b) return (subTreeUsage[a] or 0) > (subTreeUsage[b] or 0) end)
@@ -415,17 +424,22 @@ local function RenderHeatmap()
 	local topPad = 20 -- extra space at top for first subtree label
 	local dotsByNodeID = {}
 
-	-- Convert WCL entry IDs to node IDs for lookup
+	-- Parse packed string format: "id:pct;id:pct;..." into entry ID lookup
 	local pctByNodeID = {}
 	local pctByEntryID = {}
-	for entryID, pct in pairs(heatData) do
-		if type(entryID) == "number" then
-			pctByEntryID[entryID] = pct
-			local nodeID = LTT:GetNodeIDForEntry(entryID)
-			if nodeID then
-				-- If multiple entries map to the same node, take the max
-				if not pctByNodeID[nodeID] or pct > pctByNodeID[nodeID] then
-					pctByNodeID[nodeID] = pct
+	local nodeStr = heatData.n
+	if nodeStr and nodeStr ~= "" then
+		for pair in nodeStr:gmatch("[^;]+") do
+			local id, pct = pair:match("^(%d+):([%d%.]+)$")
+			if id and pct then
+				local entryID = tonumber(id)
+				local pctVal = tonumber(pct)
+				pctByEntryID[entryID] = pctVal
+				local nodeID = LTT:GetNodeIDForEntry(entryID)
+				if nodeID then
+					if not pctByNodeID[nodeID] or pctVal > pctByNodeID[nodeID] then
+						pctByNodeID[nodeID] = pctVal
+					end
 				end
 			end
 		end
@@ -1344,7 +1358,9 @@ function ArchonTalents:CreateGUI()
 	end)
 	hmLinkEditBox:SetScript("OnEditFocusLost", function(self)
 		self:HighlightText(0, 0)
+		hmLinkPopup.justClosed = true
 		hmLinkPopup:Hide()
+		C_Timer.After(0.2, function() hmLinkPopup.justClosed = false end)
 	end)
 	hmLinkEditBox:SetScript("OnEscapePressed", function(self)
 		self:ClearFocus()
@@ -1358,8 +1374,9 @@ function ArchonTalents:CreateGUI()
 	end)
 
 	hmLinkBtn:SetScript("OnClick", function()
-		if hmLinkPopup:IsShown() then
+		if hmLinkPopup:IsShown() or hmLinkPopup.justClosed then
 			hmLinkPopup:Hide()
+			hmLinkEditBox:ClearFocus()
 		else
 			hmLinkPopup:Show()
 			hmLinkEditBox:SetCursorPosition(0)

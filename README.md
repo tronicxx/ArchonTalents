@@ -8,12 +8,15 @@ Display popular talent builds from Archon.gg and WarcraftLogs top 100 data direc
 - **Mythic+ Builds** -- Meta builds for Mythic+ content
 - **WCL Top 100 Heatmap** -- Visual talent tree with color-coded node usage from WarcraftLogs top 100 rankings
 - **Hero Talent Labels** -- Shows which hero talent subtree is dominant with usage percentages
+- **Build Optimizer** -- Compare your current loadout against the meta build and apply changes
 - **Auto Detection** -- Detects your class and specialization automatically
 - **Minimap Button** -- Left-click to open, drag to reposition
 
 ## Installation
 
 Download the latest release from [GitHub Releases](https://github.com/tronicxx/ArchonTalents/releases) and extract `ArchonTalents/` to `World of Warcraft/_retail_/Interface/AddOns/`.
+
+Talent data is shipped with the addon and updated on a regular cadence via tagged releases -- no extra setup or credentials required.
 
 ## Usage
 
