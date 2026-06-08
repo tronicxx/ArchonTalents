@@ -1,6 +1,6 @@
 -- WarcraftLogs Talent Heatmap Data
--- Generated: 2026-06-07 08:27:04 UTC
--- Version: 1780838824
+-- Generated: 2026-06-08 08:24:49 UTC
+-- Version: 1780925089
 -- Source: WarcraftLogs Top 100 Rankings
 
 WCLTalentHeatmap = {
