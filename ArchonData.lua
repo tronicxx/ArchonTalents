@@ -1,280 +1,280 @@
 -- Archon Talents Data File
--- Generated: 2026-06-16 08:07:26 UTC
--- Version: 1781615246
+-- Generated: 2026-06-17 08:07:47 UTC
+-- Version: 1781701667
 -- Source: Archon.gg Meta Builds
 -- This is a plain global table, NOT a SavedVariable.
 -- It gets freshly loaded from this file every time the addon loads.
 
 ArchonTalentsData = {
-    version = 1781615246,
-    lastUpdated = "2026-06-16 08:07:26 UTC",
+    version = 1781701667,
+    lastUpdated = "2026-06-17 08:07:47 UTC",
     specData = {
         ["Imperator"] = {
             ["Heroic"] = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMDY2mZmZmZZmZkZMmZYGGPgZGMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgZAMMzAMzgB",
-                        usage = 50.6,
-                        totalRankings = 1807,
-                        source = "Archon.gg Meta Builds (50.6% popularity, 1,807 parses)"
+                        usage = 50.4,
+                        totalRankings = 1786,
+                        source = "Archon.gg Meta Builds (50.4% popularity, 1,786 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
-                        usage = 41.2,
-                        totalRankings = 9232,
-                        source = "Archon.gg Meta Builds (41.2% popularity, 9,232 parses)"
+                        usage = 41.4,
+                        totalRankings = 8992,
+                        source = "Archon.gg Meta Builds (41.4% popularity, 8,992 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMmxAAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxmGLbA2GwGgZYAAAzMYwA",
-                        usage = 11.0,
-                        totalRankings = 2472,
-                        source = "Archon.gg Meta Builds (11.0% popularity, 2,472 parses)"
+                        usage = 10.5,
+                        totalRankings = 2415,
+                        source = "Archon.gg Meta Builds (10.5% popularity, 2,415 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMzmxMzMmZmMmZAAAAAAAzyDMmtZYmZ2mZGbz28AzwYYsMw2sYGDzGTjZmxwGAAAAAAAAzMYAAAAYA",
-                        usage = 23.1,
-                        totalRankings = 2931,
-                        source = "Archon.gg Meta Builds (23.1% popularity, 2,931 parses)"
+                        usage = 22.6,
+                        totalRankings = 2860,
+                        source = "Archon.gg Meta Builds (22.6% popularity, 2,860 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmhZkZmBziZMDmZMzYmHYmZGDmtZGbzMz2YYAAAAAAAAYmhNAAAAMwMzMzs12MzMAAAAAAD",
-                        usage = 8.3,
-                        totalRankings = 1123,
-                        source = "Archon.gg Meta Builds (8.3% popularity, 1,123 parses)"
+                        usage = 8.2,
+                        totalRankings = 1101,
+                        source = "Archon.gg Meta Builds (8.2% popularity, 1,101 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
-                        usage = 90.5,
-                        totalRankings = 6093,
-                        source = "Archon.gg Meta Builds (90.5% popularity, 6,093 parses)"
+                        usage = 90.6,
+                        totalRankings = 5931,
+                        source = "Archon.gg Meta Builds (90.6% popularity, 5,931 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYGzyMLjtZMjNWmZZMzwsghBYAW2GbYamZZAAAAwGzMzMYzwYMDgZGAYA",
-                        usage = 16.8,
-                        totalRankings = 3142,
-                        source = "Archon.gg Meta Builds (16.8% popularity, 3,142 parses)"
+                        usage = 16.9,
+                        totalRankings = 3046,
+                        source = "Archon.gg Meta Builds (16.9% popularity, 3,046 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYm5BmZAAAAYLY2MMmZUzYWmZmZGjZMAAAAAAMwAAAAAAMbzs0sNzyGYmHAYxMYAAMzAgB",
-                        usage = 29.7,
-                        totalRankings = 1927,
-                        source = "Archon.gg Meta Builds (29.7% popularity, 1,927 parses)"
+                        usage = 29.6,
+                        totalRankings = 1847,
+                        source = "Archon.gg Meta Builds (29.6% popularity, 1,847 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZmFzMjZWmZxMPwMLLDMbGGNRmZWmZmZmlxMMAAAAAAjNzALbzMYMLDgJAAAgNMzAsYMMwsYBgZGAA",
-                        usage = 15.4,
-                        totalRankings = 2952,
-                        source = "Archon.gg Meta Builds (15.4% popularity, 2,952 parses)"
+                        usage = 15.2,
+                        totalRankings = 2876,
+                        source = "Archon.gg Meta Builds (15.2% popularity, 2,876 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGz2wDwMzmxCzAAAAAAAAAAgtBNbMmmZM8AmlZmZmhhZAAAAAAAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
-                        usage = 38.8,
-                        totalRankings = 3276,
-                        source = "Archon.gg Meta Builds (38.8% popularity, 3,276 parses)"
+                        usage = 38.6,
+                        totalRankings = 3162,
+                        source = "Archon.gg Meta Builds (38.6% popularity, 3,162 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 38.3,
+                        usage = 38.1,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (38.3% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (38.1% popularity, 1,000 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2WmHADzMmNjZmZWmxAAAzYGDmxMyMzAAAAMzMTmxMjZbmZAwAjZsxCMwMM0AWgxMDwYA",
-                        usage = 19.1,
-                        totalRankings = 1014,
-                        source = "Archon.gg Meta Builds (19.1% popularity, 1,014 parses)"
+                        usage = 19.0,
+                        totalRankings = 1000,
+                        source = "Archon.gg Meta Builds (19.0% popularity, 1,000 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZzYwCsMGGbDgZQshZGYmBwA",
-                        usage = 24.0,
-                        totalRankings = 2881,
-                        source = "Archon.gg Meta Builds (24.0% popularity, 2,881 parses)"
+                        usage = 24.1,
+                        totalRankings = 2814,
+                        source = "Archon.gg Meta Builds (24.1% popularity, 2,814 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYG2GzsNzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAwMAAAMzMzAMzGghZBsNA",
-                        usage = 30.3,
-                        totalRankings = 7711,
-                        source = "Archon.gg Meta Builds (30.3% popularity, 7,711 parses)"
+                        usage = 30.4,
+                        totalRankings = 7524,
+                        source = "Archon.gg Meta Builds (30.4% popularity, 7,524 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAYzsMwAGwMsFYWAAAAAAAAAmxMmhZMzMmBjpZMY22YmZWmZmZmZWwsMMzAAAGzMzMzMDYgZxAsxMA",
-                        usage = 31.9,
-                        totalRankings = 1084,
-                        source = "Archon.gg Meta Builds (31.9% popularity, 1,084 parses)"
+                        usage = 31.6,
+                        totalRankings = 1064,
+                        source = "Archon.gg Meta Builds (31.6% popularity, 1,064 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmx2MGzYGWGTzAAAAwAAjllZmZxMzMYMGwMbAGGjZmNDA",
-                        usage = 46.8,
-                        totalRankings = 1762,
-                        source = "Archon.gg Meta Builds (46.8% popularity, 1,762 parses)"
+                        usage = 46.0,
+                        totalRankings = 1721,
+                        source = "Archon.gg Meta Builds (46.0% popularity, 1,721 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 34.6,
+                        usage = 35.0,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (34.6% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (35.0% popularity, 1,000 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzwYmZmZ2GAmZgxYMYGG",
-                        usage = 22.7,
+                        usage = 22.2,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (22.7% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (22.2% popularity, 1,000 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 46.2,
-                        totalRankings = 8393,
-                        source = "Archon.gg Meta Builds (46.2% popularity, 8,393 parses)"
+                        usage = 46.4,
+                        totalRankings = 8187,
+                        source = "Archon.gg Meta Builds (46.4% popularity, 8,187 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 18.4,
-                        totalRankings = 1960,
-                        source = "Archon.gg Meta Builds (18.4% popularity, 1,960 parses)"
+                        usage = 18.5,
+                        totalRankings = 1916,
+                        source = "Archon.gg Meta Builds (18.5% popularity, 1,916 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
-                        usage = 31.2,
-                        totalRankings = 5827,
-                        source = "Archon.gg Meta Builds (31.2% popularity, 5,827 parses)"
+                        usage = 31.1,
+                        totalRankings = 5689,
+                        source = "Archon.gg Meta Builds (31.1% popularity, 5,689 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDjwMMMgZMMzMzwsMMDzyMBAsYmtxwYmZAAsBAzys0MzMLADDMzAwYZMgBM",
-                        usage = 39.4,
-                        totalRankings = 2799,
-                        source = "Archon.gg Meta Builds (39.4% popularity, 2,799 parses)"
+                        usage = 39.2,
+                        totalRankings = 2716,
+                        source = "Archon.gg Meta Builds (39.2% popularity, 2,716 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
                         usage = 44.9,
-                        totalRankings = 2561,
-                        source = "Archon.gg Meta Builds (44.9% popularity, 2,561 parses)"
+                        totalRankings = 2494,
+                        source = "Archon.gg Meta Builds (44.9% popularity, 2,494 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
                         usage = 23.8,
-                        totalRankings = 1855,
-                        source = "Archon.gg Meta Builds (23.8% popularity, 1,855 parses)"
+                        totalRankings = 1806,
+                        source = "Archon.gg Meta Builds (23.8% popularity, 1,806 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMMzAAAAAAwoMmhZGbDz2wMbzYMmZYGbsNMAAwMTbzMbzAA2AMAYMDzgZMmNsMDGGzYwA",
-                        usage = 33.6,
-                        totalRankings = 8394,
-                        source = "Archon.gg Meta Builds (33.6% popularity, 8,394 parses)"
+                        usage = 33.9,
+                        totalRankings = 8146,
+                        source = "Archon.gg Meta Builds (33.9% popularity, 8,146 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZYGmBmpZamBYmFMEGzyAMGsAAAjxMjBzAMzMMDD",
                         usage = 25.4,
-                        totalRankings = 2861,
-                        source = "Archon.gg Meta Builds (25.4% popularity, 2,861 parses)"
+                        totalRankings = 2795,
+                        source = "Archon.gg Meta Builds (25.4% popularity, 2,795 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwwsMDzMzMYGzAYmaAgZWMDziBAGD2MzMLAaGmxYYmZbZAmBG",
-                        usage = 46.8,
-                        totalRankings = 2627,
-                        source = "Archon.gg Meta Builds (46.8% popularity, 2,627 parses)"
+                        usage = 47.4,
+                        totalRankings = 2571,
+                        source = "Archon.gg Meta Builds (47.4% popularity, 2,571 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 33.3,
-                        totalRankings = 3295,
-                        source = "Archon.gg Meta Builds (33.3% popularity, 3,295 parses)"
+                        usage = 32.6,
+                        totalRankings = 3222,
+                        source = "Archon.gg Meta Builds (32.6% popularity, 3,222 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsZwAAAAAAzyglZAAAAAAttNzMzMzMGzMzMbzsMzMDzMzMzMMDzMAGYBmxoxsAYbAbGAMzAD",
-                        usage = 19.4,
+                        usage = 19.9,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (19.4% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (19.9% popularity, 1,000 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZmZMmNeAmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 29.3,
+                        usage = 29.2,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (29.3% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (29.2% popularity, 1,000 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
-                        usage = 51.3,
-                        totalRankings = 2600,
-                        source = "Archon.gg Meta Builds (51.3% popularity, 2,600 parses)"
+                        usage = 51.7,
+                        totalRankings = 2551,
+                        source = "Archon.gg Meta Builds (51.7% popularity, 2,551 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMLzMzYstYahZmlxyMzMjhlZZYxMDzsAAMAmZghhB",
-                        usage = 30.8,
-                        totalRankings = 3741,
-                        source = "Archon.gg Meta Builds (30.8% popularity, 3,741 parses)"
+                        usage = 30.9,
+                        totalRankings = 3635,
+                        source = "Archon.gg Meta Builds (30.9% popularity, 3,635 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAAsBYzMG2gFYGGawCAz2MmxYZZGLMzsNWmZmZYsMmBAYGGzMMCMzgBjB",
-                        usage = 25.9,
-                        totalRankings = 1586,
-                        source = "Archon.gg Meta Builds (25.9% popularity, 1,586 parses)"
+                        usage = 26.1,
+                        totalRankings = 1538,
+                        source = "Archon.gg Meta Builds (26.1% popularity, 1,538 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
-                        usage = 27.8,
-                        totalRankings = 4727,
-                        source = "Archon.gg Meta Builds (27.8% popularity, 4,727 parses)"
+                        usage = 27.9,
+                        totalRankings = 4600,
+                        source = "Archon.gg Meta Builds (27.9% popularity, 4,600 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZhhZmZmlBAAYmZxyMzsMzAAjllBGwAmhtADbDAAAzAAAYmhZmxADzMzMjZwMzMDAYGYA",
-                        usage = 23.8,
-                        totalRankings = 1298,
-                        source = "Archon.gg Meta Builds (23.8% popularity, 1,298 parses)"
+                        usage = 23.5,
+                        totalRankings = 1283,
+                        source = "Archon.gg Meta Builds (23.5% popularity, 1,283 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAAAAAAGzYYBGYbYhGWMYmlZbmZGzAAzwMzMzMAjZMzsBAAmZmZGDjZZGDYA",
-                        usage = 32.0,
-                        totalRankings = 5772,
-                        source = "Archon.gg Meta Builds (32.0% popularity, 5,772 parses)"
+                        usage = 31.5,
+                        totalRankings = 5604,
+                        source = "Archon.gg Meta Builds (31.5% popularity, 5,604 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmZmlZjZmZxgFzAAgZmxMzsAGzYYBGYbYjGLMAAwYgxGAmZAMzYMAAAMzMzAAYmhB",
                         usage = 11.9,
-                        totalRankings = 1365,
-                        source = "Archon.gg Meta Builds (11.9% popularity, 1,365 parses)"
+                        totalRankings = 1340,
+                        source = "Archon.gg Meta Builds (11.9% popularity, 1,340 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMzMDAAAghphxYGWmZmZGMmZAAAAAMzyMDIjxyyALgBMDTgZwGYmxmZbMYGDwMDAzYYA",
-                        usage = 39.7,
-                        totalRankings = 2820,
-                        source = "Archon.gg Meta Builds (39.7% popularity, 2,820 parses)"
+                        usage = 39.6,
+                        totalRankings = 2748,
+                        source = "Archon.gg Meta Builds (39.6% popularity, 2,748 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmhlZmZmZYMzMzYGzsMzMGzMbjZmBAAixyyALgBMDTgZYDYmBz2AAgZGDjZmhBD",
-                        usage = 32.3,
-                        totalRankings = 3874,
-                        source = "Archon.gg Meta Builds (32.3% popularity, 3,874 parses)"
+                        usage = 32.4,
+                        totalRankings = 3793,
+                        source = "Archon.gg Meta Builds (32.4% popularity, 3,793 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMjZmZmZGzmxsMjxY0wMDLzMzMDGzMAAAAYZAYGDwAbwyiRjZAMbYmNYGzMY2GAMzAAwMgB",
-                        usage = 9.2,
-                        totalRankings = 1851,
-                        source = "Archon.gg Meta Builds (9.2% popularity, 1,851 parses)"
+                        usage = 9.8,
+                        totalRankings = 1811,
+                        source = "Archon.gg Meta Builds (9.8% popularity, 1,811 parses)"
                     },
                 },
             },
@@ -282,115 +282,115 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMGDz2MzMzMbmZ0MjxYYGGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgBghZGgZgB",
-                        usage = 70.3,
-                        totalRankings = 2663,
-                        source = "Archon.gg Meta Builds (70.3% popularity, 2,663 parses)"
+                        usage = 69.9,
+                        totalRankings = 2657,
+                        source = "Archon.gg Meta Builds (69.9% popularity, 2,657 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
-                        usage = 21.1,
-                        totalRankings = 18068,
-                        source = "Archon.gg Meta Builds (21.1% popularity, 18,068 parses)"
+                        usage = 21.3,
+                        totalRankings = 17867,
+                        source = "Archon.gg Meta Builds (21.3% popularity, 17,867 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMmxAAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxmGLbA2GwGgZYAAAzMYwA",
                         usage = 9.1,
-                        totalRankings = 4374,
-                        source = "Archon.gg Meta Builds (9.1% popularity, 4,374 parses)"
+                        totalRankings = 4320,
+                        source = "Archon.gg Meta Builds (9.1% popularity, 4,320 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmZmZmwMDAAAAAAY2MmtZYmBzM2mt5BmZMGDLDsNLmxwsx0YmZMsBAAAAAAAwMDGAAAAG",
-                        usage = 32.4,
-                        totalRankings = 3202,
-                        source = "Archon.gg Meta Builds (32.4% popularity, 3,202 parses)"
+                        usage = 33.3,
+                        totalRankings = 3165,
+                        source = "Archon.gg Meta Builds (33.3% popularity, 3,165 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmhZkZmBziZMDmZMzYmHYmZGDmtZGbzMz2YYAAAAAAAAYmhNAAAAMwMzMzs12MzMAAAAAAD",
-                        usage = 8.0,
-                        totalRankings = 1152,
-                        source = "Archon.gg Meta Builds (8.0% popularity, 1,152 parses)"
+                        usage = 8.3,
+                        totalRankings = 1140,
+                        source = "Archon.gg Meta Builds (8.3% popularity, 1,140 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
-                        usage = 95.1,
-                        totalRankings = 9781,
-                        source = "Archon.gg Meta Builds (95.1% popularity, 9,781 parses)"
+                        usage = 95.2,
+                        totalRankings = 9703,
+                        source = "Archon.gg Meta Builds (95.2% popularity, 9,703 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwswMzMYYGz2MLjtZMjNWmxYmZMLYYAGgltxGmmZWGAAAAsZmZmZwmxMGzAYmBAGA",
-                        usage = 18.0,
-                        totalRankings = 4708,
-                        source = "Archon.gg Meta Builds (18.0% popularity, 4,708 parses)"
+                        usage = 18.5,
+                        totalRankings = 4674,
+                        source = "Archon.gg Meta Builds (18.5% popularity, 4,674 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYm5BmZAAAAYLY2MMmZUzYWmZmZGjZMAAAAAAMwAAAAAAMbzs0sNzyGYmHAYxMYAAMzAgB",
                         usage = 55.2,
-                        totalRankings = 1962,
-                        source = "Archon.gg Meta Builds (55.2% popularity, 1,962 parses)"
+                        totalRankings = 1928,
+                        source = "Archon.gg Meta Builds (55.2% popularity, 1,928 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMPwYMzmZZGMWGgZGjmoZmZZmZmZMMPgBAAAAwgZsMDYZbmBjZbAMBAAAshZMgFzgBsYZbAmZAM",
-                        usage = 16.7,
-                        totalRankings = 4414,
-                        source = "Archon.gg Meta Builds (16.7% popularity, 4,414 parses)"
+                        usage = 16.5,
+                        totalRankings = 4367,
+                        source = "Archon.gg Meta Builds (16.5% popularity, 4,367 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGz2wDwMzmxCzAAAAAAAAAAgtBNbMmmZM8AmlZmZmhhZAAAAAAAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
-                        usage = 22.2,
-                        totalRankings = 5485,
-                        source = "Archon.gg Meta Builds (22.2% popularity, 5,485 parses)"
+                        usage = 22.4,
+                        totalRankings = 5400,
+                        source = "Archon.gg Meta Builds (22.4% popularity, 5,400 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 47.4,
+                        usage = 47.3,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (47.4% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (47.3% popularity, 1,000 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2MPAGmZMbGzMzsMDAAwMmxMGjZEmBAAAYmZkZMzMzyMzAgBGzYjFYgZYohhFYMzAMGA",
-                        usage = 18.0,
-                        totalRankings = 2075,
-                        source = "Archon.gg Meta Builds (18.0% popularity, 2,075 parses)"
+                        usage = 17.6,
+                        totalRankings = 2060,
+                        source = "Archon.gg Meta Builds (17.6% popularity, 2,060 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZxAjZswCMwMM0ALYmxMDAM",
-                        usage = 25.9,
-                        totalRankings = 6198,
-                        source = "Archon.gg Meta Builds (25.9% popularity, 6,198 parses)"
+                        usage = 26.0,
+                        totalRankings = 6112,
+                        source = "Archon.gg Meta Builds (26.0% popularity, 6,112 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGPwyMzsYGmZmZGzMMzMmhZGzMzYbmZMjZYZMNDAAAAAAAAgxYAzsBYYWAbDA",
-                        usage = 48.2,
-                        totalRankings = 11027,
-                        source = "Archon.gg Meta Builds (48.2% popularity, 11,027 parses)"
+                        usage = 48.0,
+                        totalRankings = 10966,
+                        source = "Archon.gg Meta Builds (48.0% popularity, 10,966 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAgZMjZwYmZMDGTzYwsttZmZMzMzMzsgZZYmBAAMzMzAgZGbMLGgNmZM",
-                        usage = 30.7,
-                        totalRankings = 1858,
-                        source = "Archon.gg Meta Builds (30.7% popularity, 1,858 parses)"
+                        usage = 31.1,
+                        totalRankings = 1839,
+                        source = "Archon.gg Meta Builds (31.1% popularity, 1,839 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmhZMmxMYMNDAAAADAMWWmZmFzMzYMzYAzsBwixYmZzAA",
-                        usage = 57.5,
-                        totalRankings = 2919,
-                        source = "Archon.gg Meta Builds (57.5% popularity, 2,919 parses)"
+                        usage = 57.0,
+                        totalRankings = 2875,
+                        source = "Archon.gg Meta Builds (57.0% popularity, 2,875 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 53.5,
-                        totalRankings = 738,
-                        source = "Archon.gg Meta Builds (53.5% popularity, 738 parses)"
+                        usage = 52.8,
+                        totalRankings = 727,
+                        source = "Archon.gg Meta Builds (52.8% popularity, 727 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMzAAAwAAmZmmlllZAA2MzM2GzMzYBAAAAAWMzMzAAAjZMjZmZmZZAYmBGjxADD",
@@ -401,76 +401,76 @@ ArchonTalentsData = {
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
                         usage = 74.0,
-                        totalRankings = 13351,
-                        source = "Archon.gg Meta Builds (74.0% popularity, 13,351 parses)"
+                        totalRankings = 13172,
+                        source = "Archon.gg Meta Builds (74.0% popularity, 13,172 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 20.6,
-                        totalRankings = 4255,
-                        source = "Archon.gg Meta Builds (20.6% popularity, 4,255 parses)"
+                        usage = 20.8,
+                        totalRankings = 4188,
+                        source = "Archon.gg Meta Builds (20.8% popularity, 4,188 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
-                        usage = 36.1,
-                        totalRankings = 7375,
-                        source = "Archon.gg Meta Builds (36.1% popularity, 7,375 parses)"
+                        usage = 35.9,
+                        totalRankings = 7309,
+                        source = "Archon.gg Meta Builds (35.9% popularity, 7,309 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDjwMMMgZMMzMzwsMMDzyMBAsYmtxwYmZAAsBAzys0MzMLADDMzAwYZMgBM",
-                        usage = 56.2,
-                        totalRankings = 3513,
-                        source = "Archon.gg Meta Builds (56.2% popularity, 3,513 parses)"
+                        usage = 55.8,
+                        totalRankings = 3445,
+                        source = "Archon.gg Meta Builds (55.8% popularity, 3,445 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 56.6,
-                        totalRankings = 3985,
-                        source = "Archon.gg Meta Builds (56.6% popularity, 3,985 parses)"
+                        usage = 56.4,
+                        totalRankings = 3928,
+                        source = "Archon.gg Meta Builds (56.4% popularity, 3,928 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
-                        usage = 16.1,
-                        totalRankings = 1601,
-                        source = "Archon.gg Meta Builds (16.1% popularity, 1,601 parses)"
+                        usage = 16.3,
+                        totalRankings = 1596,
+                        source = "Archon.gg Meta Builds (16.3% popularity, 1,596 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMmZmBAAAAAwMlxMMzYbY2GmZbGjxYYGbsBAAwMTbzMbzAA2AMAYMDzgZMzshlZwwYGDG",
-                        usage = 34.8,
-                        totalRankings = 11848,
-                        source = "Archon.gg Meta Builds (34.8% popularity, 11,848 parses)"
+                        usage = 34.5,
+                        totalRankings = 11675,
+                        source = "Archon.gg Meta Builds (34.5% popularity, 11,675 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZYGmBmpZamBYmFMEGzyAMGsAAAjxMjBzAMzMMDD",
-                        usage = 16.3,
-                        totalRankings = 4911,
-                        source = "Archon.gg Meta Builds (16.3% popularity, 4,911 parses)"
+                        usage = 16.0,
+                        totalRankings = 4849,
+                        source = "Archon.gg Meta Builds (16.0% popularity, 4,849 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwMmlZwMzMMDzAYmaAgZWMDziBAGD2MzMLAaGjxYYmZbZAmBG",
                         usage = 53.5,
-                        totalRankings = 3451,
-                        source = "Archon.gg Meta Builds (53.5% popularity, 3,451 parses)"
+                        totalRankings = 3425,
+                        source = "Archon.gg Meta Builds (53.5% popularity, 3,425 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 41.3,
-                        totalRankings = 3861,
-                        source = "Archon.gg Meta Builds (41.3% popularity, 3,861 parses)"
+                        usage = 40.9,
+                        totalRankings = 3827,
+                        source = "Archon.gg Meta Builds (40.9% popularity, 3,827 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsZwAAAAAAzyglZAAAAAAttNzMzMzMGzMzMbzsMzMwMzMzMmZmZMAGYBmxoxsAYZAbGAMzMYA",
-                        usage = 14.8,
+                        usage = 14.3,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (14.8% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (14.3% popularity, 1,000 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZMzMzsBmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
@@ -480,69 +480,69 @@ ArchonTalentsData = {
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
-                        usage = 66.7,
-                        totalRankings = 4818,
-                        source = "Archon.gg Meta Builds (66.7% popularity, 4,818 parses)"
+                        usage = 67.0,
+                        totalRankings = 4776,
+                        source = "Archon.gg Meta Builds (67.0% popularity, 4,776 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMLzMzYstYahZmlxyMzMjhlZZYxMDzsAAMAmZghhB",
-                        usage = 34.6,
-                        totalRankings = 5345,
-                        source = "Archon.gg Meta Builds (34.6% popularity, 5,345 parses)"
+                        usage = 34.4,
+                        totalRankings = 5285,
+                        source = "Archon.gg Meta Builds (34.4% popularity, 5,285 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAAsBYzMG2gFYGGawCAz2MmxYZZGLMzsNWmZmZYsMmBAYGGzMMCMzgBjB",
-                        usage = 36.9,
-                        totalRankings = 1847,
-                        source = "Archon.gg Meta Builds (36.9% popularity, 1,847 parses)"
+                        usage = 37.5,
+                        totalRankings = 1834,
+                        source = "Archon.gg Meta Builds (37.5% popularity, 1,834 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
                         usage = 27.4,
-                        totalRankings = 8833,
-                        source = "Archon.gg Meta Builds (27.4% popularity, 8,833 parses)"
+                        totalRankings = 8709,
+                        source = "Archon.gg Meta Builds (27.4% popularity, 8,709 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMAAAzMLz2MzsYGAYstNwAGwMsEYYbAAAYGAAAzMzMjZGYYmZmZGDmZmBAYGYA",
-                        usage = 15.0,
-                        totalRankings = 1027,
-                        source = "Archon.gg Meta Builds (15.0% popularity, 1,027 parses)"
+                        usage = 14.8,
+                        totalRankings = 1021,
+                        source = "Archon.gg Meta Builds (14.8% popularity, 1,021 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAAAAAAGzYYBGYbYhGWMYmlZbmZGzAAzwMzMzMAjZMzsBAAmZmZGDjZZGDYA",
-                        usage = 37.2,
-                        totalRankings = 11634,
-                        source = "Archon.gg Meta Builds (37.2% popularity, 11,634 parses)"
+                        usage = 37.0,
+                        totalRankings = 11482,
+                        source = "Archon.gg Meta Builds (37.0% popularity, 11,482 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMmlZZMzMLmZ2WYAAwMGzMzCYMjhFYgthFaswAAAjBDbAYmBYmZMzsBAAYmZGAAMDD",
-                        usage = 11.0,
+                        usage = 11.2,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (11.0% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (11.2% popularity, 1,000 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZAAAAMMNMzYmxyMzMzgxMDAAAAgZWmZgtMGLLDsAGwMMBmBbAzgZbMYmtBYmBgZMMA",
-                        usage = 44.0,
-                        totalRankings = 3806,
-                        source = "Archon.gg Meta Builds (44.0% popularity, 3,806 parses)"
+                        usage = 44.8,
+                        totalRankings = 3752,
+                        source = "Archon.gg Meta Builds (44.8% popularity, 3,752 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmx2yMzMzMMmZmZMjZWmZGjZmtxMzAAAxYZZgFwAmhJwMsBMzgxAAgZGDjZmhBD",
-                        usage = 48.4,
-                        totalRankings = 5514,
-                        source = "Archon.gg Meta Builds (48.4% popularity, 5,514 parses)"
+                        usage = 48.1,
+                        totalRankings = 5429,
+                        source = "Archon.gg Meta Builds (48.1% popularity, 5,429 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMjZmZmZGzmxsMjxY0wMDLzMzMDGzMAAAAYZAYGDwAbwyiRjZAMbYmNYGzMY2GAMzAAwMgB",
-                        usage = 13.4,
-                        totalRankings = 3101,
-                        source = "Archon.gg Meta Builds (13.4% popularity, 3,101 parses)"
+                        usage = 13.5,
+                        totalRankings = 3065,
+                        source = "Archon.gg Meta Builds (13.5% popularity, 3,065 parses)"
                     },
                 },
             },
@@ -552,195 +552,195 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMDY2mZmZmZZmZkZMmZYGGPgZGMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgZAMMzAMzgB",
-                        usage = 69.0,
-                        totalRankings = 1676,
-                        source = "Archon.gg Meta Builds (69.0% popularity, 1,676 parses)"
+                        usage = 69.1,
+                        totalRankings = 1649,
+                        source = "Archon.gg Meta Builds (69.1% popularity, 1,649 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
-                        usage = 49.9,
-                        totalRankings = 7382,
-                        source = "Archon.gg Meta Builds (49.9% popularity, 7,382 parses)"
+                        usage = 50.1,
+                        totalRankings = 7207,
+                        source = "Archon.gg Meta Builds (50.1% popularity, 7,207 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMmxAAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxmGLbA2GwGgZYAAAzMYwA",
-                        usage = 11.8,
-                        totalRankings = 2297,
-                        source = "Archon.gg Meta Builds (11.8% popularity, 2,297 parses)"
+                        usage = 11.6,
+                        totalRankings = 2239,
+                        source = "Archon.gg Meta Builds (11.6% popularity, 2,239 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMzmxMzMmZmMmZAAAAAAAzyDMmtZYmZ2mZGbz28AzwYYsMw2sYGDzGTjZmxwGAAAAAAAAzMYAAAAYA",
-                        usage = 24.9,
-                        totalRankings = 2901,
-                        source = "Archon.gg Meta Builds (24.9% popularity, 2,901 parses)"
+                        usage = 24.2,
+                        totalRankings = 2830,
+                        source = "Archon.gg Meta Builds (24.2% popularity, 2,830 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmhZkZmBziZMDmZMzYmHYmZGDmtZGbzMz2YYAAAAAAAAYmhNAAAAMwMzMzs12MzMAAAAAAD",
-                        usage = 8.0,
-                        totalRankings = 1094,
-                        source = "Archon.gg Meta Builds (8.0% popularity, 1,094 parses)"
+                        usage = 8.2,
+                        totalRankings = 1077,
+                        source = "Archon.gg Meta Builds (8.2% popularity, 1,077 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
-                        usage = 90.1,
-                        totalRankings = 6056,
-                        source = "Archon.gg Meta Builds (90.1% popularity, 6,056 parses)"
+                        usage = 90.2,
+                        totalRankings = 5912,
+                        source = "Archon.gg Meta Builds (90.2% popularity, 5,912 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDMmFzMzMAzYWmZZYGzYjlZWmZmhZBDDwAssN2w0MzyAAAAgNmZmZwmxwYGAzMAwA",
-                        usage = 15.7,
-                        totalRankings = 3091,
-                        source = "Archon.gg Meta Builds (15.7% popularity, 3,091 parses)"
+                        usage = 15.2,
+                        totalRankings = 2999,
+                        source = "Archon.gg Meta Builds (15.2% popularity, 2,999 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYGzMDAAAALBzGMmZUzYWYmZGjZmZAAAAAAAGAAAAAgZbmlmtZW2AzMALmBDAgZGAMA",
-                        usage = 31.8,
-                        totalRankings = 1870,
-                        source = "Archon.gg Meta Builds (31.8% popularity, 1,870 parses)"
+                        usage = 31.7,
+                        totalRankings = 1792,
+                        source = "Archon.gg Meta Builds (31.7% popularity, 1,792 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMPwYMzmZZGMWGgZGjmoZmZZmZmZMMPgBAAAAwgZsMDYZbmBjZbAMBAAAshZMgFzgBsYZbAmZAM",
-                        usage = 13.0,
-                        totalRankings = 2835,
-                        source = "Archon.gg Meta Builds (13.0% popularity, 2,835 parses)"
+                        usage = 13.4,
+                        totalRankings = 2761,
+                        source = "Archon.gg Meta Builds (13.4% popularity, 2,761 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGz2wDwMzmxCzAAAAAAAAAAgtBNbMmmZM8AmlZmZmhhZAAAAAAAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
-                        usage = 36.9,
-                        totalRankings = 3121,
-                        source = "Archon.gg Meta Builds (36.9% popularity, 3,121 parses)"
+                        usage = 36.8,
+                        totalRankings = 3015,
+                        source = "Archon.gg Meta Builds (36.8% popularity, 3,015 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 36.9,
+                        usage = 36.8,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (36.9% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (36.8% popularity, 1,000 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2WmHADzMmNjZmZWmxAAAzYGDmxMyMzAAAAMzMTmxMjZbmZAwAjZsxCMwMM0AWgxMDwYA",
-                        usage = 18.1,
+                        usage = 18.0,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (18.1% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (18.0% popularity, 1,000 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZzYwCsMGGbDgZQshZGYmBwA",
-                        usage = 23.1,
-                        totalRankings = 2870,
-                        source = "Archon.gg Meta Builds (23.1% popularity, 2,870 parses)"
+                        usage = 23.4,
+                        totalRankings = 2793,
+                        source = "Archon.gg Meta Builds (23.4% popularity, 2,793 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYG2GzsNzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAwMAAAMzMzAMzGghZBsNA",
-                        usage = 53.7,
-                        totalRankings = 7467,
-                        source = "Archon.gg Meta Builds (53.7% popularity, 7,467 parses)"
+                        usage = 53.8,
+                        totalRankings = 7301,
+                        source = "Archon.gg Meta Builds (53.8% popularity, 7,301 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAYzsMwAGwMsFYWAAAAAAAAAmxMmhZMzMmBjpZMzM22YMzyMzMzMzywsMYAAAGzMzMzMDAMLGgNmB",
-                        usage = 31.2,
-                        totalRankings = 1051,
-                        source = "Archon.gg Meta Builds (31.2% popularity, 1,051 parses)"
+                        usage = 30.7,
+                        totalRankings = 1027,
+                        source = "Archon.gg Meta Builds (30.7% popularity, 1,027 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmx2MGzYGWGTzAAAAwAAjllZmZxMzMYMGwMbAGGjZmNDA",
-                        usage = 28.4,
-                        totalRankings = 1709,
-                        source = "Archon.gg Meta Builds (28.4% popularity, 1,709 parses)"
+                        usage = 28.1,
+                        totalRankings = 1664,
+                        source = "Archon.gg Meta Builds (28.1% popularity, 1,664 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 33.5,
+                        usage = 33.6,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (33.5% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (33.6% popularity, 1,000 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzwYmZmZ2GAmZgxYMYGG",
-                        usage = 21.6,
+                        usage = 21.3,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (21.6% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (21.3% popularity, 1,000 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 47.4,
-                        totalRankings = 8349,
-                        source = "Archon.gg Meta Builds (47.4% popularity, 8,349 parses)"
+                        usage = 47.5,
+                        totalRankings = 8149,
+                        source = "Archon.gg Meta Builds (47.5% popularity, 8,149 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
                         usage = 18.2,
-                        totalRankings = 1923,
-                        source = "Archon.gg Meta Builds (18.2% popularity, 1,923 parses)"
+                        totalRankings = 1875,
+                        source = "Archon.gg Meta Builds (18.2% popularity, 1,875 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
                         usage = 31.3,
-                        totalRankings = 5718,
-                        source = "Archon.gg Meta Builds (31.3% popularity, 5,718 parses)"
+                        totalRankings = 5577,
+                        source = "Archon.gg Meta Builds (31.3% popularity, 5,577 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MGsNzMbzAAAAAAAAAAAAsMMCzYbYAzYYmZmhZZYGmlZCAYzMbjhZmZGAAbAwsMLNzMzCAGYmBAWGDYAD",
-                        usage = 33.1,
-                        totalRankings = 2746,
-                        source = "Archon.gg Meta Builds (33.1% popularity, 2,746 parses)"
+                        usage = 33.0,
+                        totalRankings = 2665,
+                        source = "Archon.gg Meta Builds (33.0% popularity, 2,665 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 47.9,
-                        totalRankings = 2430,
-                        source = "Archon.gg Meta Builds (47.9% popularity, 2,430 parses)"
+                        usage = 48.0,
+                        totalRankings = 2366,
+                        source = "Archon.gg Meta Builds (48.0% popularity, 2,366 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
                         usage = 27.5,
-                        totalRankings = 1826,
-                        source = "Archon.gg Meta Builds (27.5% popularity, 1,826 parses)"
+                        totalRankings = 1786,
+                        source = "Archon.gg Meta Builds (27.5% popularity, 1,786 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMMzAAAAAAwoMmhZGbDz2wMbzYMmZYGbsNMAAwMTbzMbzAA2AMAYMDzgZMmNsMDGGzYwA",
-                        usage = 49.5,
-                        totalRankings = 8261,
-                        source = "Archon.gg Meta Builds (49.5% popularity, 8,261 parses)"
+                        usage = 49.8,
+                        totalRankings = 8031,
+                        source = "Archon.gg Meta Builds (49.8% popularity, 8,031 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZYGmBmpZamBYmFMEGzyAMGsAAAjxMjBzAMzMMDD",
-                        usage = 26.5,
-                        totalRankings = 2828,
-                        source = "Archon.gg Meta Builds (26.5% popularity, 2,828 parses)"
+                        usage = 26.6,
+                        totalRankings = 2766,
+                        source = "Archon.gg Meta Builds (26.6% popularity, 2,766 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwwsMDzMzMYGzAYmaAgZWMDziBAGD2MzMLAaGmxYYmZbZAmBG",
-                        usage = 47.0,
-                        totalRankings = 2514,
-                        source = "Archon.gg Meta Builds (47.0% popularity, 2,514 parses)"
+                        usage = 47.4,
+                        totalRankings = 2453,
+                        source = "Archon.gg Meta Builds (47.4% popularity, 2,453 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 33.8,
-                        totalRankings = 3249,
-                        source = "Archon.gg Meta Builds (33.8% popularity, 3,249 parses)"
+                        usage = 33.2,
+                        totalRankings = 3182,
+                        source = "Archon.gg Meta Builds (33.2% popularity, 3,182 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsMDAAAAAottZmZmZmxYmZmZbmlZmZwYmZmxMjhBwALwMGNmFALDYzAgZmBD",
-                        usage = 17.4,
+                        usage = 17.1,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (17.4% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (17.1% popularity, 1,000 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZmZMmNeAmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
@@ -750,69 +750,69 @@ ArchonTalentsData = {
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
-                        usage = 54.8,
-                        totalRankings = 2229,
-                        source = "Archon.gg Meta Builds (54.8% popularity, 2,229 parses)"
+                        usage = 55.4,
+                        totalRankings = 2175,
+                        source = "Archon.gg Meta Builds (55.4% popularity, 2,175 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMLzMzYstYahZmlxyMzMjhlZZYxMDzsAAMAmZghhB",
-                        usage = 31.7,
-                        totalRankings = 3719,
-                        source = "Archon.gg Meta Builds (31.7% popularity, 3,719 parses)"
+                        usage = 31.8,
+                        totalRankings = 3607,
+                        source = "Archon.gg Meta Builds (31.8% popularity, 3,607 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZmZGAAAAAAAAAYB2gZsox2AYGwGAzyMmZGLLzAzMbsMzMzwwYGAADwYmJmZAgxA",
-                        usage = 31.5,
-                        totalRankings = 1534,
-                        source = "Archon.gg Meta Builds (31.5% popularity, 1,534 parses)"
+                        usage = 31.4,
+                        totalRankings = 1480,
+                        source = "Archon.gg Meta Builds (31.4% popularity, 1,480 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
-                        usage = 27.1,
-                        totalRankings = 4535,
-                        source = "Archon.gg Meta Builds (27.1% popularity, 4,535 parses)"
+                        usage = 26.9,
+                        totalRankings = 4417,
+                        source = "Archon.gg Meta Builds (26.9% popularity, 4,417 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAgZmZGNbMMzMmlBAAYmZxyMzsMzAAjllBGwAmhtADbDAAAzAAAYmhZmZmNMMzMzMmBzMzMAgZgB",
-                        usage = 39.3,
-                        totalRankings = 1739,
-                        source = "Archon.gg Meta Builds (39.3% popularity, 1,739 parses)"
+                        usage = 39.7,
+                        totalRankings = 1720,
+                        source = "Archon.gg Meta Builds (39.7% popularity, 1,720 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAAAAAAGzYYBGYbYhGWMYmlZbmZGzAAzwMzMzMAjZMzsBAAmZmZGDjZZGDYA",
-                        usage = 20.8,
-                        totalRankings = 5033,
-                        source = "Archon.gg Meta Builds (20.8% popularity, 5,033 parses)"
+                        usage = 20.7,
+                        totalRankings = 4879,
+                        source = "Archon.gg Meta Builds (20.7% popularity, 4,879 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmZmlZjZmZxgFzAAgZmxMzsAGzYYBGYbYjGLMAAwYgxGAmZAMzYMAAAMzMzAAYmhB",
-                        usage = 13.4,
-                        totalRankings = 1448,
-                        source = "Archon.gg Meta Builds (13.4% popularity, 1,448 parses)"
+                        usage = 13.3,
+                        totalRankings = 1430,
+                        source = "Archon.gg Meta Builds (13.3% popularity, 1,430 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMzMDAAAghphxYGWmZmZGMmZAAAAAMzyMDIjxyyALgBMDTgZwGYmxmZbMYGDwMDAzYYA",
-                        usage = 54.4,
-                        totalRankings = 2991,
-                        source = "Archon.gg Meta Builds (54.4% popularity, 2,991 parses)"
+                        usage = 54.8,
+                        totalRankings = 2915,
+                        source = "Archon.gg Meta Builds (54.8% popularity, 2,915 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmhlZmZmZYMzMzYGzsMzMGzMbjZmBAAixyyALgBMDTgZYDYmBz2AAgZGDjZmhBD",
                         usage = 35.4,
-                        totalRankings = 3933,
-                        source = "Archon.gg Meta Builds (35.4% popularity, 3,933 parses)"
+                        totalRankings = 3834,
+                        source = "Archon.gg Meta Builds (35.4% popularity, 3,834 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMjZmZmZGzmxsMjxY0wMDLzMzMDGzMAAAAYZAYGDwAbwyiRjZAMbYmNYGzMY2GAMzAAwMgB",
-                        usage = 9.1,
-                        totalRankings = 1844,
-                        source = "Archon.gg Meta Builds (9.1% popularity, 1,844 parses)"
+                        usage = 9.4,
+                        totalRankings = 1802,
+                        source = "Archon.gg Meta Builds (9.4% popularity, 1,802 parses)"
                     },
                 },
             },
@@ -820,267 +820,267 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDYmZMzMDY2mZmZmZzMjMjxMDzw4BMzgZmZmZAAAAAAAAAYMbDMgFwywEYsgZGzMDMDghZGgZgB",
-                        usage = 75.8,
-                        totalRankings = 2177,
-                        source = "Archon.gg Meta Builds (75.8% popularity, 2,177 parses)"
+                        usage = 76.0,
+                        totalRankings = 2173,
+                        source = "Archon.gg Meta Builds (76.0% popularity, 2,173 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
-                        usage = 34.2,
-                        totalRankings = 12783,
-                        source = "Archon.gg Meta Builds (34.2% popularity, 12,783 parses)"
+                        usage = 34.8,
+                        totalRankings = 12654,
+                        source = "Archon.gg Meta Builds (34.8% popularity, 12,654 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMmxAAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxmGLbA2GwGgZYAAAzMYwA",
-                        usage = 9.9,
-                        totalRankings = 3778,
-                        source = "Archon.gg Meta Builds (9.9% popularity, 3,778 parses)"
+                        usage = 9.8,
+                        totalRankings = 3736,
+                        source = "Archon.gg Meta Builds (9.8% popularity, 3,736 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmZmZmwMDAAAAAAY2MmtZYmBzM2mt5BmZMGDLDsNLmxwsx0YmZMsBAAAAAAAwMDGAAAAG",
-                        usage = 36.3,
-                        totalRankings = 2686,
-                        source = "Archon.gg Meta Builds (36.3% popularity, 2,686 parses)"
+                        usage = 36.7,
+                        totalRankings = 2659,
+                        source = "Archon.gg Meta Builds (36.7% popularity, 2,659 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmhZkZmBziZMDmZMzYmHYmZGDmtZGbzMz2YYAAAAAAAAYmhNAAAAMwMzMzs12MzMAAAAAAD",
-                        usage = 7.7,
+                        usage = 7.9,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (7.7% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (7.9% popularity, 1,000 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
-                        usage = 95.1,
-                        totalRankings = 8448,
-                        source = "Archon.gg Meta Builds (95.1% popularity, 8,448 parses)"
+                        usage = 95.2,
+                        totalRankings = 8386,
+                        source = "Archon.gg Meta Builds (95.2% popularity, 8,386 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDMmlZmZmBYGjZWGbzYGbsMzyYmZMLYYAGgltxGmmZWGAAAAsxMzMD2MwYGAzMAwA",
-                        usage = 45.0,
-                        totalRankings = 4073,
-                        source = "Archon.gg Meta Builds (45.0% popularity, 4,073 parses)"
+                        usage = 45.2,
+                        totalRankings = 4051,
+                        source = "Archon.gg Meta Builds (45.2% popularity, 4,051 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYGzMDAAAALBzmhHwMjaGzCzMzYMzDMDAAAAAgBGAAAAAgZbmlmtZW2AzMALmBDAgZGAMA",
-                        usage = 55.4,
-                        totalRankings = 1436,
-                        source = "Archon.gg Meta Builds (55.4% popularity, 1,436 parses)"
+                        usage = 55.9,
+                        totalRankings = 1406,
+                        source = "Archon.gg Meta Builds (55.9% popularity, 1,406 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMPwYMzmZZGMWGgZGjmoZmZZmZmZMMPgBAAAAwgZsMDYZbmBjZbAMBAAAshZMgFzgBsYZbAmZAM",
-                        usage = 19.3,
-                        totalRankings = 3157,
-                        source = "Archon.gg Meta Builds (19.3% popularity, 3,157 parses)"
+                        usage = 19.2,
+                        totalRankings = 3132,
+                        source = "Archon.gg Meta Builds (19.2% popularity, 3,132 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGz2wDwMzmxCzAAAAAAAAAAgtBNbMmmZM8AmlZmZmhhZAAAAAAAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
-                        usage = 19.7,
-                        totalRankings = 4524,
-                        source = "Archon.gg Meta Builds (19.7% popularity, 4,524 parses)"
+                        usage = 19.9,
+                        totalRankings = 4469,
+                        source = "Archon.gg Meta Builds (19.9% popularity, 4,469 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 42.4,
-                        totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (42.4% popularity, 1,000 parses)"
+                        usage = 42.2,
+                        totalRankings = 997,
+                        source = "Archon.gg Meta Builds (42.2% popularity, 997 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2MPAGmZMbGzMzsMDAAwMmxMGjZEmBAAAYmZkZMzMzyMzAgBGzYjFYgZYohhFYMzAMGA",
-                        usage = 19.0,
-                        totalRankings = 1959,
-                        source = "Archon.gg Meta Builds (19.0% popularity, 1,959 parses)"
+                        usage = 18.7,
+                        totalRankings = 1940,
+                        source = "Archon.gg Meta Builds (18.7% popularity, 1,940 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZxAjZswCMwMM0ALYmxMDAM",
-                        usage = 27.5,
-                        totalRankings = 5685,
-                        source = "Archon.gg Meta Builds (27.5% popularity, 5,685 parses)"
+                        usage = 27.4,
+                        totalRankings = 5616,
+                        source = "Archon.gg Meta Builds (27.4% popularity, 5,616 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYG2GzsNzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAwMAAAMzMzAMzGghZBsNA",
-                        usage = 73.4,
-                        totalRankings = 9361,
-                        source = "Archon.gg Meta Builds (73.4% popularity, 9,361 parses)"
+                        usage = 73.9,
+                        totalRankings = 9301,
+                        source = "Archon.gg Meta Builds (73.9% popularity, 9,301 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAYzsMwAGwMsFYWAAAAAAAAAmxMmhZMzMmBjpZMzM22YMzyMzMzMzywsMYAAAGzMzMzMDAMLGgNmB",
-                        usage = 17.7,
-                        totalRankings = 1493,
-                        source = "Archon.gg Meta Builds (17.7% popularity, 1,493 parses)"
+                        usage = 17.1,
+                        totalRankings = 1478,
+                        source = "Archon.gg Meta Builds (17.1% popularity, 1,478 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMGWgFYGGawixMzMzYZAAAAAAwMmZmhZMmxMYMNDAAAADAMWWmZmFzMzMzDMzAYmNADjxM2MA",
-                        usage = 29.6,
-                        totalRankings = 2423,
-                        source = "Archon.gg Meta Builds (29.6% popularity, 2,423 parses)"
+                        usage = 29.2,
+                        totalRankings = 2380,
+                        source = "Archon.gg Meta Builds (29.2% popularity, 2,380 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 55.5,
-                        totalRankings = 542,
-                        source = "Archon.gg Meta Builds (55.5% popularity, 542 parses)"
+                        usage = 55.2,
+                        totalRankings = 531,
+                        source = "Archon.gg Meta Builds (55.2% popularity, 531 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzYGzMzMzyAwMDMGjBGG",
-                        usage = 23.5,
-                        totalRankings = 971,
-                        source = "Archon.gg Meta Builds (23.5% popularity, 971 parses)"
+                        usage = 23.9,
+                        totalRankings = 966,
+                        source = "Archon.gg Meta Builds (23.9% popularity, 966 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
                         usage = 76.7,
-                        totalRankings = 11725,
-                        source = "Archon.gg Meta Builds (76.7% popularity, 11,725 parses)"
+                        totalRankings = 11582,
+                        source = "Archon.gg Meta Builds (76.7% popularity, 11,582 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 19.6,
-                        totalRankings = 3779,
-                        source = "Archon.gg Meta Builds (19.6% popularity, 3,779 parses)"
+                        usage = 20.0,
+                        totalRankings = 3716,
+                        source = "Archon.gg Meta Builds (20.0% popularity, 3,716 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
-                        usage = 38.6,
-                        totalRankings = 6169,
-                        source = "Archon.gg Meta Builds (38.6% popularity, 6,169 parses)"
+                        usage = 38.4,
+                        totalRankings = 6126,
+                        source = "Archon.gg Meta Builds (38.4% popularity, 6,126 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MGsNzMbzAAAAAAAAAAAAsMMCzYbYAzYYmZmhZZYGmlZCAYzMbjhZmZGAAbAwsMLNzMzCAGYmBAWGDYAD",
-                        usage = 33.6,
-                        totalRankings = 2957,
-                        source = "Archon.gg Meta Builds (33.6% popularity, 2,957 parses)"
+                        usage = 33.5,
+                        totalRankings = 2916,
+                        source = "Archon.gg Meta Builds (33.5% popularity, 2,916 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 58.6,
-                        totalRankings = 3434,
-                        source = "Archon.gg Meta Builds (58.6% popularity, 3,434 parses)"
+                        usage = 58.4,
+                        totalRankings = 3387,
+                        source = "Archon.gg Meta Builds (58.4% popularity, 3,387 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
-                        usage = 20.8,
+                        usage = 20.5,
                         totalRankings = 1315,
-                        source = "Archon.gg Meta Builds (20.8% popularity, 1,315 parses)"
+                        source = "Archon.gg Meta Builds (20.5% popularity, 1,315 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMMzAAAAAAwoMmhZGbDz2wMbzYMmZYGbsNMAAwMTbzMbzAA2AMAYMDzgZMmNsMDGGzYwA",
-                        usage = 53.9,
-                        totalRankings = 9915,
-                        source = "Archon.gg Meta Builds (53.9% popularity, 9,915 parses)"
+                        usage = 53.8,
+                        totalRankings = 9797,
+                        source = "Archon.gg Meta Builds (53.8% popularity, 9,797 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZYGmBmpZamBYmFMEGzyAMGsAAAjxMjBzAMzMMDD",
-                        usage = 16.5,
-                        totalRankings = 4335,
-                        source = "Archon.gg Meta Builds (16.5% popularity, 4,335 parses)"
+                        usage = 16.3,
+                        totalRankings = 4281,
+                        source = "Archon.gg Meta Builds (16.3% popularity, 4,281 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwMmlZwMzMMDzAYmaAgZWMDziBAGD2MzMLAaGjxYYmZbZAmBG",
-                        usage = 54.2,
-                        totalRankings = 2948,
-                        source = "Archon.gg Meta Builds (54.2% popularity, 2,948 parses)"
+                        usage = 54.4,
+                        totalRankings = 2931,
+                        source = "Archon.gg Meta Builds (54.4% popularity, 2,931 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 39.9,
-                        totalRankings = 3373,
-                        source = "Archon.gg Meta Builds (39.9% popularity, 3,373 parses)"
+                        usage = 39.5,
+                        totalRankings = 3352,
+                        source = "Archon.gg Meta Builds (39.5% popularity, 3,352 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsMDAAAAAottZmZmZmxYmZmZbmlZmZwYmZmxMjhBwALwMGNmFALDYzAgZmBD",
-                        usage = 18.4,
+                        usage = 18.9,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (18.4% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (18.9% popularity, 1,000 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZmZMmNeAmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 34.1,
+                        usage = 33.8,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (34.1% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (33.8% popularity, 1,000 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
-                        usage = 69.0,
-                        totalRankings = 3812,
-                        source = "Archon.gg Meta Builds (69.0% popularity, 3,812 parses)"
+                        usage = 69.7,
+                        totalRankings = 3789,
+                        source = "Archon.gg Meta Builds (69.7% popularity, 3,789 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMLzMzYstYahZmlxyMzMjhlZZYxMDzsAAMAmZghhB",
-                        usage = 32.2,
-                        totalRankings = 4617,
-                        source = "Archon.gg Meta Builds (32.2% popularity, 4,617 parses)"
+                        usage = 32.4,
+                        totalRankings = 4561,
+                        source = "Archon.gg Meta Builds (32.4% popularity, 4,561 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAAsBYzMG2gFYGGawCAz2MmxYZZGLMzsNWmZmZYsMmBAYGGzMMCMzgBjB",
-                        usage = 33.9,
-                        totalRankings = 1474,
-                        source = "Archon.gg Meta Builds (33.9% popularity, 1,474 parses)"
+                        usage = 33.8,
+                        totalRankings = 1468,
+                        source = "Archon.gg Meta Builds (33.8% popularity, 1,468 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
                         usage = 26.8,
-                        totalRankings = 7126,
-                        source = "Archon.gg Meta Builds (26.8% popularity, 7,126 parses)"
+                        totalRankings = 7042,
+                        source = "Archon.gg Meta Builds (26.8% popularity, 7,042 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAgZmZGNbMMzMmlBAAYmZxyMzsMzAAjllBGwAmhtADbDAAAzAAAYmhZmZmNMMzMzMmBzMzMAgZgB",
-                        usage = 47.5,
-                        totalRankings = 2943,
-                        source = "Archon.gg Meta Builds (47.5% popularity, 2,943 parses)"
+                        usage = 47.1,
+                        totalRankings = 2899,
+                        source = "Archon.gg Meta Builds (47.1% popularity, 2,899 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMz2MzY2GAAAAAAAwYGDLwAbDb0wixYsMLzMzYGAwMmZmZmBYmZMDAAgxMzMGGzyMGwA",
                         usage = 17.0,
-                        totalRankings = 7222,
-                        source = "Archon.gg Meta Builds (17.0% popularity, 7,222 parses)"
+                        totalRankings = 7146,
+                        source = "Archon.gg Meta Builds (17.0% popularity, 7,146 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZmZWmlZmZmFjZbxMAAYGjZmZxCMwsY0YGAzG2YAAgxAsBAMzgZmxYAAAYmZGAAGDD",
-                        usage = 27.2,
-                        totalRankings = 1106,
-                        source = "Archon.gg Meta Builds (27.2% popularity, 1,106 parses)"
+                        usage = 26.8,
+                        totalRankings = 1092,
+                        source = "Archon.gg Meta Builds (26.8% popularity, 1,092 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMzMDAAAghphZGzwyMzMzgxMDAAAAgZWmZAZMWWGYBMgZYCMD2AzMY2GDmxAMzAwMGGA",
-                        usage = 55.8,
-                        totalRankings = 3711,
-                        source = "Archon.gg Meta Builds (55.8% popularity, 3,711 parses)"
+                        usage = 56.1,
+                        totalRankings = 3667,
+                        source = "Archon.gg Meta Builds (56.1% popularity, 3,667 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmhlZmZmZYMzMzYGzsMzMGzMbjZmBAAixyyALgBMDTgZYDYmBz2AAgZGDjZmhBD",
-                        usage = 54.6,
-                        totalRankings = 4903,
-                        source = "Archon.gg Meta Builds (54.6% popularity, 4,903 parses)"
+                        usage = 54.9,
+                        totalRankings = 4832,
+                        source = "Archon.gg Meta Builds (54.9% popularity, 4,832 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMjZmZmZGzmxsMjxY0wMDLzMzMDGzMAAAAYZAYGDwAbwyiRjZAMbYmNYGzMY2GAMzAAwMgB",
-                        usage = 11.8,
-                        totalRankings = 2827,
-                        source = "Archon.gg Meta Builds (11.8% popularity, 2,827 parses)"
+                        usage = 12.1,
+                        totalRankings = 2795,
+                        source = "Archon.gg Meta Builds (12.1% popularity, 2,795 parses)"
                     },
                 },
             },
@@ -1090,267 +1090,267 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMDY2mZmZmZZmZkZMmZYGGPgZGMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgZAMMzAMzgB",
-                        usage = 69.2,
-                        totalRankings = 1524,
-                        source = "Archon.gg Meta Builds (69.2% popularity, 1,524 parses)"
+                        usage = 69.1,
+                        totalRankings = 1504,
+                        source = "Archon.gg Meta Builds (69.1% popularity, 1,504 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
-                        usage = 49.2,
-                        totalRankings = 6570,
-                        source = "Archon.gg Meta Builds (49.2% popularity, 6,570 parses)"
+                        usage = 49.4,
+                        totalRankings = 6403,
+                        source = "Archon.gg Meta Builds (49.4% popularity, 6,403 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMmxAAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxmGLbA2GwGgZYAAAzMYwA",
-                        usage = 10.8,
-                        totalRankings = 2181,
-                        source = "Archon.gg Meta Builds (10.8% popularity, 2,181 parses)"
+                        usage = 10.4,
+                        totalRankings = 2131,
+                        source = "Archon.gg Meta Builds (10.4% popularity, 2,131 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMzmxMzMmZmMmZAAAAAAAzyDMmtZYmZ2mZGbz28AzwYYsMw2sYGDzGTjZmxwGAAAAAAAAzMYAAAAYA",
-                        usage = 25.1,
-                        totalRankings = 2832,
-                        source = "Archon.gg Meta Builds (25.1% popularity, 2,832 parses)"
+                        usage = 24.6,
+                        totalRankings = 2766,
+                        source = "Archon.gg Meta Builds (24.6% popularity, 2,766 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmhZkZmBziZMDmZMzYmHYmZGDmtZGbzMz2YYAAAAAAAAYmhNAAAAMwMzMzs12MzMAAAAAAD",
-                        usage = 7.7,
-                        totalRankings = 1106,
-                        source = "Archon.gg Meta Builds (7.7% popularity, 1,106 parses)"
+                        usage = 7.6,
+                        totalRankings = 1085,
+                        source = "Archon.gg Meta Builds (7.6% popularity, 1,085 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
-                        usage = 90.5,
-                        totalRankings = 6344,
-                        source = "Archon.gg Meta Builds (90.5% popularity, 6,344 parses)"
+                        usage = 90.6,
+                        totalRankings = 6203,
+                        source = "Archon.gg Meta Builds (90.6% popularity, 6,203 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsYmZmBDDzyMLDzYGbsMzyMzMMLYYAGgltxGmmZWGAAAAsZmZmZwmxMGzAYmBAGA",
-                        usage = 11.8,
-                        totalRankings = 3139,
-                        source = "Archon.gg Meta Builds (11.8% popularity, 3,139 parses)"
+                        usage = 11.5,
+                        totalRankings = 3047,
+                        source = "Archon.gg Meta Builds (11.5% popularity, 3,047 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYGzMDAAAALBzGMmZUzYWYmZGjZmZAAAAAAAGAAAAAgZbmlmtZW2AzMALmBDAgZGAMA",
-                        usage = 32.1,
-                        totalRankings = 1812,
-                        source = "Archon.gg Meta Builds (32.1% popularity, 1,812 parses)"
+                        usage = 31.9,
+                        totalRankings = 1743,
+                        source = "Archon.gg Meta Builds (31.9% popularity, 1,743 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZmFzMjZWmZxMPwMLLDMbGGNRmZWmZmZmlxMMAAAAAAjNzALbzMYMLDgJAAAgNMzAsYMMwsYBgZGAA",
-                        usage = 14.0,
-                        totalRankings = 2820,
-                        source = "Archon.gg Meta Builds (14.0% popularity, 2,820 parses)"
+                        usage = 13.8,
+                        totalRankings = 2748,
+                        source = "Archon.gg Meta Builds (13.8% popularity, 2,748 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGz2wDwMzmxCzAAAAAAAAAAgtBNbMmmZM8AmlZmZmhhZAAAAAAAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
-                        usage = 38.3,
-                        totalRankings = 2996,
-                        source = "Archon.gg Meta Builds (38.3% popularity, 2,996 parses)"
+                        usage = 38.5,
+                        totalRankings = 2907,
+                        source = "Archon.gg Meta Builds (38.5% popularity, 2,907 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 39.6,
+                        usage = 39.3,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (39.6% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (39.3% popularity, 1,000 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2WmHADzMmNjZmZWmxAAAzYGDmxMyMzAAAAMzMTmxMjZbmZAwAjZsxCMwMM0AWgxMDwYA",
-                        usage = 19.2,
+                        usage = 19.0,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (19.2% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (19.0% popularity, 1,000 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZzYwCsMGGbDgZQshZGYmBwA",
-                        usage = 22.5,
-                        totalRankings = 2813,
-                        source = "Archon.gg Meta Builds (22.5% popularity, 2,813 parses)"
+                        usage = 22.3,
+                        totalRankings = 2738,
+                        source = "Archon.gg Meta Builds (22.3% popularity, 2,738 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYG2GzsNzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAwMAAAMzMzAMzGghZBsNA",
-                        usage = 55.5,
-                        totalRankings = 7297,
-                        source = "Archon.gg Meta Builds (55.5% popularity, 7,297 parses)"
+                        usage = 55.8,
+                        totalRankings = 7122,
+                        source = "Archon.gg Meta Builds (55.8% popularity, 7,122 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAYzsMwAGwMsFYWAAAAAAAAAmxMmhZMzMmBjpZMzM22YMzyMzMzMzywsMYAAAGzMzMzMDAMLGgNmB",
-                        usage = 21.6,
-                        totalRankings = 1015,
-                        source = "Archon.gg Meta Builds (21.6% popularity, 1,015 parses)"
+                        usage = 21.5,
+                        totalRankings = 1000,
+                        source = "Archon.gg Meta Builds (21.5% popularity, 1,000 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmx2MGzYGWGTzAAAAwAAjllZmZxMzMYMGwMbAGGjZmNDA",
-                        usage = 29.5,
-                        totalRankings = 1611,
-                        source = "Archon.gg Meta Builds (29.5% popularity, 1,611 parses)"
+                        usage = 29.3,
+                        totalRankings = 1571,
+                        source = "Archon.gg Meta Builds (29.3% popularity, 1,571 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 35.6,
+                        usage = 36.1,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (35.6% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (36.1% popularity, 1,000 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzwYmZmZ2GAmZgxYMYGG",
-                        usage = 22.6,
+                        usage = 22.1,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (22.6% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (22.1% popularity, 1,000 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
                         usage = 49.1,
-                        totalRankings = 8567,
-                        source = "Archon.gg Meta Builds (49.1% popularity, 8,567 parses)"
+                        totalRankings = 8357,
+                        source = "Archon.gg Meta Builds (49.1% popularity, 8,357 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 18.6,
-                        totalRankings = 1895,
-                        source = "Archon.gg Meta Builds (18.6% popularity, 1,895 parses)"
+                        usage = 18.7,
+                        totalRankings = 1851,
+                        source = "Archon.gg Meta Builds (18.7% popularity, 1,851 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
                         usage = 33.3,
-                        totalRankings = 5699,
-                        source = "Archon.gg Meta Builds (33.3% popularity, 5,699 parses)"
+                        totalRankings = 5564,
+                        source = "Archon.gg Meta Builds (33.3% popularity, 5,564 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MGsNzMbzAAAAAAAAAAAAsMMCzYbYAzYYmZmhZZYGmlZCAYzMbjhZmZGAAbAwsMLNzMzCAGYmBAWGDYAD",
-                        usage = 32.5,
-                        totalRankings = 2750,
-                        source = "Archon.gg Meta Builds (32.5% popularity, 2,750 parses)"
+                        usage = 32.7,
+                        totalRankings = 2681,
+                        source = "Archon.gg Meta Builds (32.7% popularity, 2,681 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 47.2,
-                        totalRankings = 2348,
-                        source = "Archon.gg Meta Builds (47.2% popularity, 2,348 parses)"
+                        usage = 46.9,
+                        totalRankings = 2283,
+                        source = "Archon.gg Meta Builds (46.9% popularity, 2,283 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
-                        usage = 28.2,
-                        totalRankings = 1760,
-                        source = "Archon.gg Meta Builds (28.2% popularity, 1,760 parses)"
+                        usage = 27.8,
+                        totalRankings = 1713,
+                        source = "Archon.gg Meta Builds (27.8% popularity, 1,713 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMMzAAAAAAwoMmhZGbDz2wMbzYMmZYGbsNMAAwMTbzMbzAA2AMAYMDzgZMmNsMDGGzYwA",
-                        usage = 48.5,
-                        totalRankings = 7854,
-                        source = "Archon.gg Meta Builds (48.5% popularity, 7,854 parses)"
+                        usage = 48.6,
+                        totalRankings = 7638,
+                        source = "Archon.gg Meta Builds (48.6% popularity, 7,638 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZYGmBmpZamBYmFMEGzyAMGsAAAjxMjBzAMzMMDD",
-                        usage = 26.6,
-                        totalRankings = 2789,
-                        source = "Archon.gg Meta Builds (26.6% popularity, 2,789 parses)"
+                        usage = 26.8,
+                        totalRankings = 2729,
+                        source = "Archon.gg Meta Builds (26.8% popularity, 2,729 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwwsMDzMzMYGzAYmaAgZWMDziBAGD2MzMLAaGmxYYmZbZAmBG",
-                        usage = 48.5,
-                        totalRankings = 2487,
-                        source = "Archon.gg Meta Builds (48.5% popularity, 2,487 parses)"
+                        usage = 48.8,
+                        totalRankings = 2422,
+                        source = "Archon.gg Meta Builds (48.8% popularity, 2,422 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 34.4,
-                        totalRankings = 3300,
-                        source = "Archon.gg Meta Builds (34.4% popularity, 3,300 parses)"
+                        usage = 33.7,
+                        totalRankings = 3239,
+                        source = "Archon.gg Meta Builds (33.7% popularity, 3,239 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsZwAAAAAAzyglZAAAAAAttNzMzMzMGzMzMbzsMzMDzMzMzMMDzMAGYBmxoxsAYbAbGAMzAD",
-                        usage = 15.9,
+                        usage = 15.3,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (15.9% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (15.3% popularity, 1,000 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZmZMmNeAmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 33.6,
+                        usage = 33.4,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (33.6% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (33.4% popularity, 1,000 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
-                        usage = 54.7,
-                        totalRankings = 2091,
-                        source = "Archon.gg Meta Builds (54.7% popularity, 2,091 parses)"
+                        usage = 55.3,
+                        totalRankings = 2043,
+                        source = "Archon.gg Meta Builds (55.3% popularity, 2,043 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMLzMzYstYahZmlxyMzMjhlZZYxMDzsAAMAmZghhB",
                         usage = 31.1,
-                        totalRankings = 3680,
-                        source = "Archon.gg Meta Builds (31.1% popularity, 3,680 parses)"
+                        totalRankings = 3580,
+                        source = "Archon.gg Meta Builds (31.1% popularity, 3,580 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZmZGAAAAAAAAAYB2gZsox2AYGwGAzyMmZGLLzAzMbsMzMzwwYGAADwYmJmZAgxA",
-                        usage = 28.2,
-                        totalRankings = 1471,
-                        source = "Archon.gg Meta Builds (28.2% popularity, 1,471 parses)"
+                        usage = 28.3,
+                        totalRankings = 1425,
+                        source = "Archon.gg Meta Builds (28.3% popularity, 1,425 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
-                        usage = 28.6,
-                        totalRankings = 4392,
-                        source = "Archon.gg Meta Builds (28.6% popularity, 4,392 parses)"
+                        usage = 28.4,
+                        totalRankings = 4278,
+                        source = "Archon.gg Meta Builds (28.4% popularity, 4,278 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZhhZmZmlBAAYmZxyMzsMzAAjllBGwAmhtADbDAAAzAAAYmhZmxADzMzMjZwMzMDAYGYA",
-                        usage = 32.7,
-                        totalRankings = 1344,
-                        source = "Archon.gg Meta Builds (32.7% popularity, 1,344 parses)"
+                        usage = 32.6,
+                        totalRankings = 1331,
+                        source = "Archon.gg Meta Builds (32.6% popularity, 1,331 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAAAAAAGzYYBGYbYhGWMYmlZbmZGzAAzwMzMzMAjZMzsBAAmZmZGDjZZGDYA",
-                        usage = 28.6,
-                        totalRankings = 5143,
-                        source = "Archon.gg Meta Builds (28.6% popularity, 5,143 parses)"
+                        usage = 28.0,
+                        totalRankings = 4991,
+                        source = "Archon.gg Meta Builds (28.0% popularity, 4,991 parses)"
                     },
                     ["Destruction"] = {
-                        loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmxsMLzMzMLGz2iZAAwMGzMziFYgZxoxMAmNsxAAAjBYDAYmBzMjxAAAwMzMDAgxwA",
-                        usage = 7.7,
-                        totalRankings = 1555,
-                        source = "Archon.gg Meta Builds (7.7% popularity, 1,555 parses)"
+                        loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzMNbMMzMmlZZMzMLGz2iHYAAwMzYmZWsADMLGNmBwshNGAAYMAbAAzMwMjxAAAwMzMDAAzwA",
+                        usage = 7.9,
+                        totalRankings = 1538,
+                        source = "Archon.gg Meta Builds (7.9% popularity, 1,538 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMzMDAAAghphxYGWmZmZGMmZAAAAAMzyMDIjxyyALgBMDTgZwGYmxmZbMYGDwMDAzYYA",
-                        usage = 51.8,
-                        totalRankings = 2358,
-                        source = "Archon.gg Meta Builds (51.8% popularity, 2,358 parses)"
+                        usage = 51.9,
+                        totalRankings = 2290,
+                        source = "Archon.gg Meta Builds (51.9% popularity, 2,290 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmhlZmZmZYMzMzYGzsMzMGzMbjZmBAAixyyALgBMDTgZYDYmBz2AAgZGDjZmhBD",
-                        usage = 35.4,
-                        totalRankings = 3420,
-                        source = "Archon.gg Meta Builds (35.4% popularity, 3,420 parses)"
+                        usage = 35.1,
+                        totalRankings = 3330,
+                        source = "Archon.gg Meta Builds (35.1% popularity, 3,330 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzMzmxsMjxYmGmZYZMzMDzYmBAAAALDAzYAGYDWWMaMDgZDzsBzYmBz2AgZGAAGgB",
-                        usage = 9.6,
-                        totalRankings = 1719,
-                        source = "Archon.gg Meta Builds (9.6% popularity, 1,719 parses)"
+                        usage = 9.5,
+                        totalRankings = 1681,
+                        source = "Archon.gg Meta Builds (9.5% popularity, 1,681 parses)"
                     },
                 },
             },
@@ -1358,49 +1358,49 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMGDz2MzMzMbmZ0MjxYYGGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgBghZGgZgB",
-                        usage = 58.4,
-                        totalRankings = 1520,
-                        source = "Archon.gg Meta Builds (58.4% popularity, 1,520 parses)"
+                        usage = 57.7,
+                        totalRankings = 1519,
+                        source = "Archon.gg Meta Builds (57.7% popularity, 1,519 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
-                        usage = 25.5,
-                        totalRankings = 8910,
-                        source = "Archon.gg Meta Builds (25.5% popularity, 8,910 parses)"
+                        usage = 26.1,
+                        totalRankings = 8821,
+                        source = "Archon.gg Meta Builds (26.1% popularity, 8,821 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMmxAAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxmGLbA2GwGgZYAAAzMYwA",
                         usage = 7.5,
-                        totalRankings = 3101,
-                        source = "Archon.gg Meta Builds (7.5% popularity, 3,101 parses)"
+                        totalRankings = 3066,
+                        source = "Archon.gg Meta Builds (7.5% popularity, 3,066 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmZmZmwMDAAAAAAY2MmtZYmBzM2mt5BmZMGDLDsNLmxwsx0YmZMsBAAAAAAAwMDGAAAAG",
-                        usage = 35.1,
-                        totalRankings = 1973,
-                        source = "Archon.gg Meta Builds (35.1% popularity, 1,973 parses)"
+                        usage = 35.0,
+                        totalRankings = 1955,
+                        source = "Archon.gg Meta Builds (35.0% popularity, 1,955 parses)"
                     },
                     ["Vengeance"] = {
-                        loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmhZkZmBziZMDmZMzYmHYmZGDmtZGbzMz2YYAAAAAAAAYmhNAAAAMwMzMzs12MzMAAAAAAD",
-                        usage = 7.5,
+                        loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMzMkZmBziZMDmZMzYGzMzYYmlZGbmZ2GDAAAAAAAAYmZsBAAAgBzMzMzs12MzMAwAAAAYA",
+                        usage = 7.0,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (7.5% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (7.0% popularity, 1,000 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
                         usage = 95.7,
-                        totalRankings = 7098,
-                        source = "Archon.gg Meta Builds (95.7% popularity, 7,098 parses)"
+                        totalRankings = 7049,
+                        source = "Archon.gg Meta Builds (95.7% popularity, 7,049 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDMmlZmZmBYGjZWGbzYGbsMzyYmZMLYYAGgltxGmmZWGAAAAsxMzMD2MwYGAzMAwA",
-                        usage = 29.9,
-                        totalRankings = 3430,
-                        source = "Archon.gg Meta Builds (29.9% popularity, 3,430 parses)"
+                        usage = 30.2,
+                        totalRankings = 3385,
+                        source = "Archon.gg Meta Builds (30.2% popularity, 3,385 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYm5BmZAAAAYJY2MMmZUzYWGzMzYMjBAAAAAgBGAAAAAgZbmlmtZW2AzMALmBDAgZGAMA",
@@ -1411,214 +1411,214 @@ ArchonTalentsData = {
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMPwYMzmZZGMWGYYGjmoZmZxMzMjxMMAAAAAgZsMDYZbmBjZbAMBAAAshZmBsYGMgFLbDwMDgB",
                         usage = 18.4,
-                        totalRankings = 2121,
-                        source = "Archon.gg Meta Builds (18.4% popularity, 2,121 parses)"
+                        totalRankings = 2109,
+                        source = "Archon.gg Meta Builds (18.4% popularity, 2,109 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMLz2MmZGz2wDYmZYswMAAAAAAAAAAYzQzmZMNzAMLzMzMDDzAAAAAwAAAAAAAAmtZWa2mZzGjZmhZGY0MAAzMAMA",
-                        usage = 20.1,
-                        totalRankings = 3521,
-                        source = "Archon.gg Meta Builds (20.1% popularity, 3,521 parses)"
+                        usage = 19.8,
+                        totalRankings = 3487,
+                        source = "Archon.gg Meta Builds (19.8% popularity, 3,487 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 59.3,
-                        totalRankings = 875,
-                        source = "Archon.gg Meta Builds (59.3% popularity, 875 parses)"
+                        usage = 59.8,
+                        totalRankings = 854,
+                        source = "Archon.gg Meta Builds (59.8% popularity, 854 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2MPAGmZMbGzMzsMDAAwMmxMGjZEmBAAAYmZkZMzMzyMzAgBGzYjFYgZYohhFYMzAMGA",
-                        usage = 15.7,
-                        totalRankings = 1713,
-                        source = "Archon.gg Meta Builds (15.7% popularity, 1,713 parses)"
+                        usage = 15.1,
+                        totalRankings = 1689,
+                        source = "Archon.gg Meta Builds (15.1% popularity, 1,689 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZxAjZswCMwMM0ALYmxMDAM",
                         usage = 28.9,
-                        totalRankings = 4474,
-                        source = "Archon.gg Meta Builds (28.9% popularity, 4,474 parses)"
+                        totalRankings = 4426,
+                        source = "Archon.gg Meta Builds (28.9% popularity, 4,426 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYG2GzsNzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAwMAAAMzMzAMzGghZBsNA",
-                        usage = 42.6,
-                        totalRankings = 6543,
-                        source = "Archon.gg Meta Builds (42.6% popularity, 6,543 parses)"
+                        usage = 43.0,
+                        totalRankings = 6502,
+                        source = "Archon.gg Meta Builds (43.0% popularity, 6,502 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAgZMzMDzYmZMDGTzYwsttZmZMzMzMzswMLDzMAAgxMjBgZGbYxAsxMjB",
-                        usage = 37.9,
-                        totalRankings = 1445,
-                        source = "Archon.gg Meta Builds (37.9% popularity, 1,445 parses)"
+                        usage = 38.6,
+                        totalRankings = 1434,
+                        source = "Archon.gg Meta Builds (38.6% popularity, 1,434 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmx2MGzYGWGTzAAAAwAAjllZmZxMzMYMGwMbAGGjZmNDA",
-                        usage = 57.8,
-                        totalRankings = 1673,
-                        source = "Archon.gg Meta Builds (57.8% popularity, 1,673 parses)"
+                        usage = 58.2,
+                        totalRankings = 1643,
+                        source = "Archon.gg Meta Builds (58.2% popularity, 1,643 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 58.2,
-                        totalRankings = 376,
-                        source = "Archon.gg Meta Builds (58.2% popularity, 376 parses)"
+                        usage = 58.0,
+                        totalRankings = 369,
+                        source = "Archon.gg Meta Builds (58.0% popularity, 369 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzYGzMzMzyAwMDMGjBGG",
-                        usage = 13.9,
-                        totalRankings = 611,
-                        source = "Archon.gg Meta Builds (13.9% popularity, 611 parses)"
+                        usage = 14.8,
+                        totalRankings = 609,
+                        source = "Archon.gg Meta Builds (14.8% popularity, 609 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 79.6,
-                        totalRankings = 9640,
-                        source = "Archon.gg Meta Builds (79.6% popularity, 9,640 parses)"
+                        usage = 79.4,
+                        totalRankings = 9529,
+                        source = "Archon.gg Meta Builds (79.4% popularity, 9,529 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 19.4,
-                        totalRankings = 2970,
-                        source = "Archon.gg Meta Builds (19.4% popularity, 2,970 parses)"
+                        usage = 19.9,
+                        totalRankings = 2926,
+                        source = "Archon.gg Meta Builds (19.9% popularity, 2,926 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
-                        usage = 41.2,
-                        totalRankings = 4827,
-                        source = "Archon.gg Meta Builds (41.2% popularity, 4,827 parses)"
+                        usage = 41.3,
+                        totalRankings = 4782,
+                        source = "Archon.gg Meta Builds (41.3% popularity, 4,782 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDjwMMMgZMMzMzwsMMDzyMBAsYmtxwYmZAAsBAzys0MzMLADDMzAwYZMgBM",
-                        usage = 52.3,
-                        totalRankings = 2121,
-                        source = "Archon.gg Meta Builds (52.3% popularity, 2,121 parses)"
+                        usage = 51.4,
+                        totalRankings = 2101,
+                        source = "Archon.gg Meta Builds (51.4% popularity, 2,101 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 62.9,
-                        totalRankings = 2633,
-                        source = "Archon.gg Meta Builds (62.9% popularity, 2,633 parses)"
+                        usage = 62.5,
+                        totalRankings = 2606,
+                        source = "Archon.gg Meta Builds (62.5% popularity, 2,606 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
-                        usage = 16.1,
+                        usage = 16.0,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (16.1% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (16.0% popularity, 1,000 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMmZGAAAAAAmpMmhZGbDz2wMbzYMGDzYjtBAAwMTbzMbzAA2AMAYMDzgZMmNsMDGGzYwA",
-                        usage = 31.1,
-                        totalRankings = 6527,
-                        source = "Archon.gg Meta Builds (31.1% popularity, 6,527 parses)"
+                        usage = 30.9,
+                        totalRankings = 6446,
+                        source = "Archon.gg Meta Builds (30.9% popularity, 6,446 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZYGmBmpZamBYmFMEGzyAMGsAAAjxMjBzAMzMMDD",
-                        usage = 15.2,
-                        totalRankings = 3448,
-                        source = "Archon.gg Meta Builds (15.2% popularity, 3,448 parses)"
+                        usage = 15.0,
+                        totalRankings = 3410,
+                        source = "Archon.gg Meta Builds (15.0% popularity, 3,410 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwMmlZwMzMMDzAYmaAgZWMDziBAGD2MzMLAaGjxYYmZbZAmBG",
-                        usage = 56.5,
-                        totalRankings = 2276,
-                        source = "Archon.gg Meta Builds (56.5% popularity, 2,276 parses)"
+                        usage = 57.0,
+                        totalRankings = 2259,
+                        source = "Archon.gg Meta Builds (57.0% popularity, 2,259 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 34.9,
-                        totalRankings = 2716,
-                        source = "Archon.gg Meta Builds (34.9% popularity, 2,716 parses)"
+                        usage = 34.7,
+                        totalRankings = 2701,
+                        source = "Archon.gg Meta Builds (34.7% popularity, 2,701 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsZwAAAAAAzyglZAAAAAAttNzMzMzMGzMzMbzsMzMDmZmZmxMDjBwALwMGNmFALDYzAgZmBD",
-                        usage = 14.9,
-                        totalRankings = 683,
-                        source = "Archon.gg Meta Builds (14.9% popularity, 683 parses)"
+                        usage = 15.5,
+                        totalRankings = 669,
+                        source = "Archon.gg Meta Builds (15.5% popularity, 669 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZMzMzsBmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 24.8,
+                        usage = 24.4,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (24.8% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (24.4% popularity, 1,000 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
-                        usage = 71.9,
-                        totalRankings = 2785,
-                        source = "Archon.gg Meta Builds (71.9% popularity, 2,785 parses)"
+                        usage = 72.5,
+                        totalRankings = 2769,
+                        source = "Archon.gg Meta Builds (72.5% popularity, 2,769 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMLzMzYstYahZmlxyMzMjhlZZYxMDzsAAMAmZghhB",
-                        usage = 34.8,
-                        totalRankings = 3629,
-                        source = "Archon.gg Meta Builds (34.8% popularity, 3,629 parses)"
+                        usage = 34.5,
+                        totalRankings = 3580,
+                        source = "Archon.gg Meta Builds (34.5% popularity, 3,580 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAAsBYzMG2gFYGGawCAz2MmxYZZGLMzsNWmZmZYsMmBAYGGzMMCMzgBjB",
-                        usage = 32.3,
-                        totalRankings = 1019,
-                        source = "Archon.gg Meta Builds (32.3% popularity, 1,019 parses)"
+                        usage = 31.7,
+                        totalRankings = 1012,
+                        source = "Archon.gg Meta Builds (31.7% popularity, 1,012 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
-                        usage = 28.8,
-                        totalRankings = 4844,
-                        source = "Archon.gg Meta Builds (28.8% popularity, 4,844 parses)"
+                        usage = 29.0,
+                        totalRankings = 4796,
+                        source = "Archon.gg Meta Builds (29.0% popularity, 4,796 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAgZmZGNbMMzMmlBAAYmZxyMzsMzAAjllBGwAmhtADbDAAAzAAAYmhZmZmNMMzMzMmBzMzMAgZgB",
-                        usage = 19.4,
+                        usage = 18.5,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (19.4% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (18.5% popularity, 1,000 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbjhZmZmlBAAAAAAAMmxwCMw2wCNsYwMLz2MzMmBAmhZmZmZAmZGjBAAYmZmZMMmlZMgB",
-                        usage = 35.8,
-                        totalRankings = 6925,
-                        source = "Archon.gg Meta Builds (35.8% popularity, 6,925 parses)"
+                        usage = 35.2,
+                        totalRankings = 6834,
+                        source = "Archon.gg Meta Builds (35.2% popularity, 6,834 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMmtZZmZmZxMz2iHYAAwMGzMziFYgZxoxMAmNsxAAAjBYDAYmBzMjZmNAAAzMzAAwYYA",
                         usage = 33.3,
-                        totalRankings = 1378,
-                        source = "Archon.gg Meta Builds (33.3% popularity, 1,378 parses)"
+                        totalRankings = 1365,
+                        source = "Archon.gg Meta Builds (33.3% popularity, 1,365 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZAAAAMMNMzYGWmZmZGMmZAAAAAMzyMDslxYZZgFwAmhJwMYDMzgZbMYmtBYmBgZMMA",
-                        usage = 71.4,
-                        totalRankings = 2382,
-                        source = "Archon.gg Meta Builds (71.4% popularity, 2,382 parses)"
+                        usage = 71.6,
+                        totalRankings = 2352,
+                        source = "Archon.gg Meta Builds (71.6% popularity, 2,352 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmhlZmZmZYMzMzYGzsMzMGzMbjZmBAAixyyALgBMDTgZYDYmBz2AAgZGDjZmhBD",
-                        usage = 29.6,
-                        totalRankings = 3246,
-                        source = "Archon.gg Meta Builds (29.6% popularity, 3,246 parses)"
+                        usage = 28.5,
+                        totalRankings = 3209,
+                        source = "Archon.gg Meta Builds (28.5% popularity, 3,209 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMjZmZmZGzmxsMjxY0wMDLzMzMDGzMAAAAYZAYGDwAbwyiRjZAMbYmNYGzMY2GAMzAAwMgB",
-                        usage = 11.5,
-                        totalRankings = 2164,
-                        source = "Archon.gg Meta Builds (11.5% popularity, 2,164 parses)"
+                        usage = 11.7,
+                        totalRankings = 2136,
+                        source = "Archon.gg Meta Builds (11.7% popularity, 2,136 parses)"
                     },
                 },
             },
@@ -1628,95 +1628,95 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMDY2mZmZmZZmZkZMmZYGGPgZGMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgZAMMzAMzgB",
-                        usage = 58.7,
-                        totalRankings = 1153,
-                        source = "Archon.gg Meta Builds (58.7% popularity, 1,153 parses)"
+                        usage = 59.3,
+                        totalRankings = 1140,
+                        source = "Archon.gg Meta Builds (59.3% popularity, 1,140 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
-                        usage = 39.1,
-                        totalRankings = 5280,
-                        source = "Archon.gg Meta Builds (39.1% popularity, 5,280 parses)"
+                        usage = 39.3,
+                        totalRankings = 5148,
+                        source = "Archon.gg Meta Builds (39.3% popularity, 5,148 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMmxAAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxmGLbA2GwGgZYAAAzMYwA",
-                        usage = 12.2,
-                        totalRankings = 1946,
-                        source = "Archon.gg Meta Builds (12.2% popularity, 1,946 parses)"
+                        usage = 11.9,
+                        totalRankings = 1903,
+                        source = "Archon.gg Meta Builds (11.9% popularity, 1,903 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMzmxMzMmZmMmZAAAAAAAzyDMmtZYmZ2mZGbz28AzwYYsMw2sYGDzGTjZmxwGAAAAAAAAzMYAAAAYA",
-                        usage = 16.0,
-                        totalRankings = 2604,
-                        source = "Archon.gg Meta Builds (16.0% popularity, 2,604 parses)"
+                        usage = 15.8,
+                        totalRankings = 2559,
+                        source = "Archon.gg Meta Builds (15.8% popularity, 2,559 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmhZkZmBziZMDmZMzYmHYmZGDmtZGbzMz2YYAAAAAAAAYmhNAAAAMwMzMzs12MzMAAAAAAD",
-                        usage = 9.0,
-                        totalRankings = 1071,
-                        source = "Archon.gg Meta Builds (9.0% popularity, 1,071 parses)"
+                        usage = 9.3,
+                        totalRankings = 1051,
+                        source = "Archon.gg Meta Builds (9.3% popularity, 1,051 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
                         usage = 90.9,
-                        totalRankings = 7081,
-                        source = "Archon.gg Meta Builds (90.9% popularity, 7,081 parses)"
+                        totalRankings = 6915,
+                        source = "Archon.gg Meta Builds (90.9% popularity, 6,915 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMaGjZGYMLMzMDGmxsMzyYbGzMbsMjxMzwCGGgBYZbshpZmlBAAAAbmZmZGsZMMmBwMDAMA",
-                        usage = 11.5,
-                        totalRankings = 3150,
-                        source = "Archon.gg Meta Builds (11.5% popularity, 3,150 parses)"
+                        usage = 10.9,
+                        totalRankings = 3062,
+                        source = "Archon.gg Meta Builds (10.9% popularity, 3,062 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYm5BmZAAAAYLY2MMmZUzYWmZmZGjZMAAAAAAMwAAAAAAMbzs0sNzyGYmHAYxMYAAMzAgB",
-                        usage = 19.8,
-                        totalRankings = 1543,
-                        source = "Archon.gg Meta Builds (19.8% popularity, 1,543 parses)"
+                        usage = 20.6,
+                        totalRankings = 1484,
+                        source = "Archon.gg Meta Builds (20.6% popularity, 1,484 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZmFzMjZWmZxMPwMLLDMbGGNRmZWmZmZmlxMMAAAAAAjNzALbzMYMLDgJAAAgNMzAsYMMwsYBgZGAA",
-                        usage = 16.0,
-                        totalRankings = 2641,
-                        source = "Archon.gg Meta Builds (16.0% popularity, 2,641 parses)"
+                        usage = 15.7,
+                        totalRankings = 2585,
+                        source = "Archon.gg Meta Builds (15.7% popularity, 2,585 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGz2wDwMzmxCzAAAAAAAAAAgtBNbMmmZM8AmlZmZmhhZAAAAAAAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
-                        usage = 37.1,
-                        totalRankings = 2618,
-                        source = "Archon.gg Meta Builds (37.1% popularity, 2,618 parses)"
+                        usage = 37.3,
+                        totalRankings = 2528,
+                        source = "Archon.gg Meta Builds (37.3% popularity, 2,528 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 50.9,
+                        usage = 50.5,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (50.9% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (50.5% popularity, 1,000 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2WmHADzMmNjZmZWmxAAAzYGDmxMyMzAAAAMzMTmxMjZbmZAwAjZsxCMwMM0AWgxMDwYA",
-                        usage = 16.3,
+                        usage = 16.4,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (16.3% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (16.4% popularity, 1,000 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZzYwCsMGGbDgZQshZGYmBwA",
                         usage = 32.3,
-                        totalRankings = 2647,
-                        source = "Archon.gg Meta Builds (32.3% popularity, 2,647 parses)"
+                        totalRankings = 2570,
+                        source = "Archon.gg Meta Builds (32.3% popularity, 2,570 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGPwyMzsYGmZmZGzMMzMmhZGzMzYbmZMjZYZMNDAAAAAAAAgxYAzsBYYWAbDA",
                         usage = 32.9,
-                        totalRankings = 6065,
-                        source = "Archon.gg Meta Builds (32.9% popularity, 6,065 parses)"
+                        totalRankings = 5916,
+                        source = "Archon.gg Meta Builds (32.9% popularity, 5,916 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAgZMzMDzYmZMDGTzYwsttZmZMzMzMzswMLDzMAAgxMjBgZGbYxAsxMjB",
@@ -1727,168 +1727,168 @@ ArchonTalentsData = {
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmx2MGzYGWGTzAAAAwAAjllZmZxMzMYMGwMbAGGjZmNDA",
                         usage = 48.3,
-                        totalRankings = 1324,
-                        source = "Archon.gg Meta Builds (48.3% popularity, 1,324 parses)"
+                        totalRankings = 1289,
+                        source = "Archon.gg Meta Builds (48.3% popularity, 1,289 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 33.7,
+                        usage = 33.6,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (33.7% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (33.6% popularity, 1,000 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzwYmZmZ2GAmZgxYMYGG",
-                        usage = 22.4,
-                        totalRankings = 946,
-                        source = "Archon.gg Meta Builds (22.4% popularity, 946 parses)"
+                        usage = 21.6,
+                        totalRankings = 912,
+                        source = "Archon.gg Meta Builds (21.6% popularity, 912 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 47.0,
-                        totalRankings = 8899,
-                        source = "Archon.gg Meta Builds (47.0% popularity, 8,899 parses)"
+                        usage = 47.2,
+                        totalRankings = 8673,
+                        source = "Archon.gg Meta Builds (47.2% popularity, 8,673 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 18.4,
-                        totalRankings = 1724,
-                        source = "Archon.gg Meta Builds (18.4% popularity, 1,724 parses)"
+                        usage = 18.7,
+                        totalRankings = 1683,
+                        source = "Archon.gg Meta Builds (18.7% popularity, 1,683 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
                         usage = 30.6,
-                        totalRankings = 5453,
-                        source = "Archon.gg Meta Builds (30.6% popularity, 5,453 parses)"
+                        totalRankings = 5311,
+                        source = "Archon.gg Meta Builds (30.6% popularity, 5,311 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDjwMMMgZMMzMzwsMMDzyMBAsYmtxwYmZAAsBAzys0MzMLADDMzAwYZMgBM",
-                        usage = 41.4,
-                        totalRankings = 2460,
-                        source = "Archon.gg Meta Builds (41.4% popularity, 2,460 parses)"
+                        usage = 40.7,
+                        totalRankings = 2402,
+                        source = "Archon.gg Meta Builds (40.7% popularity, 2,402 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 48.0,
-                        totalRankings = 2127,
-                        source = "Archon.gg Meta Builds (48.0% popularity, 2,127 parses)"
+                        usage = 48.3,
+                        totalRankings = 2080,
+                        source = "Archon.gg Meta Builds (48.3% popularity, 2,080 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
-                        usage = 23.1,
-                        totalRankings = 1471,
-                        source = "Archon.gg Meta Builds (23.1% popularity, 1,471 parses)"
+                        usage = 22.9,
+                        totalRankings = 1425,
+                        source = "Archon.gg Meta Builds (22.9% popularity, 1,425 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMMzAAAAAAwoMmhZGbDz2wMbzYMmZYGbsNMAAwMTbzMbzAA2AMAYMDzgZMmNsMDGGzYwA",
-                        usage = 28.4,
-                        totalRankings = 6663,
-                        source = "Archon.gg Meta Builds (28.4% popularity, 6,663 parses)"
+                        usage = 28.3,
+                        totalRankings = 6507,
+                        source = "Archon.gg Meta Builds (28.3% popularity, 6,507 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZYGmBmpZamBYmFMEGzyAMGsAAAjxMjBzAMzMMDD",
-                        usage = 25.5,
-                        totalRankings = 2545,
-                        source = "Archon.gg Meta Builds (25.5% popularity, 2,545 parses)"
+                        usage = 25.8,
+                        totalRankings = 2498,
+                        source = "Archon.gg Meta Builds (25.8% popularity, 2,498 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwwsMDzMzMYGzAYmaAgZWMDziBAGD2MzMLAaGmxYYmZbZAmBG",
-                        usage = 48.5,
-                        totalRankings = 2311,
-                        source = "Archon.gg Meta Builds (48.5% popularity, 2,311 parses)"
+                        usage = 48.7,
+                        totalRankings = 2257,
+                        source = "Archon.gg Meta Builds (48.7% popularity, 2,257 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 34.2,
-                        totalRankings = 3238,
-                        source = "Archon.gg Meta Builds (34.2% popularity, 3,238 parses)"
+                        usage = 33.6,
+                        totalRankings = 3155,
+                        source = "Archon.gg Meta Builds (33.6% popularity, 3,155 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsZwAAAAAAzyglZAAAAAAttNzMzMzMGzMzMbzsMzMDzMzMzMMDzMAGYBmxoxsAYbAbGAMzAD",
-                        usage = 19.2,
+                        usage = 18.7,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (19.2% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (18.7% popularity, 1,000 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZMzMzsBmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 29.6,
-                        totalRankings = 982,
-                        source = "Archon.gg Meta Builds (29.6% popularity, 982 parses)"
+                        usage = 30.1,
+                        totalRankings = 965,
+                        source = "Archon.gg Meta Builds (30.1% popularity, 965 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
-                        usage = 38.4,
-                        totalRankings = 1652,
-                        source = "Archon.gg Meta Builds (38.4% popularity, 1,652 parses)"
+                        usage = 39.4,
+                        totalRankings = 1615,
+                        source = "Archon.gg Meta Builds (39.4% popularity, 1,615 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMLzMzYstYahZmlxyMzMjhlZZYxMDzsAAMAmZghhB",
-                        usage = 27.9,
-                        totalRankings = 3209,
-                        source = "Archon.gg Meta Builds (27.9% popularity, 3,209 parses)"
+                        usage = 27.8,
+                        totalRankings = 3130,
+                        source = "Archon.gg Meta Builds (27.8% popularity, 3,130 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZmZGAAAAAAAAAYB2gZsox2AYGwGAzyMmZGLLzAzMbsMzMzwwYGAADwYmJmZAgxA",
-                        usage = 28.6,
-                        totalRankings = 1223,
-                        source = "Archon.gg Meta Builds (28.6% popularity, 1,223 parses)"
+                        usage = 28.7,
+                        totalRankings = 1192,
+                        source = "Archon.gg Meta Builds (28.7% popularity, 1,192 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
-                        usage = 28.5,
-                        totalRankings = 4002,
-                        source = "Archon.gg Meta Builds (28.5% popularity, 4,002 parses)"
+                        usage = 28.2,
+                        totalRankings = 3889,
+                        source = "Archon.gg Meta Builds (28.2% popularity, 3,889 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAYmxMzoZjhZmZmlBAAMzMLziZmlxAAjtlBGwAmhtADbDAAAzAAAYmZmZMGzMmBzMzMGmZmBAYAD",
-                        usage = 11.5,
-                        totalRankings = 1125,
-                        source = "Archon.gg Meta Builds (11.5% popularity, 1,125 parses)"
+                        usage = 11.4,
+                        totalRankings = 1093,
+                        source = "Archon.gg Meta Builds (11.4% popularity, 1,093 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAAAAAAGzYYBGYbYhGWMYmlZbmZGzAAzwMzMzMAjZMzsBAAmZmZGDjZZGDYA",
-                        usage = 35.7,
-                        totalRankings = 3867,
-                        source = "Archon.gg Meta Builds (35.7% popularity, 3,867 parses)"
+                        usage = 35.5,
+                        totalRankings = 3768,
+                        source = "Archon.gg Meta Builds (35.5% popularity, 3,768 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmZmlZZMzMLGz2iHYAAwMzYmZWsADMLGNmBwshNGAAYMAbAAzMwMjxAAAwMzMDAAzwA",
                         usage = 13.3,
-                        totalRankings = 1885,
-                        source = "Archon.gg Meta Builds (13.3% popularity, 1,885 parses)"
+                        totalRankings = 1849,
+                        source = "Archon.gg Meta Builds (13.3% popularity, 1,849 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZAAAAMMNMzYmxyMzMzgxMDAAAAgZWmZgtMGLLDsAGwMMBmBbAzgZbMYmtBYmBgZMMA",
-                        usage = 33.9,
-                        totalRankings = 1762,
-                        source = "Archon.gg Meta Builds (33.9% popularity, 1,762 parses)"
+                        usage = 33.3,
+                        totalRankings = 1717,
+                        source = "Archon.gg Meta Builds (33.3% popularity, 1,717 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZMz2yMzMjZmxMjZMjZWmZGjZmlxMzAAAhB2glFjGzAYWwMWAMDGDAmZAMMzMDGM",
-                        usage = 37.7,
-                        totalRankings = 2756,
-                        source = "Archon.gg Meta Builds (37.7% popularity, 2,756 parses)"
+                        usage = 38.0,
+                        totalRankings = 2693,
+                        source = "Archon.gg Meta Builds (38.0% popularity, 2,693 parses)"
                     },
                     ["Protection"] = {
-                        loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzMzmxsMjxYmGmZYZMzMDzYmBAAAALDAzYAGYDWWMaMDgZDzsBzYmBz2AgZGAAGgB",
-                        usage = 8.6,
-                        totalRankings = 1489,
-                        source = "Archon.gg Meta Builds (8.6% popularity, 1,489 parses)"
+                        loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMjZmZmZGzmxsMjxY0wMDLzMzMDGzMAAAAYZAYGDwAbwyiRjZAMbYmNYGzMY2GAMzAAwMgB",
+                        usage = 8.7,
+                        totalRankings = 1443,
+                        source = "Archon.gg Meta Builds (8.7% popularity, 1,443 parses)"
                     },
                 },
             },
@@ -1897,28 +1897,28 @@ ArchonTalentsData = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMGDz2MzMzMbmZ0MjxYYGGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgBghZGgZgB",
                         usage = 69.1,
-                        totalRankings = 831,
-                        source = "Archon.gg Meta Builds (69.1% popularity, 831 parses)"
+                        totalRankings = 845,
+                        source = "Archon.gg Meta Builds (69.1% popularity, 845 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMMjxYY2GzMTz2MzYmZMDAAAAAAAgZGzYAwywMzmZmZmZMwAzYTjlFAbD2wAmBgxMzwgZGMmxA",
-                        usage = 17.4,
-                        totalRankings = 3747,
-                        source = "Archon.gg Meta Builds (17.4% popularity, 3,747 parses)"
+                        usage = 17.2,
+                        totalRankings = 3713,
+                        source = "Archon.gg Meta Builds (17.2% popularity, 3,713 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMmxAAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxmGLbA2GwGgZYAAAzMYwA",
-                        usage = 11.5,
-                        totalRankings = 5499,
-                        source = "Archon.gg Meta Builds (11.5% popularity, 5,499 parses)"
+                        usage = 11.3,
+                        totalRankings = 5430,
+                        source = "Archon.gg Meta Builds (11.3% popularity, 5,430 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmxMzkxMDAAAAAAY2MmtZYmBmx2sNzMz2YglBWmNzYY2YaMzMG2AAAAGAAAAzMYAAAAYA",
-                        usage = 20.9,
-                        totalRankings = 1198,
-                        source = "Archon.gg Meta Builds (20.9% popularity, 1,198 parses)"
+                        usage = 21.3,
+                        totalRankings = 1180,
+                        source = "Archon.gg Meta Builds (21.3% popularity, 1,180 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMMmMzMMDzYGjZGzMmxMzMGMLzM2MzsMGGAAAAAAAAmZGbAAAAYwMzMzMbtNzMDAMAAAAG",
@@ -1929,34 +1929,34 @@ ArchonTalentsData = {
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
                         usage = 95.7,
-                        totalRankings = 5771,
-                        source = "Archon.gg Meta Builds (95.7% popularity, 5,771 parses)"
+                        totalRankings = 5727,
+                        source = "Archon.gg Meta Builds (95.7% popularity, 5,727 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDMmlZmZmBYGz2MLjtZMzsxyMGzMDLYYAGgttxGmmZWGAAAAsxMzMD2MwYGAzMAwA",
-                        usage = 28.1,
-                        totalRankings = 2707,
-                        source = "Archon.gg Meta Builds (28.1% popularity, 2,707 parses)"
+                        usage = 28.0,
+                        totalRankings = 2665,
+                        source = "Archon.gg Meta Builds (28.0% popularity, 2,665 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZMzmZmZmxY2M2GbzMzMmZAAAAYJwmhxMjaGzyYmZmlxMMAAAAAAGYAAAAAAmtZWaWmZZDMzAsYGMAAmZAwA",
-                        usage = 32.4,
-                        totalRankings = 1028,
-                        source = "Archon.gg Meta Builds (32.4% popularity, 1,028 parses)"
+                        usage = 32.6,
+                        totalRankings = 1027,
+                        source = "Archon.gg Meta Builds (32.6% popularity, 1,027 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMPwYMzmZZGMWGY2gRT0MzsMzMzMmZGGAAAAAwMWmBssNzgxsNAmAAAA2wMPAwiZGGwiltBYmBwA",
-                        usage = 16.7,
-                        totalRankings = 1108,
-                        source = "Archon.gg Meta Builds (16.7% popularity, 1,108 parses)"
+                        usage = 16.5,
+                        totalRankings = 1107,
+                        source = "Archon.gg Meta Builds (16.5% popularity, 1,107 parses)"
                     },
                     ["Restoration"] = {
-                        loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMLz2MmZGz2wDYmZYswMAAAAAAAAAAYzQzmZMNzAMLzMzMDDzAAAAAwAAAAAAAAmtZWa2mZzGjZmhZGY0MAAzMAMA",
-                        usage = 21.8,
-                        totalRankings = 2563,
-                        source = "Archon.gg Meta Builds (21.8% popularity, 2,563 parses)"
+                        loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMLz2MmZGz2wDwMzmxCzAAAAAAAAAAgNDNbmx0MDwsMzMzMMMDAAAAADAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
+                        usage = 21.3,
+                        totalRankings = 2541,
+                        source = "Archon.gg Meta Builds (21.3% popularity, 2,541 parses)"
                     },
                 },
                 ["EVOKER"] = {
@@ -1968,195 +1968,195 @@ ArchonTalentsData = {
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2MzMmxMjhxMzMbYAAgZMjBGzMZmZGAAAwMzIzMzMmlZmBAGzAbgFwMMBWgNDDgZmxA",
-                        usage = 13.0,
-                        totalRankings = 1490,
-                        source = "Archon.gg Meta Builds (13.0% popularity, 1,490 parses)"
+                        usage = 13.2,
+                        totalRankings = 1459,
+                        source = "Archon.gg Meta Builds (13.2% popularity, 1,459 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAmhxMYM1YmZGAAAAMjZMmZWGzMwMbGDWglxwYbAMDiNMzAzMAG",
-                        usage = 25.3,
-                        totalRankings = 3247,
-                        source = "Archon.gg Meta Builds (25.3% popularity, 3,247 parses)"
+                        usage = 25.1,
+                        totalRankings = 3191,
+                        source = "Archon.gg Meta Builds (25.1% popularity, 3,191 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGPwyMzsYGmZmZGzMMzMmhZGzYmFzMjZMDGTzAAAAAAAAAGzMAmZDwsYWAbDA",
-                        usage = 69.8,
-                        totalRankings = 3729,
-                        source = "Archon.gg Meta Builds (69.8% popularity, 3,729 parses)"
+                        usage = 70.1,
+                        totalRankings = 3707,
+                        source = "Archon.gg Meta Builds (70.1% popularity, 3,707 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAgZMjZwYmZMDGTzYwsttZmZMzMzMzsgZZYmBAAMzMzAgZGbbGGgNmZM",
-                        usage = 50.4,
-                        totalRankings = 1814,
-                        source = "Archon.gg Meta Builds (50.4% popularity, 1,814 parses)"
+                        usage = 50.9,
+                        totalRankings = 1803,
+                        source = "Archon.gg Meta Builds (50.9% popularity, 1,803 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmx2MGzYGMmmBAAAgBAGLLzMziZmZMmZMgZ2AgxYmZzAA",
-                        usage = 65.6,
+                        usage = 65.2,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (65.6% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (65.2% popularity, 1,000 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 53.9,
-                        totalRankings = 204,
-                        source = "Archon.gg Meta Builds (53.9% popularity, 204 parses)"
+                        usage = 54.2,
+                        totalRankings = 201,
+                        source = "Archon.gg Meta Builds (54.2% popularity, 201 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGLAAAAAwiZmZmBAAjZMjZmZmZBAzMAjxgZYA",
-                        usage = 20.4,
-                        totalRankings = 362,
-                        source = "Archon.gg Meta Builds (20.4% popularity, 362 parses)"
+                        usage = 21.7,
+                        totalRankings = 350,
+                        source = "Archon.gg Meta Builds (21.7% popularity, 350 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 81.3,
-                        totalRankings = 7280,
-                        source = "Archon.gg Meta Builds (81.3% popularity, 7,280 parses)"
+                        usage = 81.1,
+                        totalRankings = 7196,
+                        source = "Archon.gg Meta Builds (81.1% popularity, 7,196 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 19.7,
-                        totalRankings = 2032,
-                        source = "Archon.gg Meta Builds (19.7% popularity, 2,032 parses)"
+                        usage = 19.9,
+                        totalRankings = 1999,
+                        source = "Archon.gg Meta Builds (19.9% popularity, 1,999 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
-                        usage = 44.9,
-                        totalRankings = 3530,
-                        source = "Archon.gg Meta Builds (44.9% popularity, 3,530 parses)"
+                        usage = 44.8,
+                        totalRankings = 3508,
+                        source = "Archon.gg Meta Builds (44.8% popularity, 3,508 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDjwMMMgZMMzMzwsMMDzyMBAsYmtxwYmZAAsBAzys0MzMLADDMzAwYZMgBM",
-                        usage = 71.4,
-                        totalRankings = 1328,
-                        source = "Archon.gg Meta Builds (71.4% popularity, 1,328 parses)"
+                        usage = 71.0,
+                        totalRankings = 1319,
+                        source = "Archon.gg Meta Builds (71.0% popularity, 1,319 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 66.8,
-                        totalRankings = 1979,
-                        source = "Archon.gg Meta Builds (66.8% popularity, 1,979 parses)"
+                        usage = 66.3,
+                        totalRankings = 1970,
+                        source = "Archon.gg Meta Builds (66.3% popularity, 1,970 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
-                        usage = 12.7,
-                        totalRankings = 780,
-                        source = "Archon.gg Meta Builds (12.7% popularity, 780 parses)"
+                        usage = 11.5,
+                        totalRankings = 781,
+                        source = "Archon.gg Meta Builds (11.5% popularity, 781 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMGzMDAAAAAwMlxMMzYbY2GmZbGjxYYGbsBAAwMTbzMbzAA2AMAYMDzgZmZshlZwwYGDG",
-                        usage = 54.0,
-                        totalRankings = 3769,
-                        source = "Archon.gg Meta Builds (54.0% popularity, 3,769 parses)"
+                        usage = 54.3,
+                        totalRankings = 3732,
+                        source = "Archon.gg Meta Builds (54.3% popularity, 3,732 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZwwMwMNTMAzsghwYWGgxgFAAYMzMjhZGgZmZMDD",
-                        usage = 12.4,
-                        totalRankings = 2666,
-                        source = "Archon.gg Meta Builds (12.4% popularity, 2,666 parses)"
+                        usage = 12.3,
+                        totalRankings = 2642,
+                        source = "Archon.gg Meta Builds (12.3% popularity, 2,642 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwMmlZwMzMMDzAYmaAgZWMDziBAGD2MzMLAaGjxYYmZbZAmBG",
-                        usage = 60.9,
-                        totalRankings = 1522,
-                        source = "Archon.gg Meta Builds (60.9% popularity, 1,522 parses)"
+                        usage = 61.0,
+                        totalRankings = 1520,
+                        source = "Archon.gg Meta Builds (61.0% popularity, 1,520 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 31.8,
-                        totalRankings = 1893,
-                        source = "Archon.gg Meta Builds (31.8% popularity, 1,893 parses)"
+                        usage = 31.2,
+                        totalRankings = 1878,
+                        source = "Archon.gg Meta Builds (31.2% popularity, 1,878 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmNDGAAAAAYWGsNDAAAAAIbjZmZmZMmZmZ2mxMjxMmZmxMMjxAYgFYGjGzGgtBsZAwMzMjB",
-                        usage = 42.7,
-                        totalRankings = 494,
-                        source = "Archon.gg Meta Builds (42.7% popularity, 494 parses)"
+                        usage = 42.9,
+                        totalRankings = 487,
+                        source = "Archon.gg Meta Builds (42.9% popularity, 487 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZMzMzsBmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 32.8,
-                        totalRankings = 610,
-                        source = "Archon.gg Meta Builds (32.8% popularity, 610 parses)"
+                        usage = 32.6,
+                        totalRankings = 608,
+                        source = "Archon.gg Meta Builds (32.6% popularity, 608 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZMegZmZGjZbYGbbzMzMzMjBjZ2GAAAAGMGwY2MMwAzCL0iNMDYmBzYA",
                         usage = 73.8,
-                        totalRankings = 1654,
-                        source = "Archon.gg Meta Builds (73.8% popularity, 1,654 parses)"
+                        totalRankings = 1651,
+                        source = "Archon.gg Meta Builds (73.8% popularity, 1,651 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMLbzMGjZZZZwMjBAAAAYxMbwAGwsxEYWAgZbmZGjtFTLMzsNWmZmZMsZZY5BmZMzsMAghBwMjhhB",
-                        usage = 23.7,
-                        totalRankings = 2322,
-                        source = "Archon.gg Meta Builds (23.7% popularity, 2,322 parses)"
+                        usage = 23.4,
+                        totalRankings = 2295,
+                        source = "Archon.gg Meta Builds (23.4% popularity, 2,295 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZGzAAAAAAAAAALwGMjFN2GAzA2AYWmxMGLLzYhZmNWmZmZYYMDAgBGjZmYmBAGD",
-                        usage = 29.0,
+                        usage = 28.6,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (29.0% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (28.6% popularity, 1,000 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
-                        usage = 30.6,
-                        totalRankings = 3238,
-                        source = "Archon.gg Meta Builds (30.6% popularity, 3,238 parses)"
+                        usage = 31.0,
+                        totalRankings = 3218,
+                        source = "Archon.gg Meta Builds (31.0% popularity, 3,218 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAYmxMzoZjhZmZmlBAAMzMLziZmlxAAjtlBGwAmhtADbDAAAzAAAYmZmZMGzMmBzMzMGmZmBAYAD",
-                        usage = 20.4,
+                        usage = 20.3,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (20.4% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (20.3% popularity, 1,000 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbjhZmZmlBAAAAAAAMmxwCMw2wCNsYwMLz2MzMmBAmhZmZmZAmZGjBAAYmZmZMMmlZMgB",
-                        usage = 42.9,
-                        totalRankings = 4887,
-                        source = "Archon.gg Meta Builds (42.9% popularity, 4,887 parses)"
+                        usage = 41.9,
+                        totalRankings = 4828,
+                        source = "Archon.gg Meta Builds (41.9% popularity, 4,828 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAgZmZGNbM2mZGzysMmZmFzMLLMAAYGjZmZBMmxwCMw2wCNWYAAgxghNAMzAMzMmZAAAYmZGAAMDD",
-                        usage = 36.9,
+                        usage = 38.1,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (36.9% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (38.1% popularity, 1,000 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmxsMzMzYGAAAghphZYmZZZmZmZYGzMAAAAAGbmB2iBsZGDLwAzwGNGsAMDGDmNz2gZGAwMzwA",
-                        usage = 68.2,
-                        totalRankings = 1424,
-                        source = "Archon.gg Meta Builds (68.2% popularity, 1,424 parses)"
+                        usage = 68.0,
+                        totalRankings = 1416,
+                        source = "Archon.gg Meta Builds (68.0% popularity, 1,416 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDDzMjlZmZmZYMzYGzYmlZmxYmZZMzMAAQYgNYZxoxMAmFMjFAzgZbAwMDghZmZGGM",
-                        usage = 46.0,
-                        totalRankings = 2072,
-                        source = "Archon.gg Meta Builds (46.0% popularity, 2,072 parses)"
+                        usage = 45.9,
+                        totalRankings = 2048,
+                        source = "Archon.gg Meta Builds (45.9% popularity, 2,048 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMjZmZmZGzmxsMjxY0wMDLzMzMDGzMAAAAYZAYGDwAbwyiRjZAMbYmNYGzMY2GAMzAAwMgB",
-                        usage = 12.8,
-                        totalRankings = 1445,
-                        source = "Archon.gg Meta Builds (12.8% popularity, 1,445 parses)"
+                        usage = 12.5,
+                        totalRankings = 1429,
+                        source = "Archon.gg Meta Builds (12.5% popularity, 1,429 parses)"
                     },
                 },
             },
@@ -2166,187 +2166,187 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDYmZMzMDY2mZmZmZxMjMjxYYGGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgBghZGgZgB",
-                        usage = 41.9,
-                        totalRankings = 1092,
-                        source = "Archon.gg Meta Builds (41.9% popularity, 1,092 parses)"
+                        usage = 41.5,
+                        totalRankings = 1078,
+                        source = "Archon.gg Meta Builds (41.5% popularity, 1,078 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
                         usage = 22.6,
-                        totalRankings = 5274,
-                        source = "Archon.gg Meta Builds (22.6% popularity, 5,274 parses)"
+                        totalRankings = 5151,
+                        source = "Archon.gg Meta Builds (22.6% popularity, 5,151 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMmxAAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxmGLbA2GwGgZYAAAzMYwA",
-                        usage = 14.1,
-                        totalRankings = 1967,
-                        source = "Archon.gg Meta Builds (14.1% popularity, 1,967 parses)"
+                        usage = 13.7,
+                        totalRankings = 1928,
+                        source = "Archon.gg Meta Builds (13.7% popularity, 1,928 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2YGbz2YGGDjlB2mNzYY2YaMzMG2AAAAAAAAYmBDAAAAD",
-                        usage = 20.4,
-                        totalRankings = 2341,
-                        source = "Archon.gg Meta Builds (20.4% popularity, 2,341 parses)"
+                        usage = 20.1,
+                        totalRankings = 2293,
+                        source = "Archon.gg Meta Builds (20.1% popularity, 2,293 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmhZkZmBziZMDmZMzYmHYmZGDmtZGbzMz2YYAAAAAAAAYmhNAAAAMwMzMzs12MzMAAAAAAD",
-                        usage = 9.1,
+                        usage = 8.9,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (9.1% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (8.9% popularity, 1,000 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
-                        usage = 92.0,
-                        totalRankings = 4733,
-                        source = "Archon.gg Meta Builds (92.0% popularity, 4,733 parses)"
+                        usage = 92.1,
+                        totalRankings = 4622,
+                        source = "Archon.gg Meta Builds (92.1% popularity, 4,622 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDMmlZmZmBYGjZWmZxMzYjlZWGzMzYBDDwYbbmBjZbAMBAAAYhZmZGsZgxAAwMDMA",
-                        usage = 30.8,
-                        totalRankings = 2752,
-                        source = "Archon.gg Meta Builds (30.8% popularity, 2,752 parses)"
+                        usage = 30.4,
+                        totalRankings = 2674,
+                        source = "Archon.gg Meta Builds (30.4% popularity, 2,674 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYm5BmZAAAAYLY2MMmZUzYWmZmZGjZMAAAAAAMwAAAAAAMbzs0sNzyGYmHAYxMYAAMzAgB",
-                        usage = 7.1,
-                        totalRankings = 1470,
-                        source = "Archon.gg Meta Builds (7.1% popularity, 1,470 parses)"
+                        usage = 7.2,
+                        totalRankings = 1438,
+                        source = "Archon.gg Meta Builds (7.2% popularity, 1,438 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZmFzMjZWmZxMPwMLLDMbGGNRmZWmZmZmlxMMAAAAAAjNzALbzMYMLDgJAAAgNMzAsYMMwsYBgZGAA",
-                        usage = 20.3,
-                        totalRankings = 2598,
-                        source = "Archon.gg Meta Builds (20.3% popularity, 2,598 parses)"
+                        usage = 20.4,
+                        totalRankings = 2540,
+                        source = "Archon.gg Meta Builds (20.4% popularity, 2,540 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGz2wDwMzmxCzAAAAAAAAAAgtBNbMmmZM8AmlZmZmhhZAAAAAAAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
                         usage = 36.8,
-                        totalRankings = 2448,
-                        source = "Archon.gg Meta Builds (36.8% popularity, 2,448 parses)"
+                        totalRankings = 2367,
+                        source = "Archon.gg Meta Builds (36.8% popularity, 2,367 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 51.6,
+                        usage = 50.6,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (51.6% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (50.6% popularity, 1,000 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2WmHADzMmNjZmZWmxAAAzYGDmxMyMzAAAAMzMTmxMjZbmZAwAjZsxCMwMM0AWgxMDwYA",
-                        usage = 16.5,
+                        usage = 16.9,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (16.5% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (16.9% popularity, 1,000 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZzYwCsMGGbDgZQshZGYmBwA",
-                        usage = 24.9,
-                        totalRankings = 3417,
-                        source = "Archon.gg Meta Builds (24.9% popularity, 3,417 parses)"
+                        usage = 24.7,
+                        totalRankings = 3347,
+                        source = "Archon.gg Meta Builds (24.7% popularity, 3,347 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGPwyMzsYGmZmZGzMMzMmhZGzMzYbmZMjZYZMNDAAAAAAAAgxYAzsBYYWAbDA",
-                        usage = 42.7,
-                        totalRankings = 5966,
-                        source = "Archon.gg Meta Builds (42.7% popularity, 5,966 parses)"
+                        usage = 43.2,
+                        totalRankings = 5836,
+                        source = "Archon.gg Meta Builds (43.2% popularity, 5,836 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAgZMzMDzYmZMDGTzYwsttZmZMzMzMzswMLDzMAAgxMjBgZGbYxAsxMjB",
-                        usage = 52.5,
-                        totalRankings = 1091,
-                        source = "Archon.gg Meta Builds (52.5% popularity, 1,091 parses)"
+                        usage = 53.1,
+                        totalRankings = 1065,
+                        source = "Archon.gg Meta Builds (53.1% popularity, 1,065 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmxyMGzYGMmmBAAAgBAGLLzMziZmZMGzMgZ2AgxYmZzAA",
-                        usage = 60.8,
-                        totalRankings = 1346,
-                        source = "Archon.gg Meta Builds (60.8% popularity, 1,346 parses)"
+                        usage = 60.3,
+                        totalRankings = 1314,
+                        source = "Archon.gg Meta Builds (60.3% popularity, 1,314 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
                         usage = 27.8,
-                        totalRankings = 890,
-                        source = "Archon.gg Meta Builds (27.8% popularity, 890 parses)"
+                        totalRankings = 871,
+                        source = "Archon.gg Meta Builds (27.8% popularity, 871 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzwYmZmZ2GAmZgxYMYGG",
-                        usage = 21.7,
-                        totalRankings = 849,
-                        source = "Archon.gg Meta Builds (21.7% popularity, 849 parses)"
+                        usage = 21.6,
+                        totalRankings = 815,
+                        source = "Archon.gg Meta Builds (21.6% popularity, 815 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZmZmZmZWMzMjZMDAAAMzMzyyMTbAAAAAAgFA2WGzMzgZbYMDLAAAMzGwMwAmBD",
-                        usage = 25.7,
-                        totalRankings = 6949,
-                        source = "Archon.gg Meta Builds (25.7% popularity, 6,949 parses)"
+                        usage = 25.5,
+                        totalRankings = 6790,
+                        source = "Archon.gg Meta Builds (25.5% popularity, 6,790 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 16.7,
-                        totalRankings = 2031,
-                        source = "Archon.gg Meta Builds (16.7% popularity, 2,031 parses)"
+                        usage = 17.1,
+                        totalRankings = 1993,
+                        source = "Archon.gg Meta Builds (17.1% popularity, 1,993 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
                         usage = 30.7,
-                        totalRankings = 5726,
-                        source = "Archon.gg Meta Builds (30.7% popularity, 5,726 parses)"
+                        totalRankings = 5610,
+                        source = "Archon.gg Meta Builds (30.7% popularity, 5,610 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDjwMMMgZMMzMzwsMMDzyMBAsYmtxwYmZAAsBAzys0MzMLADDMzAwYZMgBM",
-                        usage = 55.7,
-                        totalRankings = 3351,
-                        source = "Archon.gg Meta Builds (55.7% popularity, 3,351 parses)"
+                        usage = 55.6,
+                        totalRankings = 3293,
+                        source = "Archon.gg Meta Builds (55.6% popularity, 3,293 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 48.8,
-                        totalRankings = 2116,
-                        source = "Archon.gg Meta Builds (48.8% popularity, 2,116 parses)"
+                        usage = 48.5,
+                        totalRankings = 2071,
+                        source = "Archon.gg Meta Builds (48.5% popularity, 2,071 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
                         usage = 21.0,
-                        totalRankings = 1487,
-                        source = "Archon.gg Meta Builds (21.0% popularity, 1,487 parses)"
+                        totalRankings = 1442,
+                        source = "Archon.gg Meta Builds (21.0% popularity, 1,442 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MjlxYmBAAAAAwoMmhZGbDz2wMbzYmxMDzYjNAAAmZabmZbGAwGgBgZMDzgZmZmNsMDGGDDG",
-                        usage = 15.4,
-                        totalRankings = 7028,
-                        source = "Archon.gg Meta Builds (15.4% popularity, 7,028 parses)"
+                        usage = 15.2,
+                        totalRankings = 6884,
+                        source = "Archon.gg Meta Builds (15.2% popularity, 6,884 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZYGmBmpZamBYmFMEGzyAMGsAAAjxMjBzAMzMMDD",
-                        usage = 22.7,
-                        totalRankings = 2463,
-                        source = "Archon.gg Meta Builds (22.7% popularity, 2,463 parses)"
+                        usage = 22.9,
+                        totalRankings = 2414,
+                        source = "Archon.gg Meta Builds (22.9% popularity, 2,414 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwwsMDzMzMYGzAYmaAgZWMDziBAGD2MzMLAaGmxYYmZbZAmBG",
-                        usage = 48.7,
-                        totalRankings = 2310,
-                        source = "Archon.gg Meta Builds (48.7% popularity, 2,310 parses)"
+                        usage = 48.8,
+                        totalRankings = 2257,
+                        source = "Archon.gg Meta Builds (48.8% popularity, 2,257 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 16.5,
-                        totalRankings = 3201,
-                        source = "Archon.gg Meta Builds (16.5% popularity, 3,201 parses)"
+                        usage = 16.2,
+                        totalRankings = 3124,
+                        source = "Archon.gg Meta Builds (16.2% popularity, 3,124 parses)"
                     },
                 },
                 ["ROGUE"] = {
@@ -2358,75 +2358,75 @@ ArchonTalentsData = {
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZMzMzsBmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 31.5,
-                        totalRankings = 983,
-                        source = "Archon.gg Meta Builds (31.5% popularity, 983 parses)"
+                        usage = 31.8,
+                        totalRankings = 952,
+                        source = "Archon.gg Meta Builds (31.8% popularity, 952 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZMegZmZGjZbYGbbzMzMzMjBjZ2GAAAAGMGwY2MMwAzCL0iNMDYmBzYA",
-                        usage = 46.5,
-                        totalRankings = 1568,
-                        source = "Archon.gg Meta Builds (46.5% popularity, 1,568 parses)"
+                        usage = 46.3,
+                        totalRankings = 1543,
+                        source = "Archon.gg Meta Builds (46.3% popularity, 1,543 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMLLzMGjZZZZwMjBAAAAYxMbwAGwsxEYWAgZbmZGjtFTLMzsNWmZmZMsZZY5BmZMzsMAghBwMjhhB",
-                        usage = 26.5,
-                        totalRankings = 3348,
-                        source = "Archon.gg Meta Builds (26.5% popularity, 3,348 parses)"
+                        usage = 25.7,
+                        totalRankings = 3275,
+                        source = "Archon.gg Meta Builds (25.7% popularity, 3,275 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZmZGAAAAAAAAAYB2gZsox2AYGwGAzyMmZGLLzAzMbsMzMzwwYGAADwYmJmZAgxA",
-                        usage = 25.0,
-                        totalRankings = 1264,
-                        source = "Archon.gg Meta Builds (25.0% popularity, 1,264 parses)"
+                        usage = 25.3,
+                        totalRankings = 1237,
+                        source = "Archon.gg Meta Builds (25.3% popularity, 1,237 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
-                        usage = 28.5,
-                        totalRankings = 3942,
-                        source = "Archon.gg Meta Builds (28.5% popularity, 3,942 parses)"
+                        usage = 28.3,
+                        totalRankings = 3849,
+                        source = "Archon.gg Meta Builds (28.3% popularity, 3,849 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmxmZGzyAAAmZmlZzMzyYAgx22ADYAzwWghtBAAADAAgZmxMmZ2mZMDmZmZMMzMzAAmBG",
-                        usage = 9.5,
-                        totalRankings = 1054,
-                        source = "Archon.gg Meta Builds (9.5% popularity, 1,054 parses)"
+                        usage = 8.9,
+                        totalRankings = 1033,
+                        source = "Archon.gg Meta Builds (8.9% popularity, 1,033 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMz2MzYWGAAAAAAAwYGDLwAbDL0wixMjlZbmZGzAAzMGzMzMAjZMjNAAwYmZGDDLzYAD",
-                        usage = 30.4,
-                        totalRankings = 4235,
-                        source = "Archon.gg Meta Builds (30.4% popularity, 4,235 parses)"
+                        usage = 30.8,
+                        totalRankings = 4138,
+                        source = "Archon.gg Meta Builds (30.8% popularity, 4,138 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAYmZmZGNbM2MzYWmlxMzsYMLLmBAAzYMzMLWgBmFjGzAY2wGDAAMGgNAgZGMegZGzGAAgZmxAAwMM",
-                        usage = 9.7,
-                        totalRankings = 1365,
-                        source = "Archon.gg Meta Builds (9.7% popularity, 1,365 parses)"
+                        usage = 10.3,
+                        totalRankings = 1342,
+                        source = "Archon.gg Meta Builds (10.3% popularity, 1,342 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmxsMzMzYGAAAghphxwMbLzMzMjZGzMAAAAAGbmB2iBsZGDLwAzwGNGsAMDGDmNz2gZGAwMzwA",
-                        usage = 61.8,
-                        totalRankings = 1731,
-                        source = "Archon.gg Meta Builds (61.8% popularity, 1,731 parses)"
+                        usage = 62.1,
+                        totalRankings = 1684,
+                        source = "Archon.gg Meta Builds (62.1% popularity, 1,684 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZMz2yMzMjZmxMjZMjZWmZGjZmlxMzAAAhB2glFjGzAYWwMWAMDGDAmZAMMzMDGM",
-                        usage = 49.6,
-                        totalRankings = 2611,
-                        source = "Archon.gg Meta Builds (49.6% popularity, 2,611 parses)"
+                        usage = 49.3,
+                        totalRankings = 2554,
+                        source = "Archon.gg Meta Builds (49.3% popularity, 2,554 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzMzmxsMjxYmGmZYZMzMDzYmBAAAALDAzYAGYDWWMaMDgZDzsBzYmBz2AgZGAAGgB",
-                        usage = 7.8,
-                        totalRankings = 1676,
-                        source = "Archon.gg Meta Builds (7.8% popularity, 1,676 parses)"
+                        usage = 7.6,
+                        totalRankings = 1641,
+                        source = "Archon.gg Meta Builds (7.6% popularity, 1,641 parses)"
                     },
                 },
             },
@@ -2434,267 +2434,267 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMGDz2MzMzMbmZ0MjxYYGGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgBghZGgZgB",
-                        usage = 73.4,
-                        totalRankings = 546,
-                        source = "Archon.gg Meta Builds (73.4% popularity, 546 parses)"
+                        usage = 73.9,
+                        totalRankings = 560,
+                        source = "Archon.gg Meta Builds (73.9% popularity, 560 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMzYY2mZmZaYmxYGzAAAAAAAAYmhxAglZMzsZmxMzAWMLGGYgZjhGLYAzAwYmZMDwMzMGD",
-                        usage = 37.4,
-                        totalRankings = 4510,
-                        source = "Archon.gg Meta Builds (37.4% popularity, 4,510 parses)"
+                        usage = 36.7,
+                        totalRankings = 4483,
+                        source = "Archon.gg Meta Builds (36.7% popularity, 4,483 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MbmZMmxAAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxmGLbA2GwGgZYAAAzMwwA",
-                        usage = 10.3,
-                        totalRankings = 2020,
-                        source = "Archon.gg Meta Builds (10.3% popularity, 2,020 parses)"
+                        usage = 10.1,
+                        totalRankings = 2014,
+                        source = "Archon.gg Meta Builds (10.1% popularity, 2,014 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2YGbz2YGGDjlB2mNzYY2YaMzMG2AAAAAAAAYmBDAAAAD",
-                        usage = 44.5,
+                        usage = 43.8,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (44.5% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (43.8% popularity, 1,000 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmBziZMDmZMzYGzMzYYmlZGbzMjxAAAAAAAAAmZGbAAAAYwYmZmZrtZmZAgBAAAwA",
-                        usage = 21.7,
-                        totalRankings = 575,
-                        source = "Archon.gg Meta Builds (21.7% popularity, 575 parses)"
+                        usage = 21.5,
+                        totalRankings = 582,
+                        source = "Archon.gg Meta Builds (21.5% popularity, 582 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
                         usage = 96.2,
-                        totalRankings = 4174,
-                        source = "Archon.gg Meta Builds (96.2% popularity, 4,174 parses)"
+                        totalRankings = 4162,
+                        source = "Archon.gg Meta Builds (96.2% popularity, 4,162 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsYmZmBDzYMzyMLmZGbsMzyYmZGLYYAGbbzMYMbDgJAAAALMzMzgNjZMGAAmZgB",
-                        usage = 79.6,
-                        totalRankings = 1337,
-                        source = "Archon.gg Meta Builds (79.6% popularity, 1,337 parses)"
+                        usage = 79.0,
+                        totalRankings = 1322,
+                        source = "Archon.gg Meta Builds (79.0% popularity, 1,322 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZMzCjZmxY2MPw2YbmZm5BmZAAAAYLY2gxMjaGzyYmZGjZGAAAAAAMwAAAAAAMbzs0sMzyGYmBYxMYAAMzAgB",
-                        usage = 18.4,
-                        totalRankings = 501,
-                        source = "Archon.gg Meta Builds (18.4% popularity, 501 parses)"
+                        usage = 18.9,
+                        totalRankings = 512,
+                        source = "Archon.gg Meta Builds (18.9% popularity, 512 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZmFzMjZWmZxMPwMLLDMbGGNRmZWmZmZmlxMMAAAAAAjNzALbzMYMLDgJAAAgNMzAsYMMwsYBgZGAA",
-                        usage = 8.2,
+                        usage = 8.0,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (8.2% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (8.0% popularity, 1,000 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMLz2MmZGz2wDwMzmxCzAAAAAAAAAAgNDNbmx0MDwsMzMzMMMDAAAAADAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
-                        usage = 23.5,
-                        totalRankings = 2653,
-                        source = "Archon.gg Meta Builds (23.5% popularity, 2,653 parses)"
+                        usage = 24.0,
+                        totalRankings = 2652,
+                        source = "Archon.gg Meta Builds (24.0% popularity, 2,652 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzwMgBjZamZmpZM2mxMzMz8AzMzAmxMzYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 60.6,
-                        totalRankings = 180,
-                        source = "Archon.gg Meta Builds (60.6% popularity, 180 parses)"
+                        usage = 62.5,
+                        totalRankings = 184,
+                        source = "Archon.gg Meta Builds (62.5% popularity, 184 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2MPAGmZMbGzMzsNDAAYmxMmxYMjwMAAAAzMjYMzMzyMzAgBGzYjFYgZYohhFYMzAMGA",
-                        usage = 14.0,
-                        totalRankings = 1590,
-                        source = "Archon.gg Meta Builds (14.0% popularity, 1,590 parses)"
+                        usage = 14.2,
+                        totalRankings = 1570,
+                        source = "Archon.gg Meta Builds (14.2% popularity, 1,570 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZzYwCsMGGbDgZQshZGYmBwA",
-                        usage = 13.3,
-                        totalRankings = 2869,
-                        source = "Archon.gg Meta Builds (13.3% popularity, 2,869 parses)"
+                        usage = 13.1,
+                        totalRankings = 2849,
+                        source = "Archon.gg Meta Builds (13.1% popularity, 2,849 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGPwyMzsYGmZmZGzMMzMmhZGzYGmZGzYGMmmBAAAAAAAAMzMDgZ2AMMLgtBA",
-                        usage = 78.4,
-                        totalRankings = 1503,
-                        source = "Archon.gg Meta Builds (78.4% popularity, 1,503 parses)"
+                        usage = 78.9,
+                        totalRankings = 1509,
+                        source = "Archon.gg Meta Builds (78.9% popularity, 1,509 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAgZMjZwYmZMDGTzYwsttZmZMzMzMzsgZZYmBAAMzMzAgZGbbGGgNmZM",
-                        usage = 63.4,
-                        totalRankings = 3032,
-                        source = "Archon.gg Meta Builds (63.4% popularity, 3,032 parses)"
+                        usage = 63.6,
+                        totalRankings = 3034,
+                        source = "Archon.gg Meta Builds (63.6% popularity, 3,034 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmx2MGzYGWGTzAAAAwAAjllZmZxMzM8AjxAmZDAGjZmNDA",
-                        usage = 73.0,
-                        totalRankings = 807,
-                        source = "Archon.gg Meta Builds (73.0% popularity, 807 parses)"
+                        usage = 73.6,
+                        totalRankings = 795,
+                        source = "Archon.gg Meta Builds (73.6% popularity, 795 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 53.4,
-                        totalRankings = 103,
-                        source = "Archon.gg Meta Builds (53.4% popularity, 103 parses)"
+                        usage = 54.5,
+                        totalRankings = 99,
+                        source = "Archon.gg Meta Builds (54.5% popularity, 99 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGLAAAAAwiZmZmBAAjZMjZmZmZZAYmBYMGYYA",
-                        usage = 34.4,
-                        totalRankings = 180,
-                        source = "Archon.gg Meta Builds (34.4% popularity, 180 parses)"
+                        usage = 36.0,
+                        totalRankings = 178,
+                        source = "Archon.gg Meta Builds (36.0% popularity, 178 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAAWAYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 73.8,
-                        totalRankings = 5308,
-                        source = "Archon.gg Meta Builds (73.8% popularity, 5,308 parses)"
+                        usage = 74.1,
+                        totalRankings = 5268,
+                        source = "Archon.gg Meta Builds (74.1% popularity, 5,268 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMM2YwMzMDz2sxYmlhlNbbjZMLAAwGAAAY2mlmZmZxMsxAmZYaMAAgB",
-                        usage = 18.0,
-                        totalRankings = 1534,
-                        source = "Archon.gg Meta Builds (18.0% popularity, 1,534 parses)"
+                        usage = 18.3,
+                        totalRankings = 1527,
+                        source = "Archon.gg Meta Builds (18.3% popularity, 1,527 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgxM2mB2sYGzMLzYDjZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
-                        usage = 36.1,
-                        totalRankings = 3869,
-                        source = "Archon.gg Meta Builds (36.1% popularity, 3,869 parses)"
+                        usage = 36.3,
+                        totalRankings = 3864,
+                        source = "Archon.gg Meta Builds (36.3% popularity, 3,864 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDjwMMMgZMMzMzwsMMDzyMBAsYmtxwYmZAAsBAzys0MzMLADDMzAwYZMgBM",
-                        usage = 75.0,
+                        usage = 74.0,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (75.0% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (74.0% popularity, 1,000 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 72.1,
-                        totalRankings = 1722,
-                        source = "Archon.gg Meta Builds (72.1% popularity, 1,722 parses)"
+                        usage = 71.5,
+                        totalRankings = 1715,
+                        source = "Archon.gg Meta Builds (71.5% popularity, 1,715 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZMYWGLzMjZmZbZMGzsMLDDAwAAAAAAg0YWmZMzMGmt2AwAAzgNAAwMTbzMLzAAsxwMAGjZYMAALzAMzAG",
-                        usage = 9.9,
-                        totalRankings = 425,
-                        source = "Archon.gg Meta Builds (9.9% popularity, 425 parses)"
+                        usage = 9.0,
+                        totalRankings = 420,
+                        source = "Archon.gg Meta Builds (9.0% popularity, 420 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MjlxYmBAAAAAwMlZbGmZsNjZbYmtZMGzMMjF2eAAmlZbmZ2aAAAgFADAYGGYGzMbAzMDjZMYA",
-                        usage = 46.7,
-                        totalRankings = 2410,
-                        source = "Archon.gg Meta Builds (46.7% popularity, 2,410 parses)"
+                        usage = 47.6,
+                        totalRankings = 2417,
+                        source = "Archon.gg Meta Builds (47.6% popularity, 2,417 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsYY2YMzYmZMmZbmZmBzAAAAAAAAAAYmZWmBzMzghZATz0MDwMLYIMmlBYMYBAAGDzYYmBYmZGzwA",
-                        usage = 10.9,
-                        totalRankings = 2361,
-                        source = "Archon.gg Meta Builds (10.9% popularity, 2,361 parses)"
+                        usage = 10.6,
+                        totalRankings = 2354,
+                        source = "Archon.gg Meta Builds (10.6% popularity, 2,354 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwMmlZwMzMMDzAYmaAgZWMDziBAGD2MzMLAaGjxYYmZbZAmBG",
-                        usage = 64.8,
-                        totalRankings = 1178,
-                        source = "Archon.gg Meta Builds (64.8% popularity, 1,178 parses)"
+                        usage = 64.9,
+                        totalRankings = 1184,
+                        source = "Archon.gg Meta Builds (64.9% popularity, 1,184 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMjZMGAAAAAAAAAAAAjZZmxYZmxMz2MDzw2MzYmZGbIzYxMNAzMzAABY2mtFwsxAADGzMzY2GzgZGMDGA",
-                        usage = 47.9,
-                        totalRankings = 1125,
-                        source = "Archon.gg Meta Builds (47.9% popularity, 1,125 parses)"
+                        usage = 47.1,
+                        totalRankings = 1121,
+                        source = "Archon.gg Meta Builds (47.1% popularity, 1,121 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmNDGAAAAAYWGsNDAAAAAIbzMzMzMjxMzMz2MLzMeAPwMjZGDzMmZAMwCMjRjZDw2A2M2AMzMYA",
-                        usage = 41.8,
-                        totalRankings = 589,
-                        source = "Archon.gg Meta Builds (41.8% popularity, 589 parses)"
+                        usage = 42.3,
+                        totalRankings = 558,
+                        source = "Archon.gg Meta Builds (42.3% popularity, 558 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZmZmxsBmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 30.9,
-                        totalRankings = 395,
-                        source = "Archon.gg Meta Builds (30.9% popularity, 395 parses)"
+                        usage = 30.5,
+                        totalRankings = 406,
+                        source = "Archon.gg Meta Builds (30.5% popularity, 406 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZMegZmZGjZbYGbbzMzMzMjBjZ2GAAAAGMGwY2MMwAzCL0iNMDYmBzYA",
-                        usage = 80.7,
+                        usage = 80.5,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (80.7% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (80.5% popularity, 1,000 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMLLzMGjZZZZwMjBAAAAYxMbwAGwsxEYWAgZZmZmZstYCzMbjlZmZGDLWmxyDMzYmZZAADAMzYYYA",
-                        usage = 26.3,
+                        usage = 25.4,
                         totalRankings = 1337,
-                        source = "Archon.gg Meta Builds (26.3% popularity, 1,337 parses)"
+                        source = "Archon.gg Meta Builds (25.4% popularity, 1,337 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAAsBYzMG2gFYGGawCAz2MzMGLLzAzMbjlZmZGGsMDAwMMmZYmAzMYwYA",
-                        usage = 30.3,
-                        totalRankings = 620,
-                        source = "Archon.gg Meta Builds (30.3% popularity, 620 parses)"
+                        usage = 31.2,
+                        totalRankings = 618,
+                        source = "Archon.gg Meta Builds (31.2% popularity, 618 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMwyYmZa2WmZYGzCLzMzMGMLDAAAMzMYmBAGM",
-                        usage = 32.2,
-                        totalRankings = 2835,
-                        source = "Archon.gg Meta Builds (32.2% popularity, 2,835 parses)"
+                        usage = 32.1,
+                        totalRankings = 2833,
+                        source = "Archon.gg Meta Builds (32.1% popularity, 2,833 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAgZmZmpZzM2mZGz2AAAmZmlZxMzyYAgxyyADYAzwWghtBAAgZAAAMzwMGjZGzgZmZGDzMzMAgBMA",
-                        usage = 20.6,
-                        totalRankings = 339,
-                        source = "Archon.gg Meta Builds (20.6% popularity, 339 parses)"
+                        usage = 21.8,
+                        totalRankings = 344,
+                        source = "Archon.gg Meta Builds (21.8% popularity, 344 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMmtBAAAAAAAMmxwCMw2wCNsYMzYZ2mZmxMAwMjxMzMDwMzYmZDAAMmZmxwwyMGwA",
-                        usage = 39.2,
-                        totalRankings = 4352,
-                        source = "Archon.gg Meta Builds (39.2% popularity, 4,352 parses)"
+                        usage = 39.7,
+                        totalRankings = 4320,
+                        source = "Archon.gg Meta Builds (39.7% popularity, 4,320 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbjhZmxsNbzMzMLGzyiZAAwMGzMzCYMjhFYgthFaswAAAjBYDAzMAjZMzsAAAYmZGAAGDD",
-                        usage = 20.6,
-                        totalRankings = 998,
-                        source = "Archon.gg Meta Builds (20.6% popularity, 998 parses)"
+                        usage = 21.6,
+                        totalRankings = 999,
+                        source = "Archon.gg Meta Builds (21.6% popularity, 999 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmxsMzMzYGAAAghphZYmZbZmZmZwYmBAAAAwYzMwWMgNzYYBGYG2oxgFgZwsNY2MbDmZAAzMDD",
                         usage = 82.8,
-                        totalRankings = 1365,
-                        source = "Archon.gg Meta Builds (82.8% popularity, 1,365 parses)"
+                        totalRankings = 1359,
+                        source = "Archon.gg Meta Builds (82.8% popularity, 1,359 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDDzMjlZmZmZYMzYGzYmlZmxYmZZMzMAAQYgNYZxoxMAmFMjFAzgZbAwMDghZmZGGM",
-                        usage = 52.1,
+                        usage = 51.5,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (52.1% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (51.5% popularity, 1,000 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAmZGzMzMzMmNjZZGjxoxMzwyMmZGMmZAAAAwyYAmxAMwGssY0YGAzCmZDmxMDmtBAzMAAMDYA",
-                        usage = 9.8,
-                        totalRankings = 1489,
-                        source = "Archon.gg Meta Builds (9.8% popularity, 1,489 parses)"
+                        usage = 9.6,
+                        totalRankings = 1474,
+                        source = "Archon.gg Meta Builds (9.6% popularity, 1,474 parses)"
                     },
                 },
             },
@@ -2704,267 +2704,267 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMDY2mZmZmZZmZkZMmZYGGPgZGMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgZAMMzAMzgB",
-                        usage = 67.3,
+                        usage = 67.5,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (67.3% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (67.5% popularity, 1,000 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
                         usage = 53.4,
-                        totalRankings = 2888,
-                        source = "Archon.gg Meta Builds (53.4% popularity, 2,888 parses)"
+                        totalRankings = 2823,
+                        source = "Archon.gg Meta Builds (53.4% popularity, 2,823 parses)"
                     },
                     ["Blood"] = {
-                        loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMmxAAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxmGLbA2GwGgZYAAAzMYwA",
+                        loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZGmxMjhZbmZmmxMzYMjZAAAAwMzMzMzMzwMGDAGzMzMAAAGYgZspxyGglBsBYGGAAwMDMMA",
                         usage = 9.3,
-                        totalRankings = 1398,
-                        source = "Archon.gg Meta Builds (9.3% popularity, 1,398 parses)"
+                        totalRankings = 1366,
+                        source = "Archon.gg Meta Builds (9.3% popularity, 1,366 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMzmxMzMmZmMmZAAAAAAAzyDMmtZYmBzM2mt5BmZMGDLDsNLmxwsx0YmZMsBAAAAAAAwMDGAAAAG",
-                        usage = 24.1,
-                        totalRankings = 1251,
-                        source = "Archon.gg Meta Builds (24.1% popularity, 1,251 parses)"
+                        usage = 24.7,
+                        totalRankings = 1220,
+                        source = "Archon.gg Meta Builds (24.7% popularity, 1,220 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjhZkZmBWMjZwMjZGz8AzMzYYmtZGbjZMGzAAAAAAAAwMzYDAAAADMzMzMLtNzMDAmBAAAwA",
-                        usage = 7.8,
+                        usage = 7.9,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (7.8% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (7.9% popularity, 1,000 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
-                        usage = 91.2,
-                        totalRankings = 2324,
-                        source = "Archon.gg Meta Builds (91.2% popularity, 2,324 parses)"
+                        usage = 91.1,
+                        totalRankings = 2256,
+                        source = "Archon.gg Meta Builds (91.1% popularity, 2,256 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMD8AmlZmZmhhZYWmZZsMjZsxyMLjZGmFMAYAW2GbYamZZAAAAwGzMzMYzAjZAMzAADA",
-                        usage = 30.0,
-                        totalRankings = 1312,
-                        source = "Archon.gg Meta Builds (30.0% popularity, 1,312 parses)"
+                        usage = 29.9,
+                        totalRankings = 1276,
+                        source = "Archon.gg Meta Builds (29.9% popularity, 1,276 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYGzMDAAAALBzGMmZUzYWYmZGjZmZAAAAAAAGAAAAAgZbmlmtZW2AzMALmBDAgZGAMA",
-                        usage = 29.1,
+                        usage = 28.4,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (29.1% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (28.4% popularity, 1,000 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMPwYMzmZZGMWGgZGjmoZmZZmZmZMMPgBAAAAwgZsMDYZbmBjZbAMBAAAshZMgFzgBsYZbAmZAM",
-                        usage = 12.0,
-                        totalRankings = 1169,
-                        source = "Archon.gg Meta Builds (12.0% popularity, 1,169 parses)"
+                        usage = 12.2,
+                        totalRankings = 1139,
+                        source = "Archon.gg Meta Builds (12.2% popularity, 1,139 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGz2wDwMzmxCzAAAAAAAAAAgtBNbMmmZM8AmlZmZmhhZAAAAAAAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
                         usage = 33.6,
-                        totalRankings = 1558,
-                        source = "Archon.gg Meta Builds (33.6% popularity, 1,558 parses)"
+                        totalRankings = 1511,
+                        source = "Archon.gg Meta Builds (33.6% popularity, 1,511 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 38.1,
-                        totalRankings = 679,
-                        source = "Archon.gg Meta Builds (38.1% popularity, 679 parses)"
+                        usage = 37.3,
+                        totalRankings = 660,
+                        source = "Archon.gg Meta Builds (37.3% popularity, 660 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2WmHADzMmNjZmZWmxAAAzYGDmxMyMzAAAAMzMTmxMjZbmZAwAjZsxCMwMM0AWgxMDwYA",
-                        usage = 16.7,
+                        usage = 16.4,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (16.7% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (16.4% popularity, 1,000 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZzYwCsMGGbDgZQshZGYmBwA",
-                        usage = 36.6,
-                        totalRankings = 1127,
-                        source = "Archon.gg Meta Builds (36.6% popularity, 1,127 parses)"
+                        usage = 37.2,
+                        totalRankings = 1095,
+                        source = "Archon.gg Meta Builds (37.2% popularity, 1,095 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYG2GzsNzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAwMAAAMzMzAMzGghZBsNA",
-                        usage = 59.8,
-                        totalRankings = 3347,
-                        source = "Archon.gg Meta Builds (59.8% popularity, 3,347 parses)"
+                        usage = 60.0,
+                        totalRankings = 3268,
+                        source = "Archon.gg Meta Builds (60.0% popularity, 3,268 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAYzsMwAGwMsFYWAAAAAAAAAmxMmhZMzMmBjpZMY22YmZWmZmZmZWwsMMzAAAGzMzMzMDYgZxAsxMA",
-                        usage = 15.4,
-                        totalRankings = 956,
-                        source = "Archon.gg Meta Builds (15.4% popularity, 956 parses)"
+                        usage = 15.8,
+                        totalRankings = 938,
+                        source = "Archon.gg Meta Builds (15.8% popularity, 938 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmxyMGzYGMmmBAAAgBAGLLzMziZmZMGzMgZ2AgxYmZzAA",
-                        usage = 43.5,
+                        usage = 42.7,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (43.5% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (42.7% popularity, 1,000 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 36.3,
-                        totalRankings = 474,
-                        source = "Archon.gg Meta Builds (36.3% popularity, 474 parses)"
+                        usage = 35.5,
+                        totalRankings = 468,
+                        source = "Archon.gg Meta Builds (35.5% popularity, 468 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzwYmZmZ2GAmZgxYMYGG",
-                        usage = 26.3,
-                        totalRankings = 467,
-                        source = "Archon.gg Meta Builds (26.3% popularity, 467 parses)"
+                        usage = 26.0,
+                        totalRankings = 446,
+                        source = "Archon.gg Meta Builds (26.0% popularity, 446 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 54.7,
-                        totalRankings = 3401,
-                        source = "Archon.gg Meta Builds (54.7% popularity, 3,401 parses)"
+                        usage = 54.3,
+                        totalRankings = 3294,
+                        source = "Archon.gg Meta Builds (54.3% popularity, 3,294 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 18.8,
+                        usage = 19.2,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (18.8% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (19.2% popularity, 1,000 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
-                        usage = 43.3,
-                        totalRankings = 1654,
-                        source = "Archon.gg Meta Builds (43.3% popularity, 1,654 parses)"
+                        usage = 44.7,
+                        totalRankings = 1608,
+                        source = "Archon.gg Meta Builds (44.7% popularity, 1,608 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MGsNzMbzAAAAAAAAAAAAsMMCzYbYAzYYmZmhZZYGmlZCAYzMbjhZmZGAAbAwsMLNzMzCAGYmBAWGDYAD",
-                        usage = 34.6,
-                        totalRankings = 1089,
-                        source = "Archon.gg Meta Builds (34.6% popularity, 1,089 parses)"
+                        usage = 34.7,
+                        totalRankings = 1056,
+                        source = "Archon.gg Meta Builds (34.7% popularity, 1,056 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 52.6,
-                        totalRankings = 1335,
-                        source = "Archon.gg Meta Builds (52.6% popularity, 1,335 parses)"
+                        usage = 52.0,
+                        totalRankings = 1300,
+                        source = "Archon.gg Meta Builds (52.0% popularity, 1,300 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
-                        usage = 23.5,
+                        usage = 24.1,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (23.5% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (24.1% popularity, 1,000 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMMzAAAAAAwoMmhZGbDz2wMbzYMmZYGbsNMAAwMTbzMbzAA2AMAYMDzgZMmNsMDGGzYwA",
                         usage = 53.9,
-                        totalRankings = 3437,
-                        source = "Archon.gg Meta Builds (53.9% popularity, 3,437 parses)"
+                        totalRankings = 3348,
+                        source = "Archon.gg Meta Builds (53.9% popularity, 3,348 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZYGmBmpZamBYmFMEGzyAMGsAAAjxMjBzAMzMMDD",
-                        usage = 25.3,
-                        totalRankings = 1160,
-                        source = "Archon.gg Meta Builds (25.3% popularity, 1,160 parses)"
+                        usage = 25.7,
+                        totalRankings = 1131,
+                        source = "Archon.gg Meta Builds (25.7% popularity, 1,131 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwwsMDzMzMYGzAYmaAgZWMDziBAGD2MzMLAaGmxYYmZbZAmBG",
-                        usage = 54.0,
-                        totalRankings = 1352,
-                        source = "Archon.gg Meta Builds (54.0% popularity, 1,352 parses)"
+                        usage = 54.1,
+                        totalRankings = 1309,
+                        source = "Archon.gg Meta Builds (54.1% popularity, 1,309 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 41.1,
-                        totalRankings = 1432,
-                        source = "Archon.gg Meta Builds (41.1% popularity, 1,432 parses)"
+                        usage = 41.0,
+                        totalRankings = 1399,
+                        source = "Archon.gg Meta Builds (41.0% popularity, 1,399 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsZwAAAAAAzyglZAAAAAAttNzMzMzMGzMzMbzsMzMDzMzMzMMDzMAGYBmxoxsAYbAbGAMzAD",
-                        usage = 15.7,
-                        totalRankings = 674,
-                        source = "Archon.gg Meta Builds (15.7% popularity, 674 parses)"
+                        usage = 15.9,
+                        totalRankings = 660,
+                        source = "Archon.gg Meta Builds (15.9% popularity, 660 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZmZMmNeAmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 27.5,
-                        totalRankings = 534,
-                        source = "Archon.gg Meta Builds (27.5% popularity, 534 parses)"
+                        usage = 27.9,
+                        totalRankings = 517,
+                        source = "Archon.gg Meta Builds (27.9% popularity, 517 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
-                        usage = 55.7,
-                        totalRankings = 1008,
-                        source = "Archon.gg Meta Builds (55.7% popularity, 1,008 parses)"
+                        usage = 55.5,
+                        totalRankings = 1000,
+                        source = "Archon.gg Meta Builds (55.5% popularity, 1,000 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMLzMzYstYahZmlxyMzMjhlZZYxMDzsAAMAmZghhB",
-                        usage = 35.8,
-                        totalRankings = 1617,
-                        source = "Archon.gg Meta Builds (35.8% popularity, 1,617 parses)"
+                        usage = 35.6,
+                        totalRankings = 1575,
+                        source = "Archon.gg Meta Builds (35.6% popularity, 1,575 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZmZGAAAAAAAAAYB2gZsox2AYGwGAzyMmZGLLzAzMbsMzMzwwYGAADwYmJmZAgxA",
-                        usage = 37.5,
+                        usage = 37.7,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (37.5% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (37.7% popularity, 1,000 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
-                        usage = 33.7,
-                        totalRankings = 2186,
-                        source = "Archon.gg Meta Builds (33.7% popularity, 2,186 parses)"
+                        usage = 33.2,
+                        totalRankings = 2133,
+                        source = "Archon.gg Meta Builds (33.2% popularity, 2,133 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZhhZmZmlBAAYmZxyMzsMzAAjllBGwAmhtADbDAAAzAAAYmhZmxADzMzMjZwMzMDAYGYA",
-                        usage = 17.4,
+                        usage = 17.7,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (17.4% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (17.7% popularity, 1,000 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAAAAAAGzYYBGYbYhGWMYmlZbmZGzAAzwMzMzMAjZMzsBAAmZmZGDjZZGDYA",
                         usage = 26.4,
-                        totalRankings = 2198,
-                        source = "Archon.gg Meta Builds (26.4% popularity, 2,198 parses)"
+                        totalRankings = 2137,
+                        source = "Archon.gg Meta Builds (26.4% popularity, 2,137 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmxsMLzMzMLGz2iZAAwMGzMziFYgZxoxMAmNsxAAAjBYDAYmBmZMzAAAwMzMDAgxwA",
-                        usage = 18.4,
+                        usage = 18.8,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (18.4% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (18.8% popularity, 1,000 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMzMDAAAghphZGzMWmZmZGMmZAAAAAMzyMDIjxyyALgBMDTgZwGwMY2GDmxAMzAwMGGA",
-                        usage = 56.3,
+                        usage = 56.6,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (56.3% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (56.6% popularity, 1,000 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmhlZmZmZYMzMzYGzsMzMGzMbjZmBAAixyyALgBMDTgZYDYmBz2AAgZGDjZmhBD",
-                        usage = 39.4,
-                        totalRankings = 1342,
-                        source = "Archon.gg Meta Builds (39.4% popularity, 1,342 parses)"
+                        usage = 38.6,
+                        totalRankings = 1314,
+                        source = "Archon.gg Meta Builds (38.6% popularity, 1,314 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzMzmxsMjxYmGmZYZMzMDzYmBAAAALDAzYAGYDWWMaMDgZDzsBzYmBz2AgZGAAGgB",
-                        usage = 8.3,
+                        usage = 8.2,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (8.3% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (8.2% popularity, 1,000 parses)"
                     },
                 },
             },
@@ -2972,267 +2972,267 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDYmZMjxYY2mZmZmZzMjmZMmZYGGPgZGMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgZAMMzAMgB",
-                        usage = 54.3,
-                        totalRankings = 492,
-                        source = "Archon.gg Meta Builds (54.3% popularity, 492 parses)"
+                        usage = 53.6,
+                        totalRankings = 498,
+                        source = "Archon.gg Meta Builds (53.6% popularity, 498 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
-                        usage = 28.2,
-                        totalRankings = 2913,
-                        source = "Archon.gg Meta Builds (28.2% popularity, 2,913 parses)"
+                        usage = 28.4,
+                        totalRankings = 2882,
+                        source = "Archon.gg Meta Builds (28.4% popularity, 2,882 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMjhZbmZmmZxMjxMGAAAAYmZmZmZmZYGjBAjZmZGAAADMwM20YZDw2A2AMDDAAYmBzwA",
-                        usage = 6.0,
-                        totalRankings = 1192,
-                        source = "Archon.gg Meta Builds (6.0% popularity, 1,192 parses)"
+                        usage = 6.1,
+                        totalRankings = 1186,
+                        source = "Archon.gg Meta Builds (6.1% popularity, 1,186 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmZmZmwMDAAAAAAY2MmtZYmBzM2mt5BmZMGDLDsNLmxwsx0YmZMsBAAAAAAAwMDGAAAAG",
-                        usage = 29.6,
-                        totalRankings = 790,
-                        source = "Archon.gg Meta Builds (29.6% popularity, 790 parses)"
+                        usage = 29.7,
+                        totalRankings = 782,
+                        source = "Archon.gg Meta Builds (29.7% popularity, 782 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMzMkZmBziZMDmZMzYGzMzYYmlZGbmZ2GDAAAAAAAAYmZsBAAAgBzMzMzs12MzMAwAAAAYA",
-                        usage = 14.5,
-                        totalRankings = 339,
-                        source = "Archon.gg Meta Builds (14.5% popularity, 339 parses)"
+                        usage = 14.6,
+                        totalRankings = 336,
+                        source = "Archon.gg Meta Builds (14.6% popularity, 336 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
-                        usage = 96.2,
-                        totalRankings = 2483,
-                        source = "Archon.gg Meta Builds (96.2% popularity, 2,483 parses)"
+                        usage = 96.1,
+                        totalRankings = 2471,
+                        source = "Archon.gg Meta Builds (96.1% popularity, 2,471 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMD8AmlZmZmBYYMzyYZGzYjlZWGzMjZBDDwAssN2w0MzyAAAAgNzMzMD2MMGzAYmBAGA",
-                        usage = 43.8,
-                        totalRankings = 1192,
-                        source = "Archon.gg Meta Builds (43.8% popularity, 1,192 parses)"
+                        usage = 43.6,
+                        totalRankings = 1179,
+                        source = "Archon.gg Meta Builds (43.6% popularity, 1,179 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYGzMDAAAALBzmhxMjaGzyYmZGjZAAAAAAgBGAAAAAgZbmlmtZW2AzMALmZYAAMzAgB",
-                        usage = 56.0,
-                        totalRankings = 298,
-                        source = "Archon.gg Meta Builds (56.0% popularity, 298 parses)"
+                        usage = 55.3,
+                        totalRankings = 300,
+                        source = "Archon.gg Meta Builds (55.3% popularity, 300 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMPwYMzmZZGMWGY2gRTmmZmlZmZmxYGGAAAAAwMz2MgltZGMmtBwEAAAwGm5BAWMDGwiltBYmBwA",
-                        usage = 10.5,
-                        totalRankings = 760,
-                        source = "Archon.gg Meta Builds (10.5% popularity, 760 parses)"
+                        usage = 10.7,
+                        totalRankings = 764,
+                        source = "Archon.gg Meta Builds (10.7% popularity, 764 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMLz2MmZGz2wDwMzmxCzAAAAAAAAAAgFDNbmx0MDwsMzMzMMMDAAAAADAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
-                        usage = 26.0,
-                        totalRankings = 1247,
-                        source = "Archon.gg Meta Builds (26.0% popularity, 1,247 parses)"
+                        usage = 26.4,
+                        totalRankings = 1234,
+                        source = "Archon.gg Meta Builds (26.4% popularity, 1,234 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzwM8AmBjZamZmpZM2mxMzMz8AzMzAMmZGzMLjZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 38.1,
-                        totalRankings = 155,
-                        source = "Archon.gg Meta Builds (38.1% popularity, 155 parses)"
+                        usage = 39.1,
+                        totalRankings = 156,
+                        source = "Archon.gg Meta Builds (39.1% popularity, 156 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2MzMmxMjhxMzMbYAAgZMjBGzMZmZGAAAwMzIzMzMmlZmBAGzAbgFwMMBWgNDDgZmxA",
-                        usage = 15.9,
+                        usage = 16.0,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (15.9% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (16.0% popularity, 1,000 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZGjhZ2AAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZzYwCsMGGbDgZQshZGYmBwA",
-                        usage = 11.7,
-                        totalRankings = 1970,
-                        source = "Archon.gg Meta Builds (11.7% popularity, 1,970 parses)"
+                        usage = 11.6,
+                        totalRankings = 1946,
+                        source = "Archon.gg Meta Builds (11.6% popularity, 1,946 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYG2GzsNzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAwMAAAMzMzAMzGghZBsNA",
-                        usage = 84.6,
-                        totalRankings = 1849,
-                        source = "Archon.gg Meta Builds (84.6% popularity, 1,849 parses)"
+                        usage = 84.5,
+                        totalRankings = 1847,
+                        source = "Archon.gg Meta Builds (84.5% popularity, 1,847 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAgZMjZYGzMjZwYaGDmttNzMjZmZmZmFmZZYmBAAMGzMAMzYbjFDwGzMG",
-                        usage = 37.6,
-                        totalRankings = 1017,
-                        source = "Archon.gg Meta Builds (37.6% popularity, 1,017 parses)"
+                        usage = 38.3,
+                        totalRankings = 1002,
+                        source = "Archon.gg Meta Builds (38.3% popularity, 1,002 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmxMMjxMmBjpZAAAAYAgxyyMzsYmZGjZGDYmNAzixYmZzAA",
-                        usage = 73.4,
-                        totalRankings = 350,
-                        source = "Archon.gg Meta Builds (73.4% popularity, 350 parses)"
+                        usage = 73.8,
+                        totalRankings = 347,
+                        source = "Archon.gg Meta Builds (73.8% popularity, 347 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 90.1,
-                        totalRankings = 364,
-                        source = "Archon.gg Meta Builds (90.1% popularity, 364 parses)"
+                        usage = 90.6,
+                        totalRankings = 361,
+                        source = "Archon.gg Meta Builds (90.6% popularity, 361 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzYGzMzMzyAwMDMGjBGG",
-                        usage = 21.1,
-                        totalRankings = 128,
-                        source = "Archon.gg Meta Builds (21.1% popularity, 128 parses)"
+                        usage = 22.5,
+                        totalRankings = 129,
+                        source = "Archon.gg Meta Builds (22.5% popularity, 129 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 85.1,
-                        totalRankings = 2953,
-                        source = "Archon.gg Meta Builds (85.1% popularity, 2,953 parses)"
+                        usage = 84.7,
+                        totalRankings = 2903,
+                        source = "Archon.gg Meta Builds (84.7% popularity, 2,903 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMM2YwMzMDz2YmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 10.2,
-                        totalRankings = 1035,
-                        source = "Archon.gg Meta Builds (10.2% popularity, 1,035 parses)"
+                        usage = 10.3,
+                        totalRankings = 1024,
+                        source = "Archon.gg Meta Builds (10.3% popularity, 1,024 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
-                        usage = 39.3,
-                        totalRankings = 1513,
-                        source = "Archon.gg Meta Builds (39.3% popularity, 1,513 parses)"
+                        usage = 39.2,
+                        totalRankings = 1499,
+                        source = "Archon.gg Meta Builds (39.2% popularity, 1,499 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDjwMMMgZMMzMzwsMMDzyMBAsYmtxwYmZAAsBAzys0MzMLADDMzAwYZMgBM",
-                        usage = 42.1,
-                        totalRankings = 703,
-                        source = "Archon.gg Meta Builds (42.1% popularity, 703 parses)"
+                        usage = 43.0,
+                        totalRankings = 693,
+                        source = "Archon.gg Meta Builds (43.0% popularity, 693 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 72.0,
+                        usage = 70.4,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (72.0% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (70.4% popularity, 1,000 parses)"
                     },
                     ["Protection"] = {
-                        loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZGDzyYZMjZmZbZMGzsYZYAAGAAAAAA00MzyMjZGGzs1GAGYADsBAAmZabmZZGAgNGmBwYMDjBAYZGgZAG",
-                        usage = 7.7,
-                        totalRankings = 235,
-                        source = "Archon.gg Meta Builds (7.7% popularity, 235 parses)"
+                        loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZmZYWGLzMjZGbLjxYmFLDDAwAAAAAAg0MzyMjZmxMml2AwADAsBAAmZabmZZGAgNwMAGMDjBAYZGgZGwA",
+                        usage = 7.3,
+                        totalRankings = 232,
+                        source = "Archon.gg Meta Builds (7.3% popularity, 232 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa22mZmlhZGAAAAAAmpMmhZGbDz2wMbzYMmZYGbsNAAAmZabmZbGAwGgBAjZYgZMmNsMDGGzYwA",
-                        usage = 47.7,
-                        totalRankings = 1267,
-                        source = "Archon.gg Meta Builds (47.7% popularity, 1,267 parses)"
+                        usage = 47.8,
+                        totalRankings = 1259,
+                        source = "Archon.gg Meta Builds (47.8% popularity, 1,259 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZwMmBMNTzMAzshhwYWGgxgFAAYMmZMYGgZmZMDD",
-                        usage = 11.3,
-                        totalRankings = 1338,
-                        source = "Archon.gg Meta Builds (11.3% popularity, 1,338 parses)"
+                        usage = 11.7,
+                        totalRankings = 1328,
+                        source = "Archon.gg Meta Builds (11.7% popularity, 1,328 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwMmlZwMzMMDzAYmaAgZWMDziBAGD2MzMLAaGjxYYmZbZAmBG",
-                        usage = 68.8,
-                        totalRankings = 958,
-                        source = "Archon.gg Meta Builds (68.8% popularity, 958 parses)"
+                        usage = 69.6,
+                        totalRankings = 954,
+                        source = "Archon.gg Meta Builds (69.6% popularity, 954 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 43.3,
+                        usage = 42.7,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (43.3% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (42.7% popularity, 1,000 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsZwAAAAAAzyglZAAAAAAZbmZmZmZMmZmZ2mZZmZGMzMzMjZGDDgBWgZMaMbA2GwmBAzMjxA",
-                        usage = 30.1,
-                        totalRankings = 153,
-                        source = "Archon.gg Meta Builds (30.1% popularity, 153 parses)"
+                        usage = 30.4,
+                        totalRankings = 148,
+                        source = "Archon.gg Meta Builds (30.4% popularity, 148 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MGzMzMzsNzMzMjxsxDwMmWGsNDAAAAAw22MzMMzMzMmZmtBAAAwMGAMmFDDMwswCtwGDwMDGYA",
-                        usage = 21.3,
-                        totalRankings = 202,
-                        source = "Archon.gg Meta Builds (21.3% popularity, 202 parses)"
+                        usage = 19.6,
+                        totalRankings = 204,
+                        source = "Archon.gg Meta Builds (19.6% popularity, 204 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
-                        usage = 74.3,
+                        usage = 74.8,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (74.3% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (74.8% popularity, 1,000 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMbzMzMjlFTLMjtxyMzMjhlZZYxMDzsAAMAmZghhB",
-                        usage = 43.5,
-                        totalRankings = 1388,
-                        source = "Archon.gg Meta Builds (43.5% popularity, 1,388 parses)"
+                        usage = 42.4,
+                        totalRankings = 1374,
+                        source = "Archon.gg Meta Builds (42.4% popularity, 1,374 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAAsBYzMG2gFYGGawCAz2MmxYZZGbMzsNWmZmZYswMAAzwYmhZCMzgBjB",
-                        usage = 25.8,
-                        totalRankings = 314,
-                        source = "Archon.gg Meta Builds (25.8% popularity, 314 parses)"
+                        usage = 25.9,
+                        totalRankings = 316,
+                        source = "Archon.gg Meta Builds (25.9% popularity, 316 parses)"
                     },
                     ["Restoration"] = {
-                        loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYB2gZsox2AYGYzMMwyYmZa2WmZYGzGLzMzMGMLDAAAMzMYmBAGM",
-                        usage = 33.0,
-                        totalRankings = 1109,
-                        source = "Archon.gg Meta Builds (33.0% popularity, 1,109 parses)"
+                        loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYB2gZsox2AYGYzMMw2YmZa2WmZYGzGLzMzMGMLDAAAMzMYmBAGM",
+                        usage = 33.2,
+                        totalRankings = 1098,
+                        source = "Archon.gg Meta Builds (33.2% popularity, 1,098 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMAAAzMLz2MzsYGAYstNwAGwMsEYYbAAAYGAAAzMzMjZGYYmZmZGDmZmBAYGYA",
-                        usage = 16.2,
+                        usage = 16.6,
                         totalRankings = 253,
-                        source = "Archon.gg Meta Builds (16.2% popularity, 253 parses)"
+                        source = "Archon.gg Meta Builds (16.6% popularity, 253 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbjhZmZmlBAAAAAAAMmxwCMw2wCNsYMGLz2MzMmBAmZMzMzMDgZGzMAAAjZmZMMsMjBMA",
-                        usage = 27.9,
-                        totalRankings = 1816,
-                        source = "Archon.gg Meta Builds (27.9% popularity, 1,816 parses)"
+                        usage = 28.2,
+                        totalRankings = 1800,
+                        source = "Archon.gg Meta Builds (28.2% popularity, 1,800 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZmZWmlZmZmFjZbxMAAYGjZmZxCMwsY0YGAzG2YAAgxAsBAMzAzMmZAAAYmZGAAGDD",
-                        usage = 32.5,
-                        totalRankings = 1332,
-                        source = "Archon.gg Meta Builds (32.5% popularity, 1,332 parses)"
+                        usage = 32.8,
+                        totalRankings = 1302,
+                        source = "Archon.gg Meta Builds (32.8% popularity, 1,302 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
-                        loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMzMDAAAghphZGzwyMzMzgxMDAAAAgZWmZAZMWWGYBMgZYCMD2AzMY2GDmxAMzAwMGGA",
-                        usage = 45.1,
+                        loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZAAAAMMNMDzYbZmZmZYGzMAAAAAmZZmB2yYssMwCYAzwEYGsBmZwYMYmtBYmBgZMMA",
+                        usage = 43.9,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (45.1% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (43.9% popularity, 1,000 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmx2yMzMzMMmZmZMjZWmZGjZmtxMzAAAxYZZgFwAmhJwMsBMzgxAAgZGDjZmhBD",
-                        usage = 58.3,
+                        usage = 58.1,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (58.3% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (58.1% popularity, 1,000 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAmZGzMzMzMmNjZZGjxohZGWmZmZGMmZAAAAwyYAmxAMwGssY0YGAzCmZDmxMDmtBAzMAAMDYA",
-                        usage = 10.2,
+                        usage = 10.0,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (10.2% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (10.0% popularity, 1,000 parses)"
                     },
                 },
             },
@@ -3242,267 +3242,267 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMDY2mZmZmZZmZkZMmZYGGPgZGMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgZAMMzAMzgB",
-                        usage = 53.2,
-                        totalRankings = 1822,
-                        source = "Archon.gg Meta Builds (53.2% popularity, 1,822 parses)"
+                        usage = 53.5,
+                        totalRankings = 1795,
+                        source = "Archon.gg Meta Builds (53.5% popularity, 1,795 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
                         usage = 39.7,
-                        totalRankings = 9755,
-                        source = "Archon.gg Meta Builds (39.7% popularity, 9,755 parses)"
+                        totalRankings = 9565,
+                        source = "Archon.gg Meta Builds (39.7% popularity, 9,565 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZZmZmmZxMjZmxAAAAAGMzMzMjZmZMAYmZmZGAAgxsNwAWALDTghFAzYAAwMDAMA",
-                        usage = 11.2,
-                        totalRankings = 2493,
-                        source = "Archon.gg Meta Builds (11.2% popularity, 2,493 parses)"
+                        usage = 11.0,
+                        totalRankings = 2441,
+                        source = "Archon.gg Meta Builds (11.0% popularity, 2,441 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMzmxMzMmZmMmZAAAAAAAzyDMmtZYmZ2mZGbz28AzwYYsMw2sYGDzGTjZmxwGAAAAAAAAzMYAAAAYA",
-                        usage = 22.5,
-                        totalRankings = 3973,
-                        source = "Archon.gg Meta Builds (22.5% popularity, 3,973 parses)"
+                        usage = 22.2,
+                        totalRankings = 3886,
+                        source = "Archon.gg Meta Builds (22.2% popularity, 3,886 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmhZkZmBziZMDmZMzYmHYmZGDmtZGbzMz2YYAAAAAAAAYmhNAAAAMwMzMzs12MzMAAAAAAD",
-                        usage = 9.3,
-                        totalRankings = 1224,
-                        source = "Archon.gg Meta Builds (9.3% popularity, 1,224 parses)"
+                        usage = 9.4,
+                        totalRankings = 1196,
+                        source = "Archon.gg Meta Builds (9.4% popularity, 1,196 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
-                        usage = 89.3,
-                        totalRankings = 6489,
-                        source = "Archon.gg Meta Builds (89.3% popularity, 6,489 parses)"
+                        usage = 89.5,
+                        totalRankings = 6350,
+                        source = "Archon.gg Meta Builds (89.5% popularity, 6,350 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDMmlxMzMAzYWmZZsNjZsxyMLjZGmFMMADwy2YDTzMLDAAAA2YmZmBbGDjZAMzAADA",
-                        usage = 14.8,
-                        totalRankings = 3697,
-                        source = "Archon.gg Meta Builds (14.8% popularity, 3,697 parses)"
+                        usage = 14.6,
+                        totalRankings = 3627,
+                        source = "Archon.gg Meta Builds (14.6% popularity, 3,627 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYm5BmZAAAAYLY2MMmZUzYWmZmZGjZMAAAAAAMwAAAAAAMbzs0sNzyGYmHAYxMYAAMzAgB",
-                        usage = 29.3,
-                        totalRankings = 2872,
-                        source = "Archon.gg Meta Builds (29.3% popularity, 2,872 parses)"
+                        usage = 29.5,
+                        totalRankings = 2807,
+                        source = "Archon.gg Meta Builds (29.5% popularity, 2,807 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZmFzMjZWmZxMPwMLLDMbGGNRmZWmZmZmlxMMAAAAAAjNzALbzMYMLDgJAAAgNMzAsYMMwsYBgZGAA",
-                        usage = 23.3,
-                        totalRankings = 4605,
-                        source = "Archon.gg Meta Builds (23.3% popularity, 4,605 parses)"
+                        usage = 23.7,
+                        totalRankings = 4543,
+                        source = "Archon.gg Meta Builds (23.7% popularity, 4,543 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGz2wDwMzmxCzAAAAAAAAAAgtBNbMmmZM8AmlZmZmhhZAAAAAAAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
-                        usage = 39.2,
-                        totalRankings = 4632,
-                        source = "Archon.gg Meta Builds (39.2% popularity, 4,632 parses)"
+                        usage = 39.1,
+                        totalRankings = 4504,
+                        source = "Archon.gg Meta Builds (39.1% popularity, 4,504 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 40.9,
+                        usage = 40.7,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (40.9% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (40.7% popularity, 1,000 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2WmHADzMmNjZmZWmxAAAzYGDmxMyMzAAAAMzMTmxMjZbmZAwAjZsxCMwMM0AWgxMDwYA",
-                        usage = 17.8,
-                        totalRankings = 1175,
-                        source = "Archon.gg Meta Builds (17.8% popularity, 1,175 parses)"
+                        usage = 17.5,
+                        totalRankings = 1152,
+                        source = "Archon.gg Meta Builds (17.5% popularity, 1,152 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZzYwCsMGGbDgZQshZGYmBwA",
-                        usage = 28.2,
-                        totalRankings = 2724,
-                        source = "Archon.gg Meta Builds (28.2% popularity, 2,724 parses)"
+                        usage = 28.4,
+                        totalRankings = 2670,
+                        source = "Archon.gg Meta Builds (28.4% popularity, 2,670 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYG2GzsNzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAwMAAAMzMzAMzGghZBsNA",
-                        usage = 27.9,
-                        totalRankings = 10752,
-                        source = "Archon.gg Meta Builds (27.9% popularity, 10,752 parses)"
+                        usage = 28.1,
+                        totalRankings = 10600,
+                        source = "Archon.gg Meta Builds (28.1% popularity, 10,600 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAYzsMwAGwMsFYWAAAAAAAAAmxMmhZMzMmBjpZMY22YmZWmZmZmZWwsMMzAAAGzMzMzMDYgZxAsxMA",
-                        usage = 27.6,
-                        totalRankings = 1160,
-                        source = "Archon.gg Meta Builds (27.6% popularity, 1,160 parses)"
+                        usage = 27.2,
+                        totalRankings = 1129,
+                        source = "Archon.gg Meta Builds (27.2% popularity, 1,129 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmx2MGzYGWGTzAAAAwAAjllZmZxMzMYMGwMbAGGjZmNDA",
                         usage = 51.1,
-                        totalRankings = 2467,
-                        source = "Archon.gg Meta Builds (51.1% popularity, 2,467 parses)"
+                        totalRankings = 2422,
+                        source = "Archon.gg Meta Builds (51.1% popularity, 2,422 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 31.4,
+                        usage = 30.9,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (31.4% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (30.9% popularity, 1,000 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzwYmZmZ2GAmZgxYMYGG",
-                        usage = 24.8,
+                        usage = 24.4,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (24.8% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (24.4% popularity, 1,000 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 39.7,
-                        totalRankings = 9699,
-                        source = "Archon.gg Meta Builds (39.7% popularity, 9,699 parses)"
+                        usage = 39.5,
+                        totalRankings = 9501,
+                        source = "Archon.gg Meta Builds (39.5% popularity, 9,501 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 17.0,
-                        totalRankings = 2477,
-                        source = "Archon.gg Meta Builds (17.0% popularity, 2,477 parses)"
+                        usage = 16.9,
+                        totalRankings = 2425,
+                        source = "Archon.gg Meta Builds (16.9% popularity, 2,425 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
-                        usage = 29.2,
-                        totalRankings = 6563,
-                        source = "Archon.gg Meta Builds (29.2% popularity, 6,563 parses)"
+                        usage = 29.4,
+                        totalRankings = 6445,
+                        source = "Archon.gg Meta Builds (29.4% popularity, 6,445 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDjwMMMgZMMzMzwsMMDzyMBAsYmtxwYmZAAsBAzys0MzMLADDMzAwYZMgBM",
-                        usage = 33.8,
-                        totalRankings = 3628,
-                        source = "Archon.gg Meta Builds (33.8% popularity, 3,628 parses)"
+                        usage = 33.3,
+                        totalRankings = 3544,
+                        source = "Archon.gg Meta Builds (33.3% popularity, 3,544 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 45.4,
-                        totalRankings = 3149,
-                        source = "Archon.gg Meta Builds (45.4% popularity, 3,149 parses)"
+                        usage = 45.3,
+                        totalRankings = 3078,
+                        source = "Archon.gg Meta Builds (45.3% popularity, 3,078 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
-                        usage = 24.2,
-                        totalRankings = 2094,
-                        source = "Archon.gg Meta Builds (24.2% popularity, 2,094 parses)"
+                        usage = 24.0,
+                        totalRankings = 2045,
+                        source = "Archon.gg Meta Builds (24.0% popularity, 2,045 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMMzAAAAAAwoMmhZGbDz2wMbzYMmZYGbsNMAAwMTbzMbzAA2AMAYMDzgZMmNsMDGGzYwA",
-                        usage = 31.7,
-                        totalRankings = 11564,
-                        source = "Archon.gg Meta Builds (31.7% popularity, 11,564 parses)"
+                        usage = 31.6,
+                        totalRankings = 11289,
+                        source = "Archon.gg Meta Builds (31.6% popularity, 11,289 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZYGmBmpZamBYmFMEGzyAMGsAAAjxMjBzAMzMMDD",
-                        usage = 26.1,
-                        totalRankings = 3556,
-                        source = "Archon.gg Meta Builds (26.1% popularity, 3,556 parses)"
+                        usage = 26.2,
+                        totalRankings = 3500,
+                        source = "Archon.gg Meta Builds (26.2% popularity, 3,500 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwwsMDzMzMYGzAYmaAgZWMDziBAGD2MzMLAaGmxYYmZbZAmBG",
-                        usage = 45.3,
-                        totalRankings = 3013,
-                        source = "Archon.gg Meta Builds (45.3% popularity, 3,013 parses)"
+                        usage = 46.1,
+                        totalRankings = 2956,
+                        source = "Archon.gg Meta Builds (46.1% popularity, 2,956 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 28.5,
-                        totalRankings = 3570,
-                        source = "Archon.gg Meta Builds (28.5% popularity, 3,570 parses)"
+                        usage = 28.0,
+                        totalRankings = 3486,
+                        source = "Archon.gg Meta Builds (28.0% popularity, 3,486 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsZwAAAAAAzyglZAAAAAAttNzMzMzMGzMzMbzsMzMDzMzMzMMDzMAGYBmxoxsAYbAbGAMzAD",
-                        usage = 17.2,
-                        totalRankings = 1059,
-                        source = "Archon.gg Meta Builds (17.2% popularity, 1,059 parses)"
+                        usage = 16.6,
+                        totalRankings = 1038,
+                        source = "Archon.gg Meta Builds (16.6% popularity, 1,038 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZmZMmNeAmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 24.8,
-                        totalRankings = 1062,
-                        source = "Archon.gg Meta Builds (24.8% popularity, 1,062 parses)"
+                        usage = 25.6,
+                        totalRankings = 1041,
+                        source = "Archon.gg Meta Builds (25.6% popularity, 1,041 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
                         usage = 48.4,
-                        totalRankings = 2764,
-                        source = "Archon.gg Meta Builds (48.4% popularity, 2,764 parses)"
+                        totalRankings = 2726,
+                        source = "Archon.gg Meta Builds (48.4% popularity, 2,726 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMLzMzYstYahZmlxyMzMjhlZZYxMDzsAAMAmZghhB",
-                        usage = 27.3,
-                        totalRankings = 4354,
-                        source = "Archon.gg Meta Builds (27.3% popularity, 4,354 parses)"
+                        usage = 27.0,
+                        totalRankings = 4257,
+                        source = "Archon.gg Meta Builds (27.0% popularity, 4,257 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAAsBYzMG2gFYGGawCAz2MmxYZZGLMzsNWmZmZYsMmBAYGGzMMCMzgBjB",
-                        usage = 29.8,
-                        totalRankings = 2318,
-                        source = "Archon.gg Meta Builds (29.8% popularity, 2,318 parses)"
+                        usage = 30.3,
+                        totalRankings = 2269,
+                        source = "Archon.gg Meta Builds (30.3% popularity, 2,269 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
-                        usage = 25.0,
-                        totalRankings = 6393,
-                        source = "Archon.gg Meta Builds (25.0% popularity, 6,393 parses)"
+                        usage = 24.9,
+                        totalRankings = 6273,
+                        source = "Archon.gg Meta Builds (24.9% popularity, 6,273 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZhhZmZmlBAAYmZxyMzsMzAAjllBGwAmhtADbDAAAzAAAYmhZmxADzMzMjZwMzMDAYGYA",
                         usage = 20.8,
-                        totalRankings = 1747,
-                        source = "Archon.gg Meta Builds (20.8% popularity, 1,747 parses)"
+                        totalRankings = 1733,
+                        source = "Archon.gg Meta Builds (20.8% popularity, 1,733 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAAAAAAGzYYBGYbYhGWMYmlZbmZGzAAzwMzMzMAjZMzsBAAmZmZGDjZZGDYA",
-                        usage = 26.0,
-                        totalRankings = 7624,
-                        source = "Archon.gg Meta Builds (26.0% popularity, 7,624 parses)"
+                        usage = 25.9,
+                        totalRankings = 7455,
+                        source = "Archon.gg Meta Builds (25.9% popularity, 7,455 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmZmlZjZmZxgFzAAgZmxMzsAGzYYBGYbYjGLMAAwYgxGAmZAMzYMAAAMzMzAAYmhB",
-                        usage = 11.1,
-                        totalRankings = 1493,
-                        source = "Archon.gg Meta Builds (11.1% popularity, 1,493 parses)"
+                        usage = 11.2,
+                        totalRankings = 1475,
+                        source = "Archon.gg Meta Builds (11.2% popularity, 1,475 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMzMDAAAghphxYGWmZmZGMmZAAAAAMzyMDIjxyyALgBMDTgZwGYmxmZbMYGDwMDAzYYA",
-                        usage = 43.1,
-                        totalRankings = 3226,
-                        source = "Archon.gg Meta Builds (43.1% popularity, 3,226 parses)"
+                        usage = 43.3,
+                        totalRankings = 3177,
+                        source = "Archon.gg Meta Builds (43.3% popularity, 3,177 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZMz2yMzMjZmxMjZMjZWmZGjZmlxMzAAAhB2glFjGzAYWwMWAMDGDAmZAMMzMDGM",
-                        usage = 25.8,
-                        totalRankings = 4570,
-                        source = "Archon.gg Meta Builds (25.8% popularity, 4,570 parses)"
+                        usage = 25.7,
+                        totalRankings = 4485,
+                        source = "Archon.gg Meta Builds (25.7% popularity, 4,485 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzMzmxsMjxYmGmZYZMzMDzYmBAAAALDAzYAGYDWWMaMDgZDzsBzYmBz2AgZGAAGgB",
-                        usage = 7.7,
-                        totalRankings = 2018,
-                        source = "Archon.gg Meta Builds (7.7% popularity, 2,018 parses)"
+                        usage = 7.6,
+                        totalRankings = 1980,
+                        source = "Archon.gg Meta Builds (7.6% popularity, 1,980 parses)"
                     },
                 },
             },
@@ -3510,267 +3510,267 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMGDz2MzMzMbmZ0MjxYYGGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgBghZGgZgB",
-                        usage = 46.8,
-                        totalRankings = 2391,
-                        source = "Archon.gg Meta Builds (46.8% popularity, 2,391 parses)"
+                        usage = 45.9,
+                        totalRankings = 2385,
+                        source = "Archon.gg Meta Builds (45.9% popularity, 2,385 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
-                        usage = 16.9,
-                        totalRankings = 18413,
-                        source = "Archon.gg Meta Builds (16.9% popularity, 18,413 parses)"
+                        usage = 17.1,
+                        totalRankings = 18250,
+                        source = "Archon.gg Meta Builds (17.1% popularity, 18,250 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwY2GzMmxMzMMbzMz0MLmZMmxAAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxmGLbA2GwGgZYAAAzMwwA",
                         usage = 6.2,
-                        totalRankings = 4004,
-                        source = "Archon.gg Meta Builds (6.2% popularity, 4,004 parses)"
+                        totalRankings = 3962,
+                        source = "Archon.gg Meta Builds (6.2% popularity, 3,962 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmZmZmwMDAAAAAAY2MmtZYmBzM2mt5BmZMGDLDsNLmxwsx0YmZMsBAAAAAAAwMDGAAAAG",
-                        usage = 29.5,
-                        totalRankings = 3056,
-                        source = "Archon.gg Meta Builds (29.5% popularity, 3,056 parses)"
+                        usage = 30.1,
+                        totalRankings = 3032,
+                        source = "Archon.gg Meta Builds (30.1% popularity, 3,032 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmhZkZmBziZMDmZMzYmHYmZGDmtZGbzMz2YYAAAAAAAAYmhNAAAAMwMzMzs12MzMAAAAAAD",
-                        usage = 8.2,
-                        totalRankings = 1081,
-                        source = "Archon.gg Meta Builds (8.2% popularity, 1,081 parses)"
+                        usage = 8.4,
+                        totalRankings = 1064,
+                        source = "Archon.gg Meta Builds (8.4% popularity, 1,064 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
                         usage = 95.2,
-                        totalRankings = 10146,
-                        source = "Archon.gg Meta Builds (95.2% popularity, 10,146 parses)"
+                        totalRankings = 10063,
+                        source = "Archon.gg Meta Builds (95.2% popularity, 10,063 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMD8AmFzMzMMYYMzyYbGzYjlZWGzMjZBDDwAssN2w0MzyAAAAgNzMzMD2MGGzAYmBAGA",
-                        usage = 23.6,
-                        totalRankings = 4618,
-                        source = "Archon.gg Meta Builds (23.6% popularity, 4,618 parses)"
+                        usage = 23.7,
+                        totalRankings = 4571,
+                        source = "Archon.gg Meta Builds (23.7% popularity, 4,571 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYm5BmZAAAAYLY2MMmZUzYWmZmZGjZMAAAAAAMwAAAAAAMbzs0sNzyGYmHAYxMYAAMzAgB",
-                        usage = 53.2,
-                        totalRankings = 2079,
-                        source = "Archon.gg Meta Builds (53.2% popularity, 2,079 parses)"
+                        usage = 53.0,
+                        totalRankings = 2048,
+                        source = "Archon.gg Meta Builds (53.0% popularity, 2,048 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZmFzMjZWmZxMPwMLLDMbGGNRmZWmZmZmlxMMAAAAAAjNzALbzMYMLDgJAAAgNMzAsYMMwsYBgZGAA",
-                        usage = 22.5,
-                        totalRankings = 5580,
-                        source = "Archon.gg Meta Builds (22.5% popularity, 5,580 parses)"
+                        usage = 22.7,
+                        totalRankings = 5565,
+                        source = "Archon.gg Meta Builds (22.7% popularity, 5,565 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGz2wDwMzmxCzAAAAAAAAAAgtBNbMmmZM8AmlZmZmhhZAAAAAAAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
-                        usage = 22.6,
-                        totalRankings = 5772,
-                        source = "Archon.gg Meta Builds (22.6% popularity, 5,772 parses)"
+                        usage = 22.9,
+                        totalRankings = 5684,
+                        source = "Archon.gg Meta Builds (22.9% popularity, 5,684 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 47.5,
+                        usage = 48.2,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (47.5% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (48.2% popularity, 1,000 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2MPAGmZMbGzMzsMDAAwMmxMGjZEmBAAAYmZkZMzMzyMzAgBGzYjFYgZYohhFYMzAMGA",
-                        usage = 16.8,
-                        totalRankings = 2168,
-                        source = "Archon.gg Meta Builds (16.8% popularity, 2,168 parses)"
+                        usage = 16.6,
+                        totalRankings = 2141,
+                        source = "Archon.gg Meta Builds (16.6% popularity, 2,141 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZzYwCsMGGbDgZQshZGYmBwA",
-                        usage = 20.2,
-                        totalRankings = 5670,
-                        source = "Archon.gg Meta Builds (20.2% popularity, 5,670 parses)"
+                        usage = 19.6,
+                        totalRankings = 5573,
+                        source = "Archon.gg Meta Builds (19.6% popularity, 5,573 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGPwyMzsYGmZmZGzMMzMmhZGzMzgZGzYGM0MAAAAAAAAgZGzAMzGALzsA2GA",
-                        usage = 47.6,
-                        totalRankings = 11685,
-                        source = "Archon.gg Meta Builds (47.6% popularity, 11,685 parses)"
+                        usage = 47.3,
+                        totalRankings = 11625,
+                        source = "Archon.gg Meta Builds (47.3% popularity, 11,625 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAgZMjZwYmZMDGTzYwsttZmZMzMzMzsgZZYmBAAMzMzAgZGbMLGgNmZM",
-                        usage = 24.2,
-                        totalRankings = 1791,
-                        source = "Archon.gg Meta Builds (24.2% popularity, 1,791 parses)"
+                        usage = 24.7,
+                        totalRankings = 1758,
+                        source = "Archon.gg Meta Builds (24.7% popularity, 1,758 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmx2MGzYGWGTzAAAAwAAjllZmZxMzMYMGwMbAGGjZmNDA",
-                        usage = 56.5,
-                        totalRankings = 2568,
-                        source = "Archon.gg Meta Builds (56.5% popularity, 2,568 parses)"
+                        usage = 56.1,
+                        totalRankings = 2545,
+                        source = "Archon.gg Meta Builds (56.1% popularity, 2,545 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 53.5,
-                        totalRankings = 680,
-                        source = "Archon.gg Meta Builds (53.5% popularity, 680 parses)"
+                        usage = 53.8,
+                        totalRankings = 679,
+                        source = "Archon.gg Meta Builds (53.8% popularity, 679 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzwYmZmZWGAmZgxYMYGG",
-                        usage = 16.6,
-                        totalRankings = 948,
-                        source = "Archon.gg Meta Builds (16.6% popularity, 948 parses)"
+                        usage = 16.1,
+                        totalRankings = 937,
+                        source = "Archon.gg Meta Builds (16.1% popularity, 937 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 71.7,
-                        totalRankings = 13796,
-                        source = "Archon.gg Meta Builds (71.7% popularity, 13,796 parses)"
+                        usage = 71.5,
+                        totalRankings = 13648,
+                        source = "Archon.gg Meta Builds (71.5% popularity, 13,648 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 22.4,
-                        totalRankings = 4105,
-                        source = "Archon.gg Meta Builds (22.4% popularity, 4,105 parses)"
+                        usage = 22.6,
+                        totalRankings = 4031,
+                        source = "Archon.gg Meta Builds (22.6% popularity, 4,031 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
-                        usage = 36.0,
-                        totalRankings = 7768,
-                        source = "Archon.gg Meta Builds (36.0% popularity, 7,768 parses)"
+                        usage = 35.9,
+                        totalRankings = 7711,
+                        source = "Archon.gg Meta Builds (35.9% popularity, 7,711 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDjwMMMgZMMzMzwsMMDzyMBAsYmtxwYmZAAsBAzys0MzMLADDMzAwYZMgBM",
-                        usage = 39.8,
-                        totalRankings = 3384,
-                        source = "Archon.gg Meta Builds (39.8% popularity, 3,384 parses)"
+                        usage = 39.1,
+                        totalRankings = 3341,
+                        source = "Archon.gg Meta Builds (39.1% popularity, 3,341 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
                         usage = 58.5,
-                        totalRankings = 4016,
-                        source = "Archon.gg Meta Builds (58.5% popularity, 4,016 parses)"
+                        totalRankings = 3950,
+                        source = "Archon.gg Meta Builds (58.5% popularity, 3,950 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
-                        usage = 12.2,
-                        totalRankings = 1512,
-                        source = "Archon.gg Meta Builds (12.2% popularity, 1,512 parses)"
+                        usage = 12.3,
+                        totalRankings = 1498,
+                        source = "Archon.gg Meta Builds (12.3% popularity, 1,498 parses)"
                     },
                     ["Retribution"] = {
-                        loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMmZmZAAAAAAmpMmhZGbDz2wMbzYMGDzYjNAAAmZabmZbGAwGgBAjZMzgZmhNsMDGGDDG",
-                        usage = 19.0,
-                        totalRankings = 11986,
-                        source = "Archon.gg Meta Builds (19.0% popularity, 11,986 parses)"
+                        loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMMzAAAAAAwoMmhZGbDz2wMbzYMmZYGbsNMAAwMTbzMbzAA2AMAYMDzgZMmNsMDGGzYwA",
+                        usage = 19.6,
+                        totalRankings = 11874,
+                        source = "Archon.gg Meta Builds (19.6% popularity, 11,874 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZYGmBmpZamBYmFMEGzyAMGsAAAjxMjBzAMzMMDD",
-                        usage = 16.3,
-                        totalRankings = 5092,
-                        source = "Archon.gg Meta Builds (16.3% popularity, 5,092 parses)"
+                        usage = 16.1,
+                        totalRankings = 5019,
+                        source = "Archon.gg Meta Builds (16.1% popularity, 5,019 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwMmlZwMzMMDzAYmaAgZWMDziBAGD2MzMLAaGjxYYmZbZAmBG",
-                        usage = 53.3,
-                        totalRankings = 3470,
-                        source = "Archon.gg Meta Builds (53.3% popularity, 3,470 parses)"
+                        usage = 53.2,
+                        totalRankings = 3461,
+                        source = "Archon.gg Meta Builds (53.2% popularity, 3,461 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 37.5,
-                        totalRankings = 3743,
-                        source = "Archon.gg Meta Builds (37.5% popularity, 3,743 parses)"
+                        usage = 37.4,
+                        totalRankings = 3716,
+                        source = "Archon.gg Meta Builds (37.4% popularity, 3,716 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsZwAAAAAAzygtZAAAAAAttNzMzMzMGzMzMbzsMzMwMzMzMmZmZMAGYBmxoxsBYbAbGAMzMYA",
-                        usage = 12.3,
+                        usage = 12.5,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (12.3% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (12.5% popularity, 1,000 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZmZmxsBmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 16.9,
+                        usage = 17.3,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (16.9% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (17.3% popularity, 1,000 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
-                        usage = 67.2,
-                        totalRankings = 4299,
-                        source = "Archon.gg Meta Builds (67.2% popularity, 4,299 parses)"
+                        usage = 67.4,
+                        totalRankings = 4247,
+                        source = "Archon.gg Meta Builds (67.4% popularity, 4,247 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMLzMzYstYahZmlxyMzMjhlZZYxMDzsAAMAmZghhB",
-                        usage = 33.9,
-                        totalRankings = 5265,
-                        source = "Archon.gg Meta Builds (33.9% popularity, 5,265 parses)"
+                        usage = 33.6,
+                        totalRankings = 5198,
+                        source = "Archon.gg Meta Builds (33.6% popularity, 5,198 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAAsBYzMG2gFYGGawCAz2MmxYZZGLMzsNWmZmZYsMmBAYGGzMMCMzgBjB",
-                        usage = 36.6,
-                        totalRankings = 2084,
-                        source = "Archon.gg Meta Builds (36.6% popularity, 2,084 parses)"
+                        usage = 37.6,
+                        totalRankings = 2075,
+                        source = "Archon.gg Meta Builds (37.6% popularity, 2,075 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
-                        usage = 28.2,
-                        totalRankings = 8210,
-                        source = "Archon.gg Meta Builds (28.2% popularity, 8,210 parses)"
+                        usage = 28.1,
+                        totalRankings = 8125,
+                        source = "Archon.gg Meta Builds (28.1% popularity, 8,125 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAwMMzoZzMz2MzYWGAAwMzsMbmZWGDAM2WGYADYG2CMsNAAAMDAAgZmZmxMjxYGjZmZGDzMzAAMgB",
-                        usage = 14.1,
-                        totalRankings = 1191,
-                        source = "Archon.gg Meta Builds (14.1% popularity, 1,191 parses)"
+                        usage = 13.7,
+                        totalRankings = 1199,
+                        source = "Archon.gg Meta Builds (13.7% popularity, 1,199 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAAAAAAGzYYBGYbYhGWMYmlZbmZGzAAzwMzMzMAjZMzsBAAmZmZGDjZZGDYA",
-                        usage = 27.2,
-                        totalRankings = 12167,
-                        source = "Archon.gg Meta Builds (27.2% popularity, 12,167 parses)"
+                        usage = 26.6,
+                        totalRankings = 12030,
+                        source = "Archon.gg Meta Builds (26.6% popularity, 12,030 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMmlZZMzMLmZ2WYAAwMGzMzCYMjhFYgthFaswAAAjBDbAYmBYmZMzsBAAYmZGAAMDD",
-                        usage = 21.1,
+                        usage = 21.4,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (21.1% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (21.4% popularity, 1,000 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZAAAAMMNMGzMLLzMzMDzYmBAAAAwMLzMwWGjllBWADYGmAzgNgZwYMYmtBYmBgZMMA",
-                        usage = 36.7,
-                        totalRankings = 3542,
-                        source = "Archon.gg Meta Builds (36.7% popularity, 3,542 parses)"
+                        usage = 37.0,
+                        totalRankings = 3497,
+                        source = "Archon.gg Meta Builds (37.0% popularity, 3,497 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmxyyMzMzMMmZmZMjZWmZGjZmtxMzAAAxYZZgFwAmhJwMsBMzgxAAgZGDjZmhBD",
-                        usage = 31.4,
-                        totalRankings = 5012,
-                        source = "Archon.gg Meta Builds (31.4% popularity, 5,012 parses)"
+                        usage = 31.2,
+                        totalRankings = 4941,
+                        source = "Archon.gg Meta Builds (31.2% popularity, 4,941 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMjZmZmZGzmxsMjxY0wMDLzMzMDGzMAAAAYZAYGDwAbwyiRjZAMbYmNYGzMY2GAMzAAwMgB",
-                        usage = 12.1,
-                        totalRankings = 2801,
-                        source = "Archon.gg Meta Builds (12.1% popularity, 2,801 parses)"
+                        usage = 12.0,
+                        totalRankings = 2772,
+                        source = "Archon.gg Meta Builds (12.0% popularity, 2,772 parses)"
                     },
                 },
             },
@@ -3780,267 +3780,267 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMDY2mZmZmZZmZkZMmZYGGPgZGMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgZAMMzAMzgB",
-                        usage = 70.2,
-                        totalRankings = 1003,
-                        source = "Archon.gg Meta Builds (70.2% popularity, 1,003 parses)"
+                        usage = 70.7,
+                        totalRankings = 1000,
+                        source = "Archon.gg Meta Builds (70.7% popularity, 1,000 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
-                        usage = 59.8,
-                        totalRankings = 4235,
-                        source = "Archon.gg Meta Builds (59.8% popularity, 4,235 parses)"
+                        usage = 59.9,
+                        totalRankings = 4144,
+                        source = "Archon.gg Meta Builds (59.9% popularity, 4,144 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwY2mZmxMmZmhZbmZmmZxMjxMGAAAAYmZmZGzMDzYMAYMzMzAAAMmtBGwCYbYCMsAYGzAAwMDAMA",
-                        usage = 13.9,
-                        totalRankings = 1792,
-                        source = "Archon.gg Meta Builds (13.9% popularity, 1,792 parses)"
+                        usage = 14.1,
+                        totalRankings = 1746,
+                        source = "Archon.gg Meta Builds (14.1% popularity, 1,746 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmxMzkxMDAAAAAAY2MGz8AmZwMjtZbegZGjxwyAbziZMMbMNmZGDbAAAAAAAAMzgBAAAgB",
-                        usage = 27.6,
-                        totalRankings = 2149,
-                        source = "Archon.gg Meta Builds (27.6% popularity, 2,149 parses)"
+                        usage = 28.0,
+                        totalRankings = 2090,
+                        source = "Archon.gg Meta Builds (28.0% popularity, 2,090 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYWMzMjhZMzYGzYmZYGmx2MzYMAAAAAAAAgZmxGAAAAGMmZmZWabmZGAYAAAAMA",
-                        usage = 7.6,
+                        usage = 7.4,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (7.6% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (7.4% popularity, 1,000 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
-                        usage = 88.6,
-                        totalRankings = 2763,
-                        source = "Archon.gg Meta Builds (88.6% popularity, 2,763 parses)"
+                        usage = 88.4,
+                        totalRankings = 2699,
+                        source = "Archon.gg Meta Builds (88.4% popularity, 2,699 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDMmlZmZmBYYWmZbYGzYjlZMzMjZ2wAgBYZbshpZmlBAAAAbmZmZGsZMMmBwMDAMA",
-                        usage = 30.0,
-                        totalRankings = 1998,
-                        source = "Archon.gg Meta Builds (30.0% popularity, 1,998 parses)"
+                        usage = 29.1,
+                        totalRankings = 1928,
+                        source = "Archon.gg Meta Builds (29.1% popularity, 1,928 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYGzMDAAAAbBzmhxMjaGzyYmZGjZMAAAAAAMwAAAAAAMbzs0sNzyGYmBYxMYAAMzAgB",
-                        usage = 34.5,
-                        totalRankings = 1316,
-                        source = "Archon.gg Meta Builds (34.5% popularity, 1,316 parses)"
+                        usage = 34.6,
+                        totalRankings = 1271,
+                        source = "Archon.gg Meta Builds (34.6% popularity, 1,271 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMPwYMzmZZGMWGgZGjmoZmZZmZmZMMPgBAAAAwgZsMDYZbmBjZbAMBAAAshZMgFzgBsYZbAmZAM",
-                        usage = 13.7,
-                        totalRankings = 1825,
-                        source = "Archon.gg Meta Builds (13.7% popularity, 1,825 parses)"
+                        usage = 14.1,
+                        totalRankings = 1797,
+                        source = "Archon.gg Meta Builds (14.1% popularity, 1,797 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGz2wDwMzmxCzAAAAAAAAAAgtBNbMmmZM8AmlZmZmhhZAAAAAAAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
-                        usage = 33.8,
-                        totalRankings = 2108,
-                        source = "Archon.gg Meta Builds (33.8% popularity, 2,108 parses)"
+                        usage = 33.4,
+                        totalRankings = 2049,
+                        source = "Archon.gg Meta Builds (33.4% popularity, 2,049 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 38.8,
-                        totalRankings = 902,
-                        source = "Archon.gg Meta Builds (38.8% popularity, 902 parses)"
+                        usage = 38.9,
+                        totalRankings = 884,
+                        source = "Archon.gg Meta Builds (38.9% popularity, 884 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2WmHADzMmNjZmZWmxAAAzYGDmxMyMzAAAAMzMTmxMjZbmZAwAjZsxCMwMM0AWgxMDwYA",
-                        usage = 18.7,
+                        usage = 19.1,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (18.7% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (19.1% popularity, 1,000 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMzyYmBmZzYwCsMGGbDgZQshZGYmBwA",
-                        usage = 30.4,
-                        totalRankings = 1761,
-                        source = "Archon.gg Meta Builds (30.4% popularity, 1,761 parses)"
+                        usage = 30.8,
+                        totalRankings = 1716,
+                        source = "Archon.gg Meta Builds (30.8% popularity, 1,716 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYG2GzsNzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAwMAAAMzMzAMzGghZBsNA",
-                        usage = 58.5,
-                        totalRankings = 5680,
-                        source = "Archon.gg Meta Builds (58.5% popularity, 5,680 parses)"
+                        usage = 58.3,
+                        totalRankings = 5540,
+                        source = "Archon.gg Meta Builds (58.3% popularity, 5,540 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAgZMzMDzYmZMDGTzYwsttZmZMzMzMzswMLDzMAAgxMjBgZGbYxAsxMjB",
-                        usage = 16.8,
+                        usage = 16.4,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (16.8% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (16.4% popularity, 1,000 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmx2MGzYGWGTzAAAAwAAjllZmZxMzMYMGwMbAGGjZmNDA",
-                        usage = 31.8,
-                        totalRankings = 1438,
-                        source = "Archon.gg Meta Builds (31.8% popularity, 1,438 parses)"
+                        usage = 32.2,
+                        totalRankings = 1405,
+                        source = "Archon.gg Meta Builds (32.2% popularity, 1,405 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 30.4,
-                        totalRankings = 533,
-                        source = "Archon.gg Meta Builds (30.4% popularity, 533 parses)"
+                        usage = 30.9,
+                        totalRankings = 537,
+                        source = "Archon.gg Meta Builds (30.9% popularity, 537 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzwYmZmZ2GAmZgxYMYGG",
-                        usage = 22.0,
-                        totalRankings = 626,
-                        source = "Archon.gg Meta Builds (22.0% popularity, 626 parses)"
+                        usage = 22.4,
+                        totalRankings = 595,
+                        source = "Archon.gg Meta Builds (22.4% popularity, 595 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 57.2,
-                        totalRankings = 4959,
-                        source = "Archon.gg Meta Builds (57.2% popularity, 4,959 parses)"
+                        usage = 57.4,
+                        totalRankings = 4839,
+                        source = "Archon.gg Meta Builds (57.4% popularity, 4,839 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 22.1,
-                        totalRankings = 1265,
-                        source = "Archon.gg Meta Builds (22.1% popularity, 1,265 parses)"
+                        usage = 22.8,
+                        totalRankings = 1226,
+                        source = "Archon.gg Meta Builds (22.8% popularity, 1,226 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
-                        usage = 37.9,
-                        totalRankings = 2078,
-                        source = "Archon.gg Meta Builds (37.9% popularity, 2,078 parses)"
+                        usage = 38.5,
+                        totalRankings = 2024,
+                        source = "Archon.gg Meta Builds (38.5% popularity, 2,024 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MGsNzMbzAAAAAAAAAAAAsMMCzYbYAzYYmZmhZZYGmlZCAYzMbjhZmZGAAbAwsMLNzMzCAGYmBAWGDYAD",
-                        usage = 42.9,
-                        totalRankings = 1904,
-                        source = "Archon.gg Meta Builds (42.9% popularity, 1,904 parses)"
+                        usage = 43.3,
+                        totalRankings = 1866,
+                        source = "Archon.gg Meta Builds (43.3% popularity, 1,866 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 52.6,
-                        totalRankings = 1655,
-                        source = "Archon.gg Meta Builds (52.6% popularity, 1,655 parses)"
+                        usage = 52.5,
+                        totalRankings = 1603,
+                        source = "Archon.gg Meta Builds (52.5% popularity, 1,603 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
-                        usage = 24.5,
-                        totalRankings = 1154,
-                        source = "Archon.gg Meta Builds (24.5% popularity, 1,154 parses)"
+                        usage = 24.7,
+                        totalRankings = 1125,
+                        source = "Archon.gg Meta Builds (24.7% popularity, 1,125 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMMzAAAAAAwoMmhZGbDz2wMbzYMmZYGbsNMAAwMTbzMbzAA2AMAYMDzgZMmNsMDGGzYwA",
-                        usage = 49.9,
-                        totalRankings = 6548,
-                        source = "Archon.gg Meta Builds (49.9% popularity, 6,548 parses)"
+                        usage = 49.7,
+                        totalRankings = 6395,
+                        source = "Archon.gg Meta Builds (49.7% popularity, 6,395 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZYGmBmpZamBYmFMEGzyAMGsAAAjxMjBzAMzMMDD",
-                        usage = 23.0,
-                        totalRankings = 1506,
-                        source = "Archon.gg Meta Builds (23.0% popularity, 1,506 parses)"
+                        usage = 23.6,
+                        totalRankings = 1478,
+                        source = "Archon.gg Meta Builds (23.6% popularity, 1,478 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwwsMDzMzMYGzAYmaAgZWMDziBAGD2MzMLAaGmxYYmZbZAmBG",
-                        usage = 47.0,
-                        totalRankings = 1743,
-                        source = "Archon.gg Meta Builds (47.0% popularity, 1,743 parses)"
+                        usage = 47.1,
+                        totalRankings = 1695,
+                        source = "Archon.gg Meta Builds (47.1% popularity, 1,695 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 37.0,
-                        totalRankings = 1870,
-                        source = "Archon.gg Meta Builds (37.0% popularity, 1,870 parses)"
+                        usage = 36.8,
+                        totalRankings = 1840,
+                        source = "Archon.gg Meta Builds (36.8% popularity, 1,840 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsMDAAAAAottZmZmZmxYmZmZbmlZmZwYmZmxMjhBwALwMGNmFALDYzAgZmBD",
-                        usage = 15.5,
+                        usage = 15.0,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (15.5% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (15.0% popularity, 1,000 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZmZMmNeAmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 34.1,
-                        totalRankings = 971,
-                        source = "Archon.gg Meta Builds (34.1% popularity, 971 parses)"
+                        usage = 34.4,
+                        totalRankings = 933,
+                        source = "Archon.gg Meta Builds (34.4% popularity, 933 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
-                        usage = 55.1,
-                        totalRankings = 1534,
-                        source = "Archon.gg Meta Builds (55.1% popularity, 1,534 parses)"
+                        usage = 55.8,
+                        totalRankings = 1503,
+                        source = "Archon.gg Meta Builds (55.8% popularity, 1,503 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMLzMzYstYahZGjlZmZGzYZWGWMzwMLAADgZGYYYA",
-                        usage = 30.1,
-                        totalRankings = 2504,
-                        source = "Archon.gg Meta Builds (30.1% popularity, 2,504 parses)"
+                        usage = 29.8,
+                        totalRankings = 2447,
+                        source = "Archon.gg Meta Builds (29.8% popularity, 2,447 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZmZGAAAAAAAAAYB2gZsox2AYGwGAzyMmZGLLzAzMbsMzMzwwYGAADwYmJmZAgxA",
-                        usage = 35.1,
-                        totalRankings = 1026,
-                        source = "Archon.gg Meta Builds (35.1% popularity, 1,026 parses)"
+                        usage = 35.0,
+                        totalRankings = 1000,
+                        source = "Archon.gg Meta Builds (35.0% popularity, 1,000 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
-                        usage = 29.2,
-                        totalRankings = 2670,
-                        source = "Archon.gg Meta Builds (29.2% popularity, 2,670 parses)"
+                        usage = 29.0,
+                        totalRankings = 2622,
+                        source = "Archon.gg Meta Builds (29.0% popularity, 2,622 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZhhZmZmlBAAYmZxyMzsMzAAjllBGwAmhtADbDAAAzAAAYmhZmxADzMzMjZwMzMDAYGYA",
-                        usage = 19.6,
+                        usage = 20.2,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (19.6% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (20.2% popularity, 1,000 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAAAAAAGzYYBGYbYhGWMYmlZbmZGzAAzwMzMzMAjZMzsBAAmZmZGDjZZGDYA",
-                        usage = 22.5,
-                        totalRankings = 3476,
-                        source = "Archon.gg Meta Builds (22.5% popularity, 3,476 parses)"
+                        usage = 22.2,
+                        totalRankings = 3405,
+                        source = "Archon.gg Meta Builds (22.2% popularity, 3,405 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmZmlZjZmZxgFzAAgZmxMzsAGzYYBGYbYjGLMAAwYgxGAmZAMzYMAAAMzMzAAYmhB",
-                        usage = 10.5,
+                        usage = 10.4,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (10.5% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (10.4% popularity, 1,000 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMzMDAAAghphxYmxyMzMzwMmZAAAAAMzyMDIjxyyALgBMDTgZwGwMY2GDmxAMzAwMGGA",
-                        usage = 49.9,
-                        totalRankings = 1374,
-                        source = "Archon.gg Meta Builds (49.9% popularity, 1,374 parses)"
+                        usage = 49.6,
+                        totalRankings = 1344,
+                        source = "Archon.gg Meta Builds (49.6% popularity, 1,344 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmhlZmZmZYMzMzYGzsMzMGzMbjZmBAAixyyALgBMDTgZYDYmBz2AAgZGDjZmhBD",
-                        usage = 40.9,
-                        totalRankings = 2203,
-                        source = "Archon.gg Meta Builds (40.9% popularity, 2,203 parses)"
+                        usage = 40.3,
+                        totalRankings = 2160,
+                        source = "Archon.gg Meta Builds (40.3% popularity, 2,160 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzMzmxsMjxYmGmZYZMzMDzYmBAAAALDAzYAGYDWWMaMDgZDzsBzYmBz2AgZGAAGgB",
-                        usage = 9.4,
-                        totalRankings = 1192,
-                        source = "Archon.gg Meta Builds (9.4% popularity, 1,192 parses)"
+                        usage = 9.2,
+                        totalRankings = 1165,
+                        source = "Archon.gg Meta Builds (9.2% popularity, 1,165 parses)"
                     },
                 },
             },
@@ -4048,15 +4048,15 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMGDz2MzMzMLmZ0MjxYYGGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgBghZGgZgB",
-                        usage = 68.1,
+                        usage = 68.3,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (68.1% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (68.3% popularity, 1,000 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMzYY2mZmZa2MzYMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
-                        usage = 39.9,
-                        totalRankings = 2210,
-                        source = "Archon.gg Meta Builds (39.9% popularity, 2,210 parses)"
+                        usage = 40.1,
+                        totalRankings = 2228,
+                        source = "Archon.gg Meta Builds (40.1% popularity, 2,228 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMjhZbmZmmZxMjxMGAAAAYmZmZmZmZYGjBAjZmZGAAADMwMW0YZDw2A2AMDDAAYmBzwA",
@@ -4068,247 +4068,247 @@ ArchonTalentsData = {
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmZmZmwMDAAAAAAY2MmtZYmBzM2mt5BmZMGDLDsNLmxwsx0YmZMsBAAAAAAAwMDGAAAAG",
-                        usage = 33.1,
+                        usage = 33.7,
                         totalRankings = 629,
-                        source = "Archon.gg Meta Builds (33.1% popularity, 629 parses)"
+                        source = "Archon.gg Meta Builds (33.7% popularity, 629 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMzMkZmBziZMDmZMzYGzMzYYmlZGbmZ2GDAAAAAAAAYmZsBAAAgBzMzMzs12MzMAwAAAAYA",
-                        usage = 33.9,
-                        totalRankings = 224,
-                        source = "Archon.gg Meta Builds (33.9% popularity, 224 parses)"
+                        usage = 33.3,
+                        totalRankings = 234,
+                        source = "Archon.gg Meta Builds (33.3% popularity, 234 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
-                        usage = 96.6,
-                        totalRankings = 1765,
-                        source = "Archon.gg Meta Builds (96.6% popularity, 1,765 parses)"
+                        usage = 96.5,
+                        totalRankings = 1788,
+                        source = "Archon.gg Meta Builds (96.5% popularity, 1,788 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYYMzyYxMzYjlZWmZMzMLYYAGbbzMYMbDgJAAAALmZmZGsZYMGAAmZgB",
-                        usage = 48.2,
+                        usage = 49.0,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (48.2% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (49.0% popularity, 1,000 parses)"
                     },
                     ["Feral"] = {
-                        loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYm5BmZAAAAYJY2gxMjaGzCzMzYMzDMAAAAAAMwAAAAAAMbzs0sNzyGMzMALmBDAgZGAMA",
-                        usage = 43.0,
-                        totalRankings = 298,
-                        source = "Archon.gg Meta Builds (43.0% popularity, 298 parses)"
+                        loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYm5BmZAAAAYLY2MMmZUzYWGzMzYMjZAAAAAAMwAAAAAAMbzs0sNzyGYmHAYxMYAAMzAgB",
+                        usage = 41.1,
+                        totalRankings = 297,
+                        source = "Archon.gg Meta Builds (41.1% popularity, 297 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMPwYMzmZZGM2GYYGjmoZmZZmZmZMmhBAAAAAMjtZALbzMYMbDgJAAAgNMzDMgFzgBsYZbAmZAM",
-                        usage = 12.6,
-                        totalRankings = 752,
-                        source = "Archon.gg Meta Builds (12.6% popularity, 752 parses)"
+                        usage = 13.2,
+                        totalRankings = 763,
+                        source = "Archon.gg Meta Builds (13.2% popularity, 763 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMLz2MmZGz2wDYmZYswMAAAAAAAAAAYxQzmZMNzAMLzMzMDDzAAAAAwAAAAAAAAmtZWa2mZzGjZmhZGY0MAAzMAMA",
-                        usage = 33.7,
+                        usage = 33.6,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (33.7% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (33.6% popularity, 1,000 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDmZwwMDMYMTjZmJjxyMzMzwMzMzAmxMGzMLzMDmBmxMwGYBMDTgNwywAYmZGD",
-                        usage = 37.7,
-                        totalRankings = 114,
-                        source = "Archon.gg Meta Builds (37.7% popularity, 114 parses)"
+                        usage = 38.1,
+                        totalRankings = 113,
+                        source = "Archon.gg Meta Builds (38.1% popularity, 113 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2MPwMGmZMbGzMzsZMAAwMmx8AGjZEmBAAAYmZkZMzMzyMzAgBGzYjFYgZYoBsAjZGgxA",
-                        usage = 15.4,
+                        usage = 15.3,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (15.4% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (15.3% popularity, 1,000 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZGjhZ2AAAAAAAAYmZghZM1YmZGAAAAMjZmxMzyYmBmZxAjZswCMwMM0ALYmxMDAM",
-                        usage = 62.7,
-                        totalRankings = 1859,
-                        source = "Archon.gg Meta Builds (62.7% popularity, 1,859 parses)"
+                        usage = 62.6,
+                        totalRankings = 1873,
+                        source = "Archon.gg Meta Builds (62.6% popularity, 1,873 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYG2GzsNzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAwMAAAMzMDgZ2AMLmFw2AA",
-                        usage = 88.1,
-                        totalRankings = 1397,
-                        source = "Archon.gg Meta Builds (88.1% popularity, 1,397 parses)"
+                        usage = 87.9,
+                        totalRankings = 1422,
+                        source = "Archon.gg Meta Builds (87.9% popularity, 1,422 parses)"
                     },
                     ["Marksmanship"] = {
-                        loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAgZMjZwYmZMDGTzYwsttZmZMzMzMzsgZZYmBAAMzMzAgZGbbsYA2YmxA",
-                        usage = 64.6,
-                        totalRankings = 1195,
-                        source = "Archon.gg Meta Builds (64.6% popularity, 1,195 parses)"
+                        loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAgZMjZYGzMjZwYaGDmttNzMjZmZmZmFMLDzMAAgZmZAgZGbMLGgNmZM",
+                        usage = 63.4,
+                        totalRankings = 1189,
+                        source = "Archon.gg Meta Builds (63.4% popularity, 1,189 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmhZMmxMYMNDAAAAAgxyyMzsYmZGzDMzAYmNAzixYmZzAA",
-                        usage = 55.5,
-                        totalRankings = 878,
-                        source = "Archon.gg Meta Builds (55.5% popularity, 878 parses)"
+                        usage = 56.5,
+                        totalRankings = 888,
+                        source = "Archon.gg Meta Builds (56.5% popularity, 888 parses)"
                     },
                 },
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 83.3,
-                        totalRankings = 36,
-                        source = "Archon.gg Meta Builds (83.3% popularity, 36 parses)"
+                        usage = 81.1,
+                        totalRankings = 37,
+                        source = "Archon.gg Meta Builds (81.1% popularity, 37 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGLAAAAAwiZmZmBAAjZMjZmZmZBAzMAjxgZYA",
-                        usage = 19.8,
-                        totalRankings = 126,
-                        source = "Archon.gg Meta Builds (19.8% popularity, 126 parses)"
+                        usage = 19.4,
+                        totalRankings = 129,
+                        source = "Archon.gg Meta Builds (19.4% popularity, 129 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 89.0,
-                        totalRankings = 2453,
-                        source = "Archon.gg Meta Builds (89.0% popularity, 2,453 parses)"
+                        usage = 89.1,
+                        totalRankings = 2471,
+                        source = "Archon.gg Meta Builds (89.1% popularity, 2,471 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYG2mxGmZAAAAAAAYZBjYmBmhxmZMmZmZY2mNzYmFss9AbbjxMLAAwGAAAY2mlmZmZhhNAmZYaMgBAMA",
-                        usage = 5.6,
+                        usage = 5.3,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (5.6% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (5.3% popularity, 1,000 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMz0MmBMYAWmZmZY2GMYxEAAAAAAsYZmlZbmBAAGwAMDYMMWmMmBA",
-                        usage = 44.9,
+                        usage = 45.7,
                         totalRankings = 1035,
-                        source = "Archon.gg Meta Builds (44.9% popularity, 1,035 parses)"
+                        source = "Archon.gg Meta Builds (45.7% popularity, 1,035 parses)"
                     },
                     ["Windwalker"] = {
-                        loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MGsNzMbzAAAAAAAAAAAAsMMCzYBDsNjZMzMzwsMMDzyMBAsZmtxwMzMDAgNAYWmlmZmZBADMzAALDgBM",
-                        usage = 44.0,
-                        totalRankings = 722,
-                        source = "Archon.gg Meta Builds (44.0% popularity, 722 parses)"
+                        loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MGsNzMbzAAAAAAAAAAAAsMMCzYbYAzYYmZmhZZYGmlZCAYzMbjhZmZGAAbAwsMLNzMzCAGYmBAWGDYAD",
+                        usage = 43.5,
+                        totalRankings = 738,
+                        source = "Archon.gg Meta Builds (43.5% popularity, 738 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 76.3,
+                        usage = 76.8,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (76.3% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (76.8% popularity, 1,000 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWmZZmZMzwyYMmZhhBAYAAAAAAQTzMLzMmZYMzWbAYADMwGAAYmptZmlZAA2AzAgxMMGAglZAmZAD",
-                        usage = 13.8,
-                        totalRankings = 195,
-                        source = "Archon.gg Meta Builds (13.8% popularity, 195 parses)"
+                        usage = 13.0,
+                        totalRankings = 193,
+                        source = "Archon.gg Meta Builds (13.0% popularity, 193 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMmxAAAAAAwoMLzwMjthZbYmtZMzYMMjN2GAAAzMtNzsNDAYDwAwMmhZwMGzGWmBDjhBD",
-                        usage = 66.4,
-                        totalRankings = 1451,
-                        source = "Archon.gg Meta Builds (66.4% popularity, 1,451 parses)"
+                        usage = 65.9,
+                        totalRankings = 1462,
+                        source = "Archon.gg Meta Builds (65.9% popularity, 1,462 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZwMmBMNTzMAzsghwYWGgxgFAAYMmZMYGgZmZMDD",
-                        usage = 20.9,
-                        totalRankings = 1308,
-                        source = "Archon.gg Meta Builds (20.9% popularity, 1,308 parses)"
+                        usage = 20.5,
+                        totalRankings = 1321,
+                        source = "Archon.gg Meta Builds (20.5% popularity, 1,321 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwMmlZwMzMMDzAYmaAgZWMDziBAGD2MzMLAaGjxYYmZbZAmBG",
                         usage = 60.9,
-                        totalRankings = 458,
-                        source = "Archon.gg Meta Builds (60.9% popularity, 458 parses)"
+                        totalRankings = 453,
+                        source = "Archon.gg Meta Builds (60.9% popularity, 453 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxMMjxyMDzsNzwMsNzMmZmxGyMWMTDwMAzsZGmNDAZMWAwMAjZmZMbjZ2WGgZwA",
-                        usage = 42.0,
-                        totalRankings = 917,
-                        source = "Archon.gg Meta Builds (42.0% popularity, 917 parses)"
+                        usage = 41.8,
+                        totalRankings = 918,
+                        source = "Archon.gg Meta Builds (41.8% popularity, 918 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsZwAAAAAAzyglZAAAAAAZbmZmZmZMmZmZ2mZZmZwMzMzMDzMzYAMwCMjRjZDw2A2MAYmZMGA",
-                        usage = 29.9,
-                        totalRankings = 117,
-                        source = "Archon.gg Meta Builds (29.9% popularity, 117 parses)"
+                        usage = 28.9,
+                        totalRankings = 114,
+                        source = "Archon.gg Meta Builds (28.9% popularity, 114 parses)"
                     },
                     ["Outlaw"] = {
-                        loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZmZMmNeAmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 27.6,
-                        totalRankings = 185,
-                        source = "Archon.gg Meta Builds (27.6% popularity, 185 parses)"
+                        loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZmZMmNeAmZbaZw2MAAAAAAbbzMzwMzMzYmZ2GAAAAGDAGzihBGYWYhWYjBYmBzgB",
+                        usage = 28.0,
+                        totalRankings = 186,
+                        source = "Archon.gg Meta Builds (28.0% popularity, 186 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
-                        usage = 74.6,
-                        totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (74.6% popularity, 1,000 parses)"
+                        usage = 74.9,
+                        totalRankings = 1007,
+                        source = "Archon.gg Meta Builds (74.9% popularity, 1,007 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMbzMzYstYahZmlxyMzMjhFLDLmZYmFAwMAmZghhB",
-                        usage = 44.1,
-                        totalRankings = 1602,
-                        source = "Archon.gg Meta Builds (44.1% popularity, 1,602 parses)"
+                        usage = 43.7,
+                        totalRankings = 1617,
+                        source = "Archon.gg Meta Builds (43.7% popularity, 1,617 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZGzAAAAAAAAAALwGMjFN2GAzA2AYWmxMGLLzYhZmNWmZmZYYMDAwMAjZmYmBAGD",
-                        usage = 35.2,
-                        totalRankings = 267,
-                        source = "Archon.gg Meta Builds (35.2% popularity, 267 parses)"
+                        usage = 36.0,
+                        totalRankings = 264,
+                        source = "Archon.gg Meta Builds (36.0% popularity, 264 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYB2gZsox2AYGYzMMw2YmZa2WmZWMjBLzMzMGMLDAAAMzMYmBAGM",
-                        usage = 24.0,
+                        usage = 25.7,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (24.0% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (25.7% popularity, 1,000 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmxsMAAAzML2mZmlZGAYstMwAGwMsFYYbAAAYGAAAzMMjZmNMMzMzMmBzMzMAgZgB",
-                        usage = 25.3,
+                        usage = 24.1,
                         totalRankings = 87,
-                        source = "Archon.gg Meta Builds (25.3% popularity, 87 parses)"
+                        source = "Archon.gg Meta Builds (24.1% popularity, 87 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmx2MzY2GAAAAAAAwYGDLwAbDL0wiBzsMbzMzYGAYGmZmZmBYMDzsBAAmZmZmZYMLzYAD",
-                        usage = 30.8,
-                        totalRankings = 2665,
-                        source = "Archon.gg Meta Builds (30.8% popularity, 2,665 parses)"
+                        usage = 30.3,
+                        totalRankings = 2683,
+                        source = "Archon.gg Meta Builds (30.3% popularity, 2,683 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAgZmZmpZzM2mZGz2sMzMzsYMbLmBAAzYMzMLgxMGWgB2GWoxCDAAMGgNAMzAwMGDAAAzMzMAAGDD",
-                        usage = 22.5,
-                        totalRankings = 80,
-                        source = "Archon.gg Meta Builds (22.5% popularity, 80 parses)"
+                        usage = 21.7,
+                        totalRankings = 83,
+                        source = "Archon.gg Meta Builds (21.7% popularity, 83 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZAAAAMMNMzYGWmZmZGMmZAAAAAMzyMDslxYZZgFwAmhJwMYDMzgZbMYmtBYmBgZMMA",
-                        usage = 76.2,
+                        usage = 75.5,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (76.2% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (75.5% popularity, 1,000 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmhlZmZmZYMzMzYGzsMzMGzMbjZmBAAixyyALgBMDTgZYDYmBz2AAgZGDjZmhBD",
-                        usage = 37.1,
+                        usage = 36.6,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (37.1% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (36.6% popularity, 1,000 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAmZmxMzMmxsZMLDjxohZGWmZmZGMmZAAAAwyYAmZbAGYDWWMaMDgZDzshZGzMY2GAMzAAwMgB",
-                        usage = 16.5,
+                        usage = 16.8,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (16.5% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (16.8% popularity, 1,000 parses)"
                     },
                 },
             },
@@ -4318,101 +4318,101 @@ ArchonTalentsData = {
                 ["DEATHKNIGHT"] = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMDY2mZmZmZZmZkZMmZYGGPgZGMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgZAMMzAMzgB",
-                        usage = 78.0,
+                        usage = 77.7,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (78.0% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (77.7% popularity, 1,000 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
-                        usage = 65.8,
-                        totalRankings = 2635,
-                        source = "Archon.gg Meta Builds (65.8% popularity, 2,635 parses)"
+                        usage = 66.0,
+                        totalRankings = 2570,
+                        source = "Archon.gg Meta Builds (66.0% popularity, 2,570 parses)"
                     },
                     ["Blood"] = {
-                        loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMmxAAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxmGLbA2GwGgZYAAAzMYwA",
-                        usage = 11.9,
-                        totalRankings = 1430,
-                        source = "Archon.gg Meta Builds (11.9% popularity, 1,430 parses)"
+                        loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZGmxMjhZbmZmmxMzYMjZAAAAwMzMzMzMzwMGDAGzMzMAAAGYgZspxyGglBsBYGGAAwMDMMA",
+                        usage = 12.3,
+                        totalRankings = 1391,
+                        source = "Archon.gg Meta Builds (12.3% popularity, 1,391 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmxMzkxMDAAAAAAY2MGz8AmZwMjtZbegZGjxwyAbziZMMbMNmZGDbAAAAAAAAMzgBAAAgB",
-                        usage = 41.3,
-                        totalRankings = 1344,
-                        source = "Archon.gg Meta Builds (41.3% popularity, 1,344 parses)"
+                        usage = 41.9,
+                        totalRankings = 1302,
+                        source = "Archon.gg Meta Builds (41.9% popularity, 1,302 parses)"
                     },
                     ["Vengeance"] = {
-                        loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjhZkZmBWMjZwMjZGz8AzMzYYmtZGbjZMGzAAAAAAAAwMzYDAAAADMzMzMLtNzMDAmBAAAwA",
-                        usage = 5.1,
-                        totalRankings = 936,
-                        source = "Archon.gg Meta Builds (5.1% popularity, 936 parses)"
+                        loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYWMzMjhZMzYGzMzYYGmx2MzYMAAAAAAAAgZmxGAAAAGMzMzMzWbzMzAAAAAAMA",
+                        usage = 5.5,
+                        totalRankings = 921,
+                        source = "Archon.gg Meta Builds (5.5% popularity, 921 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
                         usage = 87.7,
-                        totalRankings = 1879,
-                        source = "Archon.gg Meta Builds (87.7% popularity, 1,879 parses)"
+                        totalRankings = 1834,
+                        source = "Archon.gg Meta Builds (87.7% popularity, 1,834 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDMmlZmZmBYGzyMLDzYGbsMzyMzMMLYYAGgltxGmmZWGAAAAsxMzMD2MwYGAzMAwA",
-                        usage = 23.5,
-                        totalRankings = 1147,
-                        source = "Archon.gg Meta Builds (23.5% popularity, 1,147 parses)"
+                        usage = 23.2,
+                        totalRankings = 1119,
+                        source = "Archon.gg Meta Builds (23.2% popularity, 1,119 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYGzMDAAAAbBzmhxMjaGzyYmZGjZMAAAAAAMwAAAAAAMbzs0sNzyGYmBYxMYAAMzAgB",
-                        usage = 33.9,
+                        usage = 32.8,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (33.9% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (32.8% popularity, 1,000 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMPwYMzmZZGMWGgZGjmoZmZZmZmZMMPgBAAAAwgZsMDYZbmBjZbAMBAAAshZMgFzgBsYZbAmZAM",
-                        usage = 17.0,
-                        totalRankings = 1008,
-                        source = "Archon.gg Meta Builds (17.0% popularity, 1,008 parses)"
+                        usage = 18.0,
+                        totalRankings = 1000,
+                        source = "Archon.gg Meta Builds (18.0% popularity, 1,000 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGz2wDwMzmxCzAAAAAAAAAAgtBNbMmmZM8AmlZmZmhhZAAAAAAAAAAAAAY2mZpZbmNbMmZGmZgRzAAMzAwA",
-                        usage = 33.4,
-                        totalRankings = 1382,
-                        source = "Archon.gg Meta Builds (33.4% popularity, 1,382 parses)"
+                        usage = 33.2,
+                        totalRankings = 1351,
+                        source = "Archon.gg Meta Builds (33.2% popularity, 1,351 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AYGA2wAzMYYA",
-                        usage = 35.0,
-                        totalRankings = 586,
-                        source = "Archon.gg Meta Builds (35.0% popularity, 586 parses)"
+                        usage = 34.2,
+                        totalRankings = 562,
+                        source = "Archon.gg Meta Builds (34.2% popularity, 562 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2WmHADzMmNjZmZWmxAAAzYGDmxMyMzAAAAMzMTmxMjZbmZAwAjZsxCMwMM0AWgxMDwYA",
-                        usage = 16.1,
-                        totalRankings = 940,
-                        source = "Archon.gg Meta Builds (16.1% popularity, 940 parses)"
+                        usage = 16.3,
+                        totalRankings = 906,
+                        source = "Archon.gg Meta Builds (16.3% popularity, 906 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAgBAAzMDMGjpGmZGAAAAMjZmxMzyYmBmZzYwCsMGGbDgZQshZGYmBwA",
-                        usage = 25.9,
-                        totalRankings = 1269,
-                        source = "Archon.gg Meta Builds (25.9% popularity, 1,269 parses)"
+                        usage = 27.0,
+                        totalRankings = 1242,
+                        source = "Archon.gg Meta Builds (27.0% popularity, 1,242 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYG2GzsNzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAwMAAAMzMzAMzGghZBsNA",
                         usage = 69.8,
-                        totalRankings = 3132,
-                        source = "Archon.gg Meta Builds (69.8% popularity, 3,132 parses)"
+                        totalRankings = 3065,
+                        source = "Archon.gg Meta Builds (69.8% popularity, 3,065 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAYzsNwAGwMsFYWAAAAAAAAAmxMmhZMzMmBjpZMY22YmZWmZGzMzCmlBzAAAmHYmZMzMDYYzwAsxMjB",
-                        usage = 17.5,
-                        totalRankings = 1007,
-                        source = "Archon.gg Meta Builds (17.5% popularity, 1,007 parses)"
+                        usage = 17.1,
+                        totalRankings = 975,
+                        source = "Archon.gg Meta Builds (17.1% popularity, 975 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmx2MGzYGWGTzAAAAwAAjllZmZxMzMYMGwMbAGGjZmNDA",
@@ -4424,49 +4424,49 @@ ArchonTalentsData = {
                 ["MAGE"] = {
                     ["Arcane"] = {
                         loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzQzMzAAAwAAAAzMzssMzELAAsNMzMmtFLzMzYmxYMzMzYhZmZMDAwAAAYmFAwMAYYA",
-                        usage = 27.2,
-                        totalRankings = 397,
-                        source = "Archon.gg Meta Builds (27.2% popularity, 397 parses)"
+                        usage = 27.5,
+                        totalRankings = 404,
+                        source = "Archon.gg Meta Builds (27.5% popularity, 404 parses)"
                     },
                     ["Fire"] = {
                         loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzwYmZmZ2GAmZgxYMYGG",
-                        usage = 20.5,
-                        totalRankings = 438,
-                        source = "Archon.gg Meta Builds (20.5% popularity, 438 parses)"
+                        usage = 21.1,
+                        totalRankings = 408,
+                        source = "Archon.gg Meta Builds (21.1% popularity, 408 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 64.0,
-                        totalRankings = 3118,
-                        source = "Archon.gg Meta Builds (64.0% popularity, 3,118 parses)"
+                        usage = 63.9,
+                        totalRankings = 3040,
+                        source = "Archon.gg Meta Builds (63.9% popularity, 3,040 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYEzMwMMzGDmZmZY2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
-                        usage = 19.5,
+                        usage = 19.3,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (19.5% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (19.3% popularity, 1,000 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMjmxMgBDGzyMzMDz2gBLmAAAAAAgFLzsMbzMAAwAGgZAjhxiMmBA",
-                        usage = 42.4,
-                        totalRankings = 1367,
-                        source = "Archon.gg Meta Builds (42.4% popularity, 1,367 parses)"
+                        usage = 42.9,
+                        totalRankings = 1330,
+                        source = "Archon.gg Meta Builds (42.9% popularity, 1,330 parses)"
                     },
                     ["Windwalker"] = {
                         loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MGsNzMbzAAAAAAAAAAAAsMMCzwwAmxMmZmZYWGmhZZmAA2Mz2YYmZmBAwGAMLzSzMzsAgBmZAglxAGwA",
-                        usage = 57.0,
-                        totalRankings = 1145,
-                        source = "Archon.gg Meta Builds (57.0% popularity, 1,145 parses)"
+                        usage = 56.8,
+                        totalRankings = 1123,
+                        source = "Archon.gg Meta Builds (56.8% popularity, 1,123 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 54.4,
-                        totalRankings = 1072,
-                        source = "Archon.gg Meta Builds (54.4% popularity, 1,072 parses)"
+                        usage = 54.1,
+                        totalRankings = 1039,
+                        source = "Archon.gg Meta Builds (54.1% popularity, 1,039 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZm5BYWGLzMjZGbLjxYmFbzYAAGAAAAAAkmZWMjZmxYmt2AwAGwgNAAwMTbzMLzAAsBmBAjZYMAALzAMzAG",
@@ -4476,109 +4476,109 @@ ArchonTalentsData = {
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMMzAAAAAAwoMmhZGbDz2wMbzYMmZYGbsNMAAwMTbzMbzAA2AMAYMDzgZMmNsMDGGzYwA",
-                        usage = 67.4,
-                        totalRankings = 3450,
-                        source = "Archon.gg Meta Builds (67.4% popularity, 3,450 parses)"
+                        usage = 66.8,
+                        totalRankings = 3376,
+                        source = "Archon.gg Meta Builds (66.8% popularity, 3,376 parses)"
                     },
                 },
                 ["PRIEST"] = {
                     ["Discipline"] = {
                         loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsAz2MzMYmhZbmtZmZmhZAAAAAAAAAAMDLzgZmZYGmBmpZamBYmFMEGzyAMGsAAAjxMjBzAMzMMDD",
                         usage = 19.7,
-                        totalRankings = 1072,
-                        source = "Archon.gg Meta Builds (19.7% popularity, 1,072 parses)"
+                        totalRankings = 1054,
+                        source = "Archon.gg Meta Builds (19.7% popularity, 1,054 parses)"
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwwsMDzMzMYGzAYmaAgZWMDziBAGD2MzMLAaGmxYYmZbZAmBG",
-                        usage = 45.1,
-                        totalRankings = 1173,
-                        source = "Archon.gg Meta Builds (45.1% popularity, 1,173 parses)"
+                        usage = 44.1,
+                        totalRankings = 1145,
+                        source = "Archon.gg Meta Builds (44.1% popularity, 1,145 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzAMmZmxsNmZbZAmBD",
-                        usage = 43.8,
-                        totalRankings = 1092,
-                        source = "Archon.gg Meta Builds (43.8% popularity, 1,092 parses)"
+                        usage = 44.3,
+                        totalRankings = 1079,
+                        source = "Archon.gg Meta Builds (44.3% popularity, 1,079 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsZwAAAAAAzygtZAAAAAAZZmZmZmZMmZmZ2mZZmZGMzMzMjZGDDgBWgZMaMbA2GwmBAzMjxA",
-                        usage = 16.4,
-                        totalRankings = 687,
-                        source = "Archon.gg Meta Builds (16.4% popularity, 687 parses)"
+                        usage = 16.6,
+                        totalRankings = 673,
+                        source = "Archon.gg Meta Builds (16.6% popularity, 673 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZmZMmNeAmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
-                        usage = 28.0,
-                        totalRankings = 579,
-                        source = "Archon.gg Meta Builds (28.0% popularity, 579 parses)"
+                        usage = 28.4,
+                        totalRankings = 557,
+                        source = "Archon.gg Meta Builds (28.4% popularity, 557 parses)"
                     },
                     ["Subtlety"] = {
                         loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
-                        usage = 61.5,
+                        usage = 60.5,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (61.5% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (60.5% popularity, 1,000 parses)"
                     },
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
                         loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMLzMzYstYahZGjlZmZGzYZWGWMzwMLAADgZGYYYA",
-                        usage = 47.2,
-                        totalRankings = 1539,
-                        source = "Archon.gg Meta Builds (47.2% popularity, 1,539 parses)"
+                        usage = 46.9,
+                        totalRankings = 1503,
+                        source = "Archon.gg Meta Builds (46.9% popularity, 1,503 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZmZGAAAAAAAAAYB2gZsox2AYGwGAzyMmZGLLzAzMbsMzMzwwYGAADwYmJmZAgxA",
-                        usage = 44.6,
-                        totalRankings = 1010,
-                        source = "Archon.gg Meta Builds (44.6% popularity, 1,010 parses)"
+                        usage = 41.7,
+                        totalRankings = 1049,
+                        source = "Archon.gg Meta Builds (41.7% popularity, 1,049 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMYWGjZa2WmZWMjZhFzMzYwsMAAAwMzgZGAYwA",
-                        usage = 30.9,
-                        totalRankings = 1854,
-                        source = "Archon.gg Meta Builds (30.9% popularity, 1,854 parses)"
+                        usage = 31.0,
+                        totalRankings = 1810,
+                        source = "Archon.gg Meta Builds (31.0% popularity, 1,810 parses)"
                     },
                 },
                 ["WARLOCK"] = {
                     ["Affliction"] = {
                         loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZhhZmZmlBAAYmZxyMzsMzAAjllBGwAmhtADbDAAAzAAAYmhZmxADzMzMjZwMzMDAYGYA",
-                        usage = 18.9,
-                        totalRankings = 1066,
-                        source = "Archon.gg Meta Builds (18.9% popularity, 1,066 parses)"
+                        usage = 19.4,
+                        totalRankings = 1049,
+                        source = "Archon.gg Meta Builds (19.4% popularity, 1,049 parses)"
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMAAAAAAAgxMGWgB2GWohFjxYZWmZmxMAwMjZmZmZAmZGzMAAAjZmZMMsMjBMA",
-                        usage = 38.1,
-                        totalRankings = 2534,
-                        source = "Archon.gg Meta Builds (38.1% popularity, 2,534 parses)"
+                        usage = 38.2,
+                        totalRankings = 2479,
+                        source = "Archon.gg Meta Builds (38.2% popularity, 2,479 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmZmlZjZmZxgFzAAgZmxMzsAGzYYBGYbYjGLMAAwYgxGAmZAMzYMAAAMzMzAAYmhB",
                         usage = 9.2,
-                        totalRankings = 868,
-                        source = "Archon.gg Meta Builds (9.2% popularity, 868 parses)"
+                        totalRankings = 846,
+                        source = "Archon.gg Meta Builds (9.2% popularity, 846 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMzMDAAAghphxYmxyMzMzwMmZAAAAAMzyMDIjxyyALgBMDTgZwGwMY2GDmxAMzAwMGGA",
-                        usage = 67.1,
+                        usage = 66.6,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (67.1% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (66.6% popularity, 1,000 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmhlZmZmZYMzMzYGzsMzMGzMbjZmBAAixyyALgBMDTgZYDYmBz2AAgZGDjZmhBD",
-                        usage = 58.8,
-                        totalRankings = 1346,
-                        source = "Archon.gg Meta Builds (58.8% popularity, 1,346 parses)"
+                        usage = 58.1,
+                        totalRankings = 1314,
+                        source = "Archon.gg Meta Builds (58.1% popularity, 1,314 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzMzmxsMjxYmGmZYZMzMDzYmBAAAALDAzYAGYDWWMaMDgZDzsBzYmBz2AgZGAAGgB",
-                        usage = 9.1,
+                        usage = 8.9,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (9.1% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (8.9% popularity, 1,000 parses)"
                     },
                 },
             },
@@ -4587,106 +4587,106 @@ ArchonTalentsData = {
                     ["Frost"] = {
                         loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMGDz2MzMzMLmZ0MjxMDzw4BMzgZmZmZAAAAAAAAAYMbDMgFwywEYsgZGzMDMDghZGgZgB",
                         usage = 88.0,
-                        totalRankings = 784,
-                        source = "Archon.gg Meta Builds (88.0% popularity, 784 parses)"
+                        totalRankings = 828,
+                        source = "Archon.gg Meta Builds (88.0% popularity, 828 parses)"
                     },
                     ["Unholy"] = {
                         loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMGDz2MzMTziZGzMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
-                        usage = 43.9,
-                        totalRankings = 1302,
-                        source = "Archon.gg Meta Builds (43.9% popularity, 1,302 parses)"
+                        usage = 44.2,
+                        totalRankings = 1345,
+                        source = "Archon.gg Meta Builds (44.2% popularity, 1,345 parses)"
                     },
                     ["Blood"] = {
                         loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzwMmZMMbzMz0MLmZMmxMAAAAYmxMzMzMDzYMAYmZmZGAAADMwMW0YZDw2A2AMDDAAYmBzwA",
-                        usage = 5.2,
+                        usage = 5.3,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (5.2% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (5.3% popularity, 1,000 parses)"
                     },
                 },
                 ["DEMONHUNTER"] = {
                     ["Havoc"] = {
                         loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmZmZmwMDAAAAAAY2MmtZYmBzM2mt5BmZMGDLDsNLmxwsx0YmZMsBAAAAAAAwMDGAAAAG",
-                        usage = 33.3,
-                        totalRankings = 432,
-                        source = "Archon.gg Meta Builds (33.3% popularity, 432 parses)"
+                        usage = 32.9,
+                        totalRankings = 438,
+                        source = "Archon.gg Meta Builds (32.9% popularity, 438 parses)"
                     },
                     ["Vengeance"] = {
                         loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMzMkZmhZWMjZwMjZYGzMzYYmlZGbmZ2GDAAAAAAAAYmZsBAAAgBzMzMzs12MzMAwAAAAYA",
-                        usage = 49.0,
-                        totalRankings = 100,
-                        source = "Archon.gg Meta Builds (49.0% popularity, 100 parses)"
+                        usage = 48.5,
+                        totalRankings = 101,
+                        source = "Archon.gg Meta Builds (48.5% popularity, 101 parses)"
                     },
                     ["Devourer"] = {
                         loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
-                        usage = 78.7,
-                        totalRankings = 1156,
-                        source = "Archon.gg Meta Builds (78.7% popularity, 1,156 parses)"
+                        usage = 79.2,
+                        totalRankings = 1197,
+                        source = "Archon.gg Meta Builds (79.2% popularity, 1,197 parses)"
                     },
                 },
                 ["DRUID"] = {
                     ["Balance"] = {
                         loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMD8AmlxMzMADWmZbGzYGbsMjZmZMzGGGgBYZbshpZmlBAAAAbmZmZGsZMjxMAmZAgB",
-                        usage = 57.9,
-                        totalRankings = 914,
-                        source = "Archon.gg Meta Builds (57.9% popularity, 914 parses)"
+                        usage = 59.6,
+                        totalRankings = 958,
+                        source = "Archon.gg Meta Builds (59.6% popularity, 958 parses)"
                     },
                     ["Feral"] = {
                         loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYGzMDAAAAbBDDjZG1MmlxMzMGzYGAAAAAADMAAAAAAz2MLNbzssBmZAWMDGAAzMAYA",
                         usage = 24.8,
-                        totalRankings = 121,
-                        source = "Archon.gg Meta Builds (24.8% popularity, 121 parses)"
+                        totalRankings = 129,
+                        source = "Archon.gg Meta Builds (24.8% popularity, 129 parses)"
                     },
                     ["Guardian"] = {
                         loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMPwYMzmZZGMWGYYGjmoZmZZmZmhxMmBAAAAAMjtZALbzMYMbDgJAAAgNMzDMgFzgBsYZbAmZAM",
-                        usage = 16.0,
-                        totalRankings = 275,
-                        source = "Archon.gg Meta Builds (16.0% popularity, 275 parses)"
+                        usage = 15.6,
+                        totalRankings = 288,
+                        source = "Archon.gg Meta Builds (15.6% popularity, 288 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMLz2MmZGz2wDwMzmxCzAAAAAAAAAAglBNbmx0MjhxsMzMzMMMzAAAAAAAAAAAAAY2mZpZbmNbMm5BwMDQzAAMzAwA",
-                        usage = 36.7,
+                        usage = 36.6,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (36.7% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (36.6% popularity, 1,000 parses)"
                     },
                 },
                 ["EVOKER"] = {
                     ["Devastation"] = {
                         loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZwMDGMgBjZamZmJjxyMzMzwMzMzAmxMzYmZbmZwMwMmB2ALgZYCsBWGGAzMDD",
-                        usage = 55.3,
-                        totalRankings = 38,
-                        source = "Archon.gg Meta Builds (55.3% popularity, 38 parses)"
+                        usage = 51.2,
+                        totalRankings = 41,
+                        source = "Archon.gg Meta Builds (51.2% popularity, 41 parses)"
                     },
                     ["Preservation"] = {
                         loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2MzMmxMjxMmxMbYAAgZMj5BMGzIMDAAAwMzIzYmZmlZmBAzYGYDsAmhJwCsZYAMzMGA",
-                        usage = 15.1,
-                        totalRankings = 905,
-                        source = "Archon.gg Meta Builds (15.1% popularity, 905 parses)"
+                        usage = 15.5,
+                        totalRankings = 940,
+                        source = "Archon.gg Meta Builds (15.5% popularity, 940 parses)"
                     },
                     ["Augmentation"] = {
                         loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZGjhZ2AAAAAAAAYmZghZM1YmZGAAAAMjZmxMzyYmBmZxAjZswCMwMM0ALYmxMDAM",
-                        usage = 69.3,
-                        totalRankings = 1228,
-                        source = "Archon.gg Meta Builds (69.3% popularity, 1,228 parses)"
+                        usage = 69.6,
+                        totalRankings = 1262,
+                        source = "Archon.gg Meta Builds (69.6% popularity, 1,262 parses)"
                     },
                 },
                 ["HUNTER"] = {
                     ["Beast Mastery"] = {
                         loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYG2GzsNzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAwMAAAMzMDgZ2AMLmFw2AA",
-                        usage = 92.7,
-                        totalRankings = 1599,
-                        source = "Archon.gg Meta Builds (92.7% popularity, 1,599 parses)"
+                        usage = 92.5,
+                        totalRankings = 1647,
+                        source = "Archon.gg Meta Builds (92.5% popularity, 1,647 parses)"
                     },
                     ["Marksmanship"] = {
                         loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAYzsNwAGwMsEYWAAAAAAAAAmxMmx2MmZGzgx0MGMbbMzMLzMjZmZjZWGMDAAYMzMzMzMgBwAsxMjB",
-                        usage = 30.7,
-                        totalRankings = 163,
-                        source = "Archon.gg Meta Builds (30.7% popularity, 163 parses)"
+                        usage = 32.4,
+                        totalRankings = 173,
+                        source = "Archon.gg Meta Builds (32.4% popularity, 173 parses)"
                     },
                     ["Survival"] = {
                         loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMGWgFYGGawixMzMzYZAAAAAAwMmxMMjxMmBjpZAAAAAAMWWmZmFzMzYmZGAzsBYWMGzMbGA",
-                        usage = 23.4,
-                        totalRankings = 128,
-                        source = "Archon.gg Meta Builds (23.4% popularity, 128 parses)"
+                        usage = 26.5,
+                        totalRankings = 136,
+                        source = "Archon.gg Meta Builds (26.5% popularity, 136 parses)"
                     },
                 },
                 ["MAGE"] = {
@@ -4697,56 +4697,56 @@ ArchonTalentsData = {
                         source = "Archon.gg Meta Builds (90.0% popularity, 10 parses)"
                     },
                     ["Fire"] = {
-                        loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGAAAAAgFzMzMDAAGzYGzMzMzCAmZAzYMYGG",
-                        usage = 22.9,
-                        totalRankings = 96,
-                        source = "Archon.gg Meta Builds (22.9% popularity, 96 parses)"
+                        loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDZmZGAAAGAwMz0sssMDAwmZmx2YmZGLAAAAAwiZmZmBAAjZMjZmZmZBAzMAjxgZYA",
+                        usage = 23.8,
+                        totalRankings = 101,
+                        source = "Archon.gg Meta Builds (23.8% popularity, 101 parses)"
                     },
                     ["Frost"] = {
                         loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDmthxMsAAAwMbAzADYGMA",
-                        usage = 82.7,
-                        totalRankings = 1385,
-                        source = "Archon.gg Meta Builds (82.7% popularity, 1,385 parses)"
+                        usage = 83.0,
+                        totalRankings = 1432,
+                        source = "Archon.gg Meta Builds (83.0% popularity, 1,432 parses)"
                     },
                 },
                 ["MONK"] = {
                     ["Brewmaster"] = {
                         loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzwYWM2YmZAAAAAAAYZBjYmBmhZ2MjxMzMDz2wMmZ5BYZ7B22mtxMLAAwGAAAY2mlmZmZhhNAmZYaMAAgB",
-                        usage = 7.3,
-                        totalRankings = 969,
-                        source = "Archon.gg Meta Builds (7.3% popularity, 969 parses)"
+                        usage = 6.6,
+                        totalRankings = 1000,
+                        source = "Archon.gg Meta Builds (6.6% popularity, 1,000 parses)"
                     },
                     ["Mistweaver"] = {
                         loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmltlZGLMz0MmBMYAWmZmZY2GMYxEAAAAAAsYZmlZbmBAAGwAMDYMMWmMmBA",
-                        usage = 36.4,
+                        usage = 37.8,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (36.4% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (37.8% popularity, 1,000 parses)"
                     },
                     ["Windwalker"] = {
-                        loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzMD2mxgtZGbzAAAAAAAAAAAAsMMaGzwwAbDDzMzMMbYGmFTAALmZbMMzMzAAYDAmlZpZmZWAYGYmBgxyMADYA",
-                        usage = 32.4,
-                        totalRankings = 207,
-                        source = "Archon.gg Meta Builds (32.4% popularity, 207 parses)"
+                        loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MGsNzMbzAAAAAAAAAAAAsMMCzYbYAzYYmZmhZZYGmlZCAYxMbjhZmZGAAbAwsMLNzMzCAGYmBAWGDYAD",
+                        usage = 30.7,
+                        totalRankings = 212,
+                        source = "Archon.gg Meta Builds (30.7% popularity, 212 parses)"
                     },
                 },
                 ["PALADIN"] = {
                     ["Holy"] = {
                         loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJGzYmZYY2yAwAG2AbsMjZWmtZmZrBAAAYBA2MMmxMAAgZGmxYYA",
-                        usage = 80.3,
+                        usage = 80.0,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (80.3% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (80.0% popularity, 1,000 parses)"
                     },
                     ["Protection"] = {
-                        loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsNzMGzyYbMjZGWGzMzMLMMAAAAAAAAQamZZmxMDjZ2aDADMDMwGAAYmptZmlZAA2MYGAjxMMGAglZAmZAD",
-                        usage = 8.6,
-                        totalRankings = 35,
-                        source = "Archon.gg Meta Builds (8.6% popularity, 35 parses)"
+                        loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsZmZYWGLzMjZGWGjxMLjhBAYAAAAAAQamZZmxMzYGzWbAYAgZwGAAYmptZmtZAA2YwAYwMMGAglZAmZAD",
+                        usage = 9.5,
+                        totalRankings = 42,
+                        source = "Archon.gg Meta Builds (9.5% popularity, 42 parses)"
                     },
                     ["Retribution"] = {
                         loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMMzAAAAAAwMlxMMDbDz2wMbzYMmZYGbsNAAAmZabmZbGAwGgBwYMDzgZMmNsMDGGzYwA",
-                        usage = 62.4,
+                        usage = 62.5,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (62.4% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (62.5% popularity, 1,000 parses)"
                     },
                 },
                 ["PRIEST"] = {
@@ -4758,23 +4758,23 @@ ArchonTalentsData = {
                     },
                     ["Holy"] = {
                         loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwMmlZwMzMMzYGDYmaAgZWMDziBAGD2MzMLAaGmxYwMbLDgBG",
-                        usage = 69.9,
-                        totalRankings = 143,
-                        source = "Archon.gg Meta Builds (69.9% popularity, 143 parses)"
+                        usage = 70.5,
+                        totalRankings = 156,
+                        source = "Archon.gg Meta Builds (70.5% popularity, 156 parses)"
                     },
                     ["Shadow"] = {
                         loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxMMjxyMDzsNzwMsNzMmZmxGyMWMTDwMAzsZGmNDAZMWAwMAjZmZMbjZ2WGgZwA",
-                        usage = 48.8,
-                        totalRankings = 410,
-                        source = "Archon.gg Meta Builds (48.8% popularity, 410 parses)"
+                        usage = 47.7,
+                        totalRankings = 438,
+                        source = "Archon.gg Meta Builds (47.7% popularity, 438 parses)"
                     },
                 },
                 ["ROGUE"] = {
                     ["Assassination"] = {
                         loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsZwAAAAAAzyglZAAAAAAZbmZmZmZMmZmZ2mZZmZGMzMzMjZGDDgBWgZMaMbA2GwmBAzMjxA",
-                        usage = 33.3,
-                        totalRankings = 27,
-                        source = "Archon.gg Meta Builds (33.3% popularity, 27 parses)"
+                        usage = 35.7,
+                        totalRankings = 28,
+                        source = "Archon.gg Meta Builds (35.7% popularity, 28 parses)"
                     },
                     ["Outlaw"] = {
                         loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZmZMmNeAmZbaZw2MAAAAAAbbzMzwMzMzYmZ2GAAAAGDAGzihBGYWYhWYjBYmBzgB",
@@ -4791,22 +4791,22 @@ ArchonTalentsData = {
                 },
                 ["SHAMAN"] = {
                     ["Elemental"] = {
-                        loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMbzMzYstMTLMDjlZmZGzglhFzMMzCAYGGYmBGGG",
-                        usage = 59.8,
+                        loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAMbzMzYstYahZmlxyMzMjhFLDLmZYmFAwMAmZghhB",
+                        usage = 58.8,
                         totalRankings = 1000,
-                        source = "Archon.gg Meta Builds (59.8% popularity, 1,000 parses)"
+                        source = "Archon.gg Meta Builds (58.8% popularity, 1,000 parses)"
                     },
                     ["Enhancement"] = {
                         loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZGzAAAAAAAAAALwGMjFN2GAzA2AYWmxMGLLzYhZmNWmZmZYYMDAwMAjZmYmBAGD",
-                        usage = 38.2,
-                        totalRankings = 102,
-                        source = "Archon.gg Meta Builds (38.2% popularity, 102 parses)"
+                        usage = 40.2,
+                        totalRankings = 107,
+                        source = "Archon.gg Meta Builds (40.2% popularity, 107 parses)"
                     },
                     ["Restoration"] = {
                         loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYBWgZsox2AYGYzMMw2YmZa2WmZYGzGLzMzMGMLDAAAMzMYmBAGM",
-                        usage = 20.6,
-                        totalRankings = 882,
-                        source = "Archon.gg Meta Builds (20.6% popularity, 882 parses)"
+                        usage = 21.1,
+                        totalRankings = 905,
+                        source = "Archon.gg Meta Builds (21.1% popularity, 905 parses)"
                     },
                 },
                 ["WARLOCK"] = {
@@ -4818,35 +4818,35 @@ ArchonTalentsData = {
                     },
                     ["Demonology"] = {
                         loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMegZGNbjhZmZmlBAAAAAAAMmxwCMw2wCNsYMGLzyMzMmBAmZMzMzMDwMzYmBAAYMzMjhhlZMgB",
-                        usage = 77.9,
-                        totalRankings = 1737,
-                        source = "Archon.gg Meta Builds (77.9% popularity, 1,737 parses)"
+                        usage = 77.7,
+                        totalRankings = 1787,
+                        source = "Archon.gg Meta Builds (77.7% popularity, 1,787 parses)"
                     },
                     ["Destruction"] = {
                         loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmZmlZxMzMLmZs4BGAAMjxMzsAGzYYBGYbYjGLMAAwYwM2AwMDgZGjBAAgZmZGAAjhB",
-                        usage = 38.1,
-                        totalRankings = 21,
-                        source = "Archon.gg Meta Builds (38.1% popularity, 21 parses)"
+                        usage = 39.1,
+                        totalRankings = 23,
+                        source = "Archon.gg Meta Builds (39.1% popularity, 23 parses)"
                     },
                 },
                 ["WARRIOR"] = {
                     ["Arms"] = {
                         loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMzMDAAAghphZGzwyMzMzgxMDAAAAgZWmZAZMWWGYBMgZYCMD2AzMY2GDmxAMzAwMGGA",
-                        usage = 90.6,
-                        totalRankings = 922,
-                        source = "Archon.gg Meta Builds (90.6% popularity, 922 parses)"
+                        usage = 90.9,
+                        totalRankings = 944,
+                        source = "Archon.gg Meta Builds (90.9% popularity, 944 parses)"
                     },
                     ["Fury"] = {
                         loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmhlZmZmZYMzMzYGzsMzMGzMbjZmBAAixyyALgBMDTgZYDYmBz2AAgZGDjZmhBD",
-                        usage = 78.0,
-                        totalRankings = 482,
-                        source = "Archon.gg Meta Builds (78.0% popularity, 482 parses)"
+                        usage = 78.8,
+                        totalRankings = 496,
+                        source = "Archon.gg Meta Builds (78.8% popularity, 496 parses)"
                     },
                     ["Protection"] = {
                         loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAmZmxMzMmxsZMLzYMGNMzwyMzMzgxMDAAAAWGDwMbDwAbwyiRjZAMbYmNYGzMY2GAMzAAwMgB",
-                        usage = 16.2,
-                        totalRankings = 816,
-                        source = "Archon.gg Meta Builds (16.2% popularity, 816 parses)"
+                        usage = 17.0,
+                        totalRankings = 845,
+                        source = "Archon.gg Meta Builds (17.0% popularity, 845 parses)"
                     },
                 },
             },
@@ -4855,267 +4855,267 @@ ArchonTalentsData = {
             ["DEATHKNIGHT"] = {
                 ["Blood"] = {
                     loadoutCode = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZZmZmmZxMjZmxAAAAAGMzMzMjZmZMAYmZmZGAAgxsNwAWALDTghFAzYAAwMDAMA",
-                    usage = 36.7,
-                    totalRankings = 60052,
-                    source = "Archon.gg Mythic+ Meta Builds (36.7% popularity, 60,052 parses)"
+                    usage = 37.5,
+                    totalRankings = 58655,
+                    source = "Archon.gg Mythic+ Meta Builds (37.5% popularity, 58,655 parses)"
                 },
                 ["Frost"] = {
                     loadoutCode = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZmZAz2MzMzMLmZkZMmZmZGYMzwMzMjZAAAAAAAAAYMbDMgFwywEYsgZGmZgZAMMzAMDM",
-                    usage = 52.7,
-                    totalRankings = 17553,
-                    source = "Archon.gg Mythic+ Meta Builds (52.7% popularity, 17,553 parses)"
+                    usage = 54.0,
+                    totalRankings = 17127,
+                    source = "Archon.gg Mythic+ Meta Builds (54.0% popularity, 17,127 parses)"
                 },
                 ["Unholy"] = {
                     loadoutCode = "CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMjBzyYmZa2mZGzMjBAAAAAAAgZGDDAWmxMzmZGzMDYzsZYgBmNGasgBMDAjZmxMAzMjZMA",
-                    usage = 27.6,
-                    totalRankings = 259308,
-                    source = "Archon.gg Mythic+ Meta Builds (27.6% popularity, 259,308 parses)"
+                    usage = 28.0,
+                    totalRankings = 255033,
+                    source = "Archon.gg Mythic+ Meta Builds (28.0% popularity, 255,033 parses)"
                 },
             },
             ["DEMONHUNTER"] = {
                 ["Havoc"] = {
                     loadoutCode = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZ2mxMzMGzkxMDAAAAAAYWMmtZYmBmx2sNzMjxALDsNbmxwsw0YmZMjNAAAgBAAAwMDGAAAAG",
-                    usage = 47.4,
-                    totalRankings = 50871,
-                    source = "Archon.gg Mythic+ Meta Builds (47.4% popularity, 50,871 parses)"
+                    usage = 48.1,
+                    totalRankings = 50201,
+                    source = "Archon.gg Mythic+ Meta Builds (48.1% popularity, 50,201 parses)"
                 },
                 ["Vengeance"] = {
                     loadoutCode = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmhZkZmBziZMDmZMzYmHYmZGDmtZGbzMz2YYAAAAAAAAYmhNAAAAMwMzMzs12MzMAAAAAAD",
-                    usage = 25.6,
-                    totalRankings = 40766,
-                    source = "Archon.gg Mythic+ Meta Builds (25.6% popularity, 40,766 parses)"
+                    usage = 26.3,
+                    totalRankings = 39668,
+                    source = "Archon.gg Mythic+ Meta Builds (26.3% popularity, 39,668 parses)"
                 },
                 ["Devourer"] = {
                     loadoutCode = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAAwMGMmB",
-                    usage = 90.3,
-                    totalRankings = 174591,
-                    source = "Archon.gg Mythic+ Meta Builds (90.3% popularity, 174,591 parses)"
+                    usage = 91.8,
+                    totalRankings = 171697,
+                    source = "Archon.gg Mythic+ Meta Builds (91.8% popularity, 171,697 parses)"
                 },
             },
             ["DRUID"] = {
                 ["Balance"] = {
                     loadoutCode = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsYmZmZhBjZZmlZWMzM2YZmlxMjxCGGgx22MDGz2AYCAAAwiZmZmBbGGjBAgZGYA",
-                    usage = 44.2,
-                    totalRankings = 29237,
-                    source = "Archon.gg Mythic+ Meta Builds (44.2% popularity, 29,237 parses)"
+                    usage = 45.3,
+                    totalRankings = 28497,
+                    source = "Archon.gg Mythic+ Meta Builds (45.3% popularity, 28,497 parses)"
                 },
                 ["Feral"] = {
                     loadoutCode = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZMzmZmZmxY2M2GbzMzMmZAAAAYJY2M8AmZUzYWMzMzsMmhBAAAAAwADAAAgmZZ2mZmBAsAzMDwCDGAAAzshB",
-                    usage = 15.8,
-                    totalRankings = 33367,
-                    source = "Archon.gg Mythic+ Meta Builds (15.8% popularity, 33,367 parses)"
+                    usage = 16.1,
+                    totalRankings = 32641,
+                    source = "Archon.gg Mythic+ Meta Builds (16.1% popularity, 32,641 parses)"
                 },
                 ["Guardian"] = {
                     loadoutCode = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZmFzMjZWmZxMPwMLLDMbGGNRmZWmZmZmlxMMAAAAAAjNzALbzMYMLDgJAAAgNMzAsYMMwsYBgZGAA",
-                    usage = 41.2,
-                    totalRankings = 316083,
-                    source = "Archon.gg Mythic+ Meta Builds (41.2% popularity, 316,083 parses)"
+                    usage = 41.8,
+                    totalRankings = 311927,
+                    source = "Archon.gg Mythic+ Meta Builds (41.8% popularity, 311,927 parses)"
                 },
                 ["Restoration"] = {
                     loadoutCode = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsN8AMzswsYbGAAAAAAAAAAsMoZbGmmZM8AmFzMzwMMGAAAAADAwMAAAAAY2mZrZZmFbMzMwMzCoZAAmZAYA",
-                    usage = 21.6,
-                    totalRankings = 56146,
-                    source = "Archon.gg Mythic+ Meta Builds (21.6% popularity, 56,146 parses)"
+                    usage = 22.6,
+                    totalRankings = 53807,
+                    source = "Archon.gg Mythic+ Meta Builds (22.6% popularity, 53,807 parses)"
                 },
             },
             ["EVOKER"] = {
                 ["Devastation"] = {
                     loadoutCode = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDgZGmBGGjZaMzMNDz2MmZmZmZmZGwMzMGzMLzMDMwYwCsMGN2GAzAwGmBzMYYA",
-                    usage = 31.5,
-                    totalRankings = 10084,
-                    source = "Archon.gg Mythic+ Meta Builds (31.5% popularity, 10,084 parses)"
+                    usage = 32.6,
+                    totalRankings = 9740,
+                    source = "Archon.gg Mythic+ Meta Builds (32.6% popularity, 9,740 parses)"
                 },
                 ["Preservation"] = {
                     loadoutCode = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz2yADzMmFzYM2mxAAAzYmZGmhZyMmBAAA2mZmJjZmZGjZAAYMjNWgBmhhGGWgZmZAYA",
-                    usage = 11.2,
-                    totalRankings = 15626,
-                    source = "Archon.gg Mythic+ Meta Builds (11.2% popularity, 15,626 parses)"
+                    usage = 11.5,
+                    totalRankings = 15224,
+                    source = "Archon.gg Mythic+ Meta Builds (11.5% popularity, 15,224 parses)"
                 },
                 ["Augmentation"] = {
                     loadoutCode = "CEcBAAAAAAAAAAAAAAAAAAAAAwMzMbzMzgBzMLzYMMzGAAAAAAAAmhx8AYM1YmZGAAAAYmZmxMzyYmBmZbGDWglxwYZAMDiNMzMYmBwA",
-                    usage = 35.5,
-                    totalRankings = 148009,
-                    source = "Archon.gg Mythic+ Meta Builds (35.5% popularity, 148,009 parses)"
+                    usage = 36.0,
+                    totalRankings = 145655,
+                    source = "Archon.gg Mythic+ Meta Builds (36.0% popularity, 145,655 parses)"
                 },
             },
             ["HUNTER"] = {
                 ["Beast Mastery"] = {
                     loadoutCode = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGPwyMzsYGmZmZGzMMzMmhZGzMzYzMjZMDGaGAAAAAAAAwMjxAmZDgFzCYbAA",
-                    usage = 37.8,
-                    totalRankings = 166384,
-                    source = "Archon.gg Mythic+ Meta Builds (37.8% popularity, 166,384 parses)"
+                    usage = 38.5,
+                    totalRankings = 163626,
+                    source = "Archon.gg Mythic+ Meta Builds (38.5% popularity, 163,626 parses)"
                 },
                 ["Marksmanship"] = {
                     loadoutCode = "C4PAAAAAAAAAAAAAAAAAAAAAAYzsMwAGwMsEYWAAAAAAAAAmxMzM2MmZGzwyYaGDmlNzMDzMjZmZhZWGmZAAAmxYmZmBMAGgNmZM",
-                    usage = 42.4,
-                    totalRankings = 18654,
-                    source = "Archon.gg Mythic+ Meta Builds (42.4% popularity, 18,654 parses)"
+                    usage = 43.1,
+                    totalRankings = 18346,
+                    source = "Archon.gg Mythic+ Meta Builds (43.1% popularity, 18,346 parses)"
                 },
                 ["Survival"] = {
                     loadoutCode = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmZmxyMGzYGMmmBAAAgBAGLLzMziZmZMGzMgZ2AgxYmZzAA",
-                    usage = 75.7,
-                    totalRankings = 46573,
-                    source = "Archon.gg Mythic+ Meta Builds (75.7% popularity, 46,573 parses)"
+                    usage = 77.9,
+                    totalRankings = 45223,
+                    source = "Archon.gg Mythic+ Meta Builds (77.9% popularity, 45,223 parses)"
                 },
             },
             ["MAGE"] = {
                 ["Arcane"] = {
                     loadoutCode = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFmZGamxAAAwAAAAzMzssMzELAAsNjZmxsZWmZmxMjxwMzMWYmZGzAAMAAAmZBAMDAGG",
-                    usage = 64.9,
-                    totalRankings = 19113,
-                    source = "Archon.gg Mythic+ Meta Builds (64.9% popularity, 19,113 parses)"
+                    usage = 65.6,
+                    totalRankings = 18922,
+                    source = "Archon.gg Mythic+ Meta Builds (65.6% popularity, 18,922 parses)"
                 },
                 ["Fire"] = {
                     loadoutCode = "C8DAAAAAAAAAAAAAAAAAAAAAAMzwMLzMzsgZGZmxAAAwAAmZmmlltZAA2MzM2GzMzYDAAAAAWMzMzMAAYMDjZmZmZbAYmBYMGMDD",
-                    usage = 22.1,
-                    totalRankings = 11114,
-                    source = "Archon.gg Mythic+ Meta Builds (22.1% popularity, 11,114 parses)"
+                    usage = 22.6,
+                    totalRankings = 10836,
+                    source = "Archon.gg Mythic+ Meta Builds (22.6% popularity, 10,836 parses)"
                 },
                 ["Frost"] = {
                     loadoutCode = "CAEAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFmZmYGmZmZmZWMzMMjZAAAgZmZWWmZaDAAWAAAAWAYbbMzMDmthxMjNAAAmZDYGGDYGMA",
-                    usage = 44.0,
-                    totalRankings = 117153,
-                    source = "Archon.gg Mythic+ Meta Builds (44.0% popularity, 117,153 parses)"
+                    usage = 45.2,
+                    totalRankings = 113931,
+                    source = "Archon.gg Mythic+ Meta Builds (45.2% popularity, 113,931 parses)"
                 },
             },
             ["MONK"] = {
                 ["Brewmaster"] = {
                     loadoutCode = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBmYmBmhZ2MwMzMDzGzMmZZYZ7BW2mNMLAAwysMtMbzsMAAAAG2AzMgpxAAAG",
-                    usage = 28.1,
-                    totalRankings = 97505,
-                    source = "Archon.gg Mythic+ Meta Builds (28.1% popularity, 97,505 parses)"
+                    usage = 29.1,
+                    totalRankings = 93884,
+                    source = "Archon.gg Mythic+ Meta Builds (29.1% popularity, 93,884 parses)"
                 },
                 ["Mistweaver"] = {
                     loadoutCode = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghxyMLjZx2MmZsZstsMjZ2Mz2yyMjFmRzYGwYMAmZmZY2wMMLzEAAAAAAsYbmlZbmBAAGAgZAjBWkxMA",
-                    usage = 40.3,
-                    totalRankings = 219029,
-                    source = "Archon.gg Mythic+ Meta Builds (40.3% popularity, 219,029 parses)"
+                    usage = 40.9,
+                    totalRankings = 215858,
+                    source = "Archon.gg Mythic+ Meta Builds (40.9% popularity, 215,858 parses)"
                 },
                 ["Windwalker"] = {
                     loadoutCode = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDzEmhhBMjhZmZGmthZYWmJAgFzsNGGzMDAgNAYWmlmZmZBYYgZGAYZMgBM",
-                    usage = 57.0,
-                    totalRankings = 32623,
-                    source = "Archon.gg Mythic+ Meta Builds (57.0% popularity, 32,623 parses)"
+                    usage = 58.4,
+                    totalRankings = 31833,
+                    source = "Archon.gg Mythic+ Meta Builds (58.4% popularity, 31,833 parses)"
                 },
             },
             ["PALADIN"] = {
                 ["Holy"] = {
                     loadoutCode = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMDAwglxMzMzYmZWgxwyYbmZxMNxwYmZYY2yAwAwGYjlZmZWmtZmZrBAAAYhNMYzAzYGAAwMDzYMMA",
-                    usage = 30.5,
-                    totalRankings = 54493,
-                    source = "Archon.gg Mythic+ Meta Builds (30.5% popularity, 54,493 parses)"
+                    usage = 31.2,
+                    totalRankings = 53162,
+                    source = "Archon.gg Mythic+ Meta Builds (31.2% popularity, 53,162 parses)"
                 },
                 ["Protection"] = {
                     loadoutCode = "CIEAAAAAAAAAAAAAAAAAAAAAAsNjBzyYbMjZmZZZMzwsMLDDAwAAAAAAgmmZWmZMDGmt2AwADYGsBAAAAzMLbLtMzYxMYAMGzwYAwMDAmZAD",
-                    usage = 22.8,
-                    totalRankings = 76233,
-                    source = "Archon.gg Mythic+ Meta Builds (22.8% popularity, 76,233 parses)"
+                    usage = 23.4,
+                    totalRankings = 74416,
+                    source = "Archon.gg Mythic+ Meta Builds (23.4% popularity, 74,416 parses)"
                 },
                 ["Retribution"] = {
                     loadoutCode = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa22mZmlxYmBAAAAAwMlZZGmZsNMbDzsNjxYMMjN2AAAYmptZmtZAAbAGAMmhBmZmZ2wyMYYMMYA",
-                    usage = 31.3,
-                    totalRankings = 210030,
-                    source = "Archon.gg Mythic+ Meta Builds (31.3% popularity, 210,030 parses)"
+                    usage = 32.1,
+                    totalRankings = 204973,
+                    source = "Archon.gg Mythic+ Meta Builds (32.1% popularity, 204,973 parses)"
                 },
             },
             ["PRIEST"] = {
                 ["Discipline"] = {
                     loadoutCode = "CAQAAAAAAAAAAAAAAAAAAAAAAADsYwyMjZmZGMbzYmZmZMzAAAAAAAAAAYYWmBzMzwMmZATzEDwMLYIMmlBYMYBAAGzMzYwMAzMzAG",
-                    usage = 18.1,
-                    totalRankings = 89936,
-                    source = "Archon.gg Mythic+ Meta Builds (18.1% popularity, 89,936 parses)"
+                    usage = 18.5,
+                    totalRankings = 88086,
+                    source = "Archon.gg Mythic+ Meta Builds (18.5% popularity, 88,086 parses)"
                 },
                 ["Holy"] = {
                     loadoutCode = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAgZzwYWGMmZmZMzMjlZmZAAAAYMWmBzMzYzYmxAmpAAzsZGmNDAMGsZMWA0MmZMGmZ2WGgBMA",
-                    usage = 19.0,
-                    totalRankings = 29073,
-                    source = "Archon.gg Mythic+ Meta Builds (19.0% popularity, 29,073 parses)"
+                    usage = 19.4,
+                    totalRankings = 28417,
+                    source = "Archon.gg Mythic+ Meta Builds (19.4% popularity, 28,417 parses)"
                 },
                 ["Shadow"] = {
                     loadoutCode = "CIQAAAAAAAAAAAAAAAAAAAAAAMjZMGAAAAAAAAAAAAjZZmxYZmxMz2MDjx2MzYmZGbIzYxMNAzMzAABY2mtNwsxAADGzMzY2GzgZGMDGA",
-                    usage = 22.5,
-                    totalRankings = 47128,
-                    source = "Archon.gg Mythic+ Meta Builds (22.5% popularity, 47,128 parses)"
+                    usage = 23.0,
+                    totalRankings = 45980,
+                    source = "Archon.gg Mythic+ Meta Builds (23.0% popularity, 45,980 parses)"
                 },
             },
             ["ROGUE"] = {
                 ["Assassination"] = {
                     loadoutCode = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmNDGAAAAAYWGsNDAAAAAotlZmZmZmxYmZmZbmlZGPgHYmZmZMMzYMAGYBmxoxsBYbAbGAMzMYA",
-                    usage = 46.4,
-                    totalRankings = 16849,
-                    source = "Archon.gg Mythic+ Meta Builds (46.4% popularity, 16,849 parses)"
+                    usage = 47.9,
+                    totalRankings = 16312,
+                    source = "Archon.gg Mythic+ Meta Builds (47.9% popularity, 16,312 parses)"
                 },
                 ["Outlaw"] = {
                     loadoutCode = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZMzMzsBmZbaZw2MAAAAAAbLzMzwMzMzYmZ2GAAAAGDAGzihBGYWYhWYjBYmBzgB",
-                    usage = 64.8,
-                    totalRankings = 27496,
-                    source = "Archon.gg Mythic+ Meta Builds (64.8% popularity, 27,496 parses)"
+                    usage = 66.4,
+                    totalRankings = 26838,
+                    source = "Archon.gg Mythic+ Meta Builds (66.4% popularity, 26,838 parses)"
                 },
                 ["Subtlety"] = {
                     loadoutCode = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZMegZmZGjZbYGbLzMzMzMjBjZ2GAAAAGMGwY2MMwAzCL0iNMDYmBzYA",
-                    usage = 58.8,
-                    totalRankings = 42137,
-                    source = "Archon.gg Mythic+ Meta Builds (58.8% popularity, 42,137 parses)"
+                    usage = 60.3,
+                    totalRankings = 41080,
+                    source = "Archon.gg Mythic+ Meta Builds (60.3% popularity, 41,080 parses)"
                 },
             },
             ["SHAMAN"] = {
                 ["Elemental"] = {
                     loadoutCode = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMzYML2mhZMzAAAAAAbmxwGsAzwQjNAY2mZmxYbxEmx2YZmZm5BmxilZsYmZMzCAwAYmBGGG",
-                    usage = 39.0,
-                    totalRankings = 71531,
-                    source = "Archon.gg Mythic+ Meta Builds (39.0% popularity, 71,531 parses)"
+                    usage = 40.0,
+                    totalRankings = 69752,
+                    source = "Archon.gg Mythic+ Meta Builds (40.0% popularity, 69,752 parses)"
                 },
                 ["Enhancement"] = {
                     loadoutCode = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAAsBYzMG2gFYGGawCAz2MmxYZZGYmZbsMzMzwYZMDAwMMmZYmAzMYwYA",
-                    usage = 41.0,
-                    totalRankings = 55237,
-                    source = "Archon.gg Mythic+ Meta Builds (41.0% popularity, 55,237 parses)"
+                    usage = 41.7,
+                    totalRankings = 54318,
+                    source = "Archon.gg Mythic+ Meta Builds (41.7% popularity, 54,318 parses)"
                 },
                 ["Restoration"] = {
                     loadoutCode = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAjZmZZbZMzMzYmZGzYYB2gZsox2AYGYDzMY2mZMTzyyMDzY2YxYmxwysMAAYAMzgZGAGDG",
-                    usage = 33.6,
-                    totalRankings = 181051,
-                    source = "Archon.gg Mythic+ Meta Builds (33.6% popularity, 181,051 parses)"
+                    usage = 34.3,
+                    totalRankings = 177308,
+                    source = "Archon.gg Mythic+ Meta Builds (34.3% popularity, 177,308 parses)"
                 },
             },
             ["WARLOCK"] = {
                 ["Affliction"] = {
                     loadoutCode = "CkQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmZ2mZGzyAAAmZmlZzMzyYAgx2yADYAzwWghtBAAgZAAAMzMmxM2GjZMmZmZMMzMDAwAG",
-                    usage = 22.4,
-                    totalRankings = 34680,
-                    source = "Archon.gg Mythic+ Meta Builds (22.4% popularity, 34,680 parses)"
+                    usage = 22.8,
+                    totalRankings = 33999,
+                    source = "Archon.gg Mythic+ Meta Builds (22.8% popularity, 33,999 parses)"
                 },
                 ["Demonology"] = {
                     loadoutCode = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMz2MzYWGAAAAAAAwYGDLwAbDL0wixMjlZbmZGzAAzMGzMzMAjZMjNAAwYmZGDDLzYAD",
-                    usage = 57.6,
-                    totalRankings = 142346,
-                    source = "Archon.gg Mythic+ Meta Builds (57.6% popularity, 142,346 parses)"
+                    usage = 59.3,
+                    totalRankings = 138310,
+                    source = "Archon.gg Mythic+ Meta Builds (59.3% popularity, 138,310 parses)"
                 },
                 ["Destruction"] = {
                     loadoutCode = "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNLmxiZGzysNzMjFzYZZmBAAzgZmZxCMwsY0YGAzG2YAAgxMMAAYmBjZGzsBAAYmZmBAgZYA",
                     usage = 11.9,
-                    totalRankings = 12042,
-                    source = "Archon.gg Mythic+ Meta Builds (11.9% popularity, 12,042 parses)"
+                    totalRankings = 11980,
+                    source = "Archon.gg Mythic+ Meta Builds (11.9% popularity, 11,980 parses)"
                 },
             },
             ["WARRIOR"] = {
                 ["Arms"] = {
                     loadoutCode = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmxsMzMzYGAAAghphZGmZbZmZmZYGzMAAAAAGbmB2iBsZGDLwAzwGNGsAmZYYwsZ2GMzAAMzwA",
-                    usage = 73.8,
-                    totalRankings = 69476,
-                    source = "Archon.gg Mythic+ Meta Builds (73.8% popularity, 69,476 parses)"
+                    usage = 75.5,
+                    totalRankings = 67912,
+                    source = "Archon.gg Mythic+ Meta Builds (75.5% popularity, 67,912 parses)"
                 },
                 ["Fury"] = {
                     loadoutCode = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZMz2yMzMjZmxMjZMjZWmZGjZmlxMzAAAhB2glFjGzAYWwMWAMDGDAmZAMMzMDGM",
-                    usage = 34.1,
-                    totalRankings = 62699,
-                    source = "Archon.gg Mythic+ Meta Builds (34.1% popularity, 62,699 parses)"
+                    usage = 35.0,
+                    totalRankings = 61150,
+                    source = "Archon.gg Mythic+ Meta Builds (35.0% popularity, 61,150 parses)"
                 },
                 ["Protection"] = {
                     loadoutCode = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzYmZmZmxsZmZZGjxoZmxwixMzYGmZAAAAwyMDwMGgB2glFjGzAYWwMbYmZmZYsNAYmBAgZAPA",
-                    usage = 13.6,
-                    totalRankings = 55397,
-                    source = "Archon.gg Mythic+ Meta Builds (13.6% popularity, 55,397 parses)"
+                    usage = 14.0,
+                    totalRankings = 53995,
+                    source = "Archon.gg Mythic+ Meta Builds (14.0% popularity, 53,995 parses)"
                 },
             },
         }
