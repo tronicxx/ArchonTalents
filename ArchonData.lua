@@ -1,13 +1,13 @@
 -- Archon Talents Data File
--- Generated: 2026-09-02 08:03:05 UTC
--- Version: 1788354185
+-- Generated: 2026-09-03 08:03:26 UTC
+-- Version: 1788440606
 -- Source: Archon.gg Meta Builds
 -- This is a plain global table, NOT a SavedVariable.
 -- It gets freshly loaded from this file every time the addon loads.
 
 ArchonTalentsData = {
-    version = 1788354185,
-    lastUpdated = "2026-09-02 08:03:05 UTC",
+    version = 1788440606,
+    lastUpdated = "2026-09-03 08:03:26 UTC",
     specData = {
         ["Imperator"] = {
         },
